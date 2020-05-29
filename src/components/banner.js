@@ -6,7 +6,6 @@ const Banner = () => {
   const skills = ["React", "JavaScript", "CSS", "Gatsby","Redux"]
   return (
     <div className="banner">
-      <div className="container">
         <div className="row">
             <div className="main-text">Hunter Evanoff</div>
             <div className="fade-in">
@@ -14,13 +13,12 @@ const Banner = () => {
                 <img src={ReactSVG} className="react-icon spin" />
               </div>
             </div>
+          <BannerTypewriter dataText={skills}/>
         </div>
-        <BannerTypewriter dataText={skills}/>
         <div className="scroll">
           <span>Scroll down</span>
         </div>
-      </div>
-      <div className="fixed-misc">Full Stack Web Developer</div>
+        {/*<div className="fixed-misc">Full Stack Web Developer</div>*/}
     </div>
   )
 }

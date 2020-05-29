@@ -3,13 +3,13 @@ import { Link } from "gatsby"
 
 import Header from "../components/header";
 import Banner from "../components/banner";
-import About from "../components/about";
+import Portfolio from "../components/portfolio";
 
 const IndexPage = () => (
-  <div>
+  <div className="container">
     <Header />
     <Banner />
-    <About />
+    <Portfolio />
   </div>
 )
 
