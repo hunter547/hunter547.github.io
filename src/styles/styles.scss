@@ -28,16 +28,21 @@ body {
 }
 
 .container {
-  padding: 0% 5%;
+  position: relative;
+  .content-wrapper {
+    padding: 0% 5%;
+    padding-bottom: 100px;
+  }
 }
 
 // Header
 header {
   height: 80px;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: calc(100% - 10%);
   z-index: 10;
+  background-color: $off-white;
   .inner-header {
     display: flex;
     align-items: center;
@@ -45,43 +50,50 @@ header {
     height: 80px;
     width: 100%;
     .logo {
-      a {
+      button {
         font-weight: 700;
         text-decoration: none;
         letter-spacing: 1.5px;
         color: $black;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        font-size: 1rem;
+        font-family: $font;
+        background-color: transparent;
+        &:focus {
+          outline: none;
+        }
       }
     }
     .navigation {
       nav {
-        a {
+        button {
           margin: 0 20px;
           text-decoration: none;
           letter-spacing: 1.75px;
           text-transform: uppercase;
           font-size: 0.75rem;
           color: $black;
+          border: none;
+          cursor: pointer;
+          background-color: transparent;
+          padding: 0;
           &:last-child {
             margin-right: 0px;
+          }
+          &:focus {
+            outline: none;
           }
         }
       }
     }
-    @media (max-width: 750px) {
-      .navigation {
-        display: none;
-      }
-      .menu {
-        display: block !important;
-      }
-    }
     // Hamburger menu formatting
       .menu {
-        display: none;
         z-index: 2;
         position: absolute;
         right: 0%;
-        margin-top: .7rem;
+        bottom: .8rem;
         width: 35px;
         height: 30px;
         cursor: pointer;
@@ -105,19 +117,30 @@ header {
         z-index: 2;
         padding: 0;
         position: absolute;
-        right: 10%;
-        margin-top: 8rem;
+        right: 9%;
+        margin-top: 4rem;
         transition: 0.3s;
+        letter-spacing: 1px;
         display: none;
-        text-transform: uppercase;
       }
       .menu-items li {
         list-style: none;
         padding: 1rem 0;
       }
-      .menu-items li a{
+      .menu-items li button{
         text-decoration: none;
-        color: $white;
+        color: $off-white;
+        background-color: transparent;
+        border: none;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-family: $font;
+        font-size: 1rem;
+        padding: 0;
+        cursor: pointer;
+        &:focus {
+          outline: none;
+        }
       }
       .menu-bubble {
         z-index: 1;
@@ -129,12 +152,29 @@ header {
         border-radius: 50%;
         transition: 0.3s;
         right: 0%;
-        margin-top: 2.5rem;
-        margin-right: 1rem;
+        margin-top: 2.8rem;
+        margin-right: 1.5rem;
+        will-change: transform;
+        -webkit-transform: translate(60%, -30%);
+        transform: translate(60%, -30%);
       }
       .menu-circle {
         width: 480px;
         height: 470px;
+      }
+      .menu-drap {
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        width: 0;
+        height: 0;
+        background: $dark-blue;
+        border-radius: 50%;
+        right: 0%;
+        margin-top: 2.8rem;
+        margin-right: 1.5rem;
+        will-change: transform;
+        -webkit-transform: translate(60%, -30%);
         transform: translate(60%, -30%);
       }
       .change {
@@ -151,9 +191,16 @@ header {
       }
       .change #bar2 {
         opacity: 0;
+      }.drap {
+        width: 2500px;
+        height: 2500px;
+        background-color: $white;
+        opacity: .8;
+        transition: 1.3s;
       }
     }
 }
+
 
 // Banner
 .banner {
@@ -292,10 +339,9 @@ header {
   }
 }
 
-// About section
-
+// Portfolio section
 .portfolio {
-  padding: 48px 0;
+  padding: 80px 0;
   background: $off-white;
   .portfolio__grid {
     width: 100%;
@@ -355,8 +401,8 @@ header {
         .portfolio__button-wrapper {
           display: flex;
           .portfolio__button {
-            border: 1px solid $dark-blue;
-            color: $dark-blue;
+            color: transparent;
+            border: 1px solid transparent;
             border-radius: 0.3rem;
             padding: 0.5rem;
             margin-right: 20px;
@@ -372,6 +418,47 @@ header {
           }
         }
       }
+    }
+  }
+}
+
+// Footer
+.footer {
+  margin-top: 5rem;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  background-color: $dark-blue;
+  color: $white;
+  .footer__right-content {
+    padding-right: 2rem;
+    .footer__icon {
+      margin: 0 10px;
+      cursor: pointer;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .footer__left-content {
+    padding-left: 2rem;
+  }
+  @media (max-width: 600px) {
+    flex-direction: column-reverse;
+    .footer__right-content{
+      padding-right: 0;
+      margin-top: 1rem;
+    }
+    .footer__left-content {
+      padding-left: 0;
     }
   }
 }
@@ -393,6 +480,11 @@ header {
 
 .meetup-app:hover #meetup-app-info {
   color: black;
+}
+
+.meetup-app:hover .portfolio__button {
+  border: 1px solid $dark-blue;
+  color: $dark-blue;
 }
 
 // Animations
