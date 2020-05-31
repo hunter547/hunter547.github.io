@@ -5,6 +5,7 @@ import Header from "../components/header";
 import Banner from "../components/banner";
 import Portfolio from "../components/portfolio";
 import Footer from "../components/footer";
+import About from "../components/about";
 
 const IndexPage = () => (
   <div className="container">
@@ -12,6 +13,7 @@ const IndexPage = () => (
       <Header />
       <Banner />
       <Portfolio />
+      <About />
     </div>
     <Footer />
   </div>

@@ -3,7 +3,7 @@ import ReactSVG from '../../assets/smooth-triangle.svg';
 import BannerTypewriter from './bannerTypewriter';
 
 const Banner = () => {
-  const skills = ["React", "JavaScript", "CSS", "Gatsby","Redux"]
+  const skills = ["React", "JavaScript", "CSS", "Gatsby","Redux"];
   return (
     <div className="banner">
         <div className="row">

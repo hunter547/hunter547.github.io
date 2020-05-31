@@ -3,6 +3,7 @@
     "classname":"meetup-app",
     "spanID":"meetup-app-info",
     "header":"Meetup App",
+    "image" : "../images/Linkup-app.png",
     "description":"This is a Lambda AWS serverless app using the Meetup API to show upcoming events in a user's area. This leverages other tools, such as recharts for interesting visuals to get quick information and the CI tool Atatus, and is also PWS compatible.",
     "githubLink":"https://github.com/hunter547/meetup-app",
     "applicationLink": "https://hunter547.github.io/meetup-app"
@@ -11,46 +12,52 @@
     "classname":"meetup-app",
     "spanID":"meetup-app-info",
     "header":"Meetup App",
+    "image" : "../images/Linkup-app.png",
     "description":"This is a Lambda AWS serverless app using the Meetup API to show upcoming events in a user's area. This leverages other tools, such as recharts for interesting visuals to get quick information and the CI tool Atatus, and is also PWS compatible.",
     "githubLink":"https://github.com/hunter547/meetup-app",
     "applicationLink": "https://hunter547.github.io/meetup-app"
-  },
+  },  
   {
     "classname":"meetup-app",
     "spanID":"meetup-app-info",
     "header":"Meetup App",
+    "image" : "../images/Linkup-app.png",
     "description":"This is a Lambda AWS serverless app using the Meetup API to show upcoming events in a user's area. This leverages other tools, such as recharts for interesting visuals to get quick information and the CI tool Atatus, and is also PWS compatible.",
     "githubLink":"https://github.com/hunter547/meetup-app",
     "applicationLink": "https://hunter547.github.io/meetup-app"
-  },
+  },  
   {
     "classname":"meetup-app",
     "spanID":"meetup-app-info",
     "header":"Meetup App",
+    "image" : "../images/Linkup-app.png",
     "description":"This is a Lambda AWS serverless app using the Meetup API to show upcoming events in a user's area. This leverages other tools, such as recharts for interesting visuals to get quick information and the CI tool Atatus, and is also PWS compatible.",
     "githubLink":"https://github.com/hunter547/meetup-app",
     "applicationLink": "https://hunter547.github.io/meetup-app"
-  },
+  },  
   {
     "classname":"meetup-app",
     "spanID":"meetup-app-info",
     "header":"Meetup App",
+    "image" : "../images/Linkup-app.png",
     "description":"This is a Lambda AWS serverless app using the Meetup API to show upcoming events in a user's area. This leverages other tools, such as recharts for interesting visuals to get quick information and the CI tool Atatus, and is also PWS compatible.",
     "githubLink":"https://github.com/hunter547/meetup-app",
     "applicationLink": "https://hunter547.github.io/meetup-app"
-  },
+  },  
   {
     "classname":"meetup-app",
     "spanID":"meetup-app-info",
     "header":"Meetup App",
+    "image" : "../images/Linkup-app.png",
     "description":"This is a Lambda AWS serverless app using the Meetup API to show upcoming events in a user's area. This leverages other tools, such as recharts for interesting visuals to get quick information and the CI tool Atatus, and is also PWS compatible.",
     "githubLink":"https://github.com/hunter547/meetup-app",
     "applicationLink": "https://hunter547.github.io/meetup-app"
-  },
+  },  
   {
     "classname":"meetup-app",
     "spanID":"meetup-app-info",
     "header":"Meetup App",
+    "image" : "../images/Linkup-app.png",
     "description":"This is a Lambda AWS serverless app using the Meetup API to show upcoming events in a user's area. This leverages other tools, such as recharts for interesting visuals to get quick information and the CI tool Atatus, and is also PWS compatible.",
     "githubLink":"https://github.com/hunter547/meetup-app",
     "applicationLink": "https://hunter547.github.io/meetup-app"
