@@ -13,7 +13,6 @@ const PortfolioItems = () => {
           edges {
             node {
               classname
-              spanID
               header
               image {
                 relativePath
@@ -49,8 +48,8 @@ const PortfolioItems = () => {
                   <p>{project.description}</p>
                 </div>
                 <div className="portfolio__item-button-wrapper">
-                  <a href={project.githubLink} target="_blank"  className="portfolio__item-button">GitHub</a>
-                  <a href={project.applicationLink} target="_blank"  className="portfolio__item-button">Application</a>
+                  <a href={project.githubLink} target="_blank" rel="noreferrer" className="portfolio__item-button">GitHub</a>
+                  <a href={project.applicationLink} target="_blank" rel="noreferrer" className="portfolio__item-button">Application</a>
                 </div>
               </div>
             </div>

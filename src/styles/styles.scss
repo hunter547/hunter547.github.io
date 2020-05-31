@@ -410,14 +410,19 @@ header {
       width: 100%;
     }
     .portfolio__item {
-      border-radius: 1rem;
+      border-radius: 1.2rem;
       box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
       transition: 0.3s;
+      background-color: $dark-blue;
+      @media (max-width: 500px) {
+        box-shadow: none;
+      }
       h2 {
         text-transform: uppercase;
         font-weight: 700;
         font-size: 1.5rem;
         letter-spacing: 1.2px;
+        margin-top: 0;
       }
       p {
         font-size: 1rem;
@@ -431,7 +436,7 @@ header {
         justify-content: space-between;
         border-radius: 1rem;
         .portfolio__item-image-container {
-          padding: 5% 5% 0 5%;
+          padding: 5% 5% 5% 5%;
           border-top-left-radius: 1rem;
           border-top-right-radius: 1rem;
           background: linear-gradient(
@@ -442,19 +447,23 @@ header {
             $pink 100% 
           );
           .portfolio__item-image {
-            border-top-left-radius: 1rem;
-            border-top-right-radius: 1rem;
+            border-radius: 1rem;
           }
         }
         .portfolio__item-text-container {
-          background-color: $dark-blue;
           padding: 0 5% 5% 5%;
           border-bottom-left-radius: 1rem;
           border-bottom-right-radius: 1rem;
+          background: linear-gradient(
+            -45deg, 
+            $medium-blue 0%,
+            $medium-blue 20%,
+            $dark-blue 20%,
+            $dark-blue 100% 
+          );
           .portfolio__item-bottom{
             padding: 2rem;
-            border-bottom-left-radius: 1rem;
-            border-bottom-right-radius: 1rem;
+            border-radius: 1rem;
             background-color: $off-white;
             .portfolio__item-button-wrapper {
               display: flex;
@@ -481,7 +490,9 @@ header {
     }
     .portfolio__item:hover {
       box-shadow: 0 7px 14px rgba(32,62,80,0.25), 0 5px 5px rgba(32,62,80,0.22);
-      transform: scale(1.01);
+      @media (max-width: 500px) {
+        box-shadow: none;
+      }
     }
   }
 }
