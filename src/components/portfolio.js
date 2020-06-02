@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
-import PortfolioItems from "./portfolioItems"
+import PortfolioCollection from "./portfolioCollection";
 
 const Portfolio = () => {
   const data = useStaticQuery(graphql`
@@ -32,7 +32,7 @@ const Portfolio = () => {
           </div> */}
         </div>
         <div className="portfolio__grid">
-          <PortfolioItems />
+          <PortfolioCollection />
         </div>
       </div>
     </section>
