@@ -30,14 +30,15 @@ const IndexPage = () => {
       stagger: {
         amount: 0.4
       }
-    }).to('.overlay-bottom', 1.6, {
+    }) 
+    {/*.to('.overlay-bottom', 1.6, {
       width: 0,
       ease: 'expo.inOut',
       delay: -.8,
       stagger: {
         amount: 0.4
       }
-    })
+    }) */}
   }, [])
   return(
     <>

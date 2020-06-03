@@ -1,10 +1,51 @@
-import React from "react"
+import React , { useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { useIntersection } from "react-use";
+import { ScrollTrigger } from "gsap/ScrollTrigger"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
+import gsap from "gsap"
 import PortfolioCollection from "./portfolioCollection";
 
 const Portfolio = () => {
+
+  if (typeof window !== `undefined`) {
+    gsap.registerPlugin(ScrollTrigger)
+    gsap.core.globals("ScrollTrigger", ScrollTrigger)
+  }
+  gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(()=> {
+    gsap.from('.portfolio__summary h3', {
+      scrollTrigger: {
+        trigger: '.portfolio__summary h3',
+        start: 'top 95%',
+        triggerActions: 'play none none none',
+      },
+      y: 100,
+      ease: "power4.out",
+      skewY: 7,
+      stagger: {
+        amount: 0.3
+      },
+      opacity: 0,
+    });
+    gsap.from('.portfolio__summary p', {
+      scrollTrigger: {
+        trigger: '.portfolio__summary p',
+        start: 'top 95%',
+        triggerActions: 'play none none none',
+      },
+      y: 100,
+      ease: "power4.out",
+      skewY: 7,
+      stagger: {
+        amount: 0.3
+      },
+      opacity: 0,
+    });
+  })
+
   const data = useStaticQuery(graphql`
     query {
       code: file(relativePath: { eq: "code.png" }) {

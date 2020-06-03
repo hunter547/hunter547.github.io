@@ -1,14 +1,39 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { useIntersection } from "react-use";
 import Image from "gatsby-image";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+
 
 
 
 
 const PortfolioItem = ({ project, setFade, fadeState }) => {
 
+  useEffect(() => {
+    gsap.fromTo('.portfolio__item-image, .portfolio__item-bottom',
+      {
+        opacity: 0,
+        y: 60,
+        ease: 'power4.out',
+        stagger: {
+          amount: .3
+        }
+      },
+      {
+        scrollTrigger: {
+          trigger: '.portfolio__grid',
+          start: 'top 60%',
+          triggerActions: 'play none none none',
+        },
+        opacity: 1,
+        y: 0,
+      }); 
+  }, []);
+  
   const sectionRef = useRef(null);
+  {/*
+  
 
   const intersection = useIntersection(sectionRef, {
     root: null,
@@ -30,33 +55,24 @@ const PortfolioItem = ({ project, setFade, fadeState }) => {
         opacity: 1,
         y: 0,
       });
-    
-    setFade();
+  } 
 
-  }
+  if (intersection && 
+      intersection.intersectionRatio === 1) {
+    fadeIn(".fadeIn")
+  } */}
 
-  const fadeOut = (element) => {
-    //gsap.to(element, 10, {
-    //  opacity: 0,
-    //  y: -20,
-    // ease: 'power4.out',
-    //  stagger: {
-    //    amount: .3
-    //  }
-    //})
-  }
-  intersection && fadeState && intersection.intersectionRatio === 1 ?
-  fadeIn(".fadeIn")
-  :
-  fadeOut(".fadeIn")
+  
+  
+  
   return (
     <div className={`portfolio__item ${project.classname}`}>
       <div className="portfolio__item-wrapper">
-        <div ref={sectionRef} className="portfolio__item-image-container">
-          <Image className="portfolio__item-image fadeIn" fluid={project.image.childImageSharp.fluid} />
+        <div className="portfolio__item-image-container">
+          <Image className="portfolio__item-image" fluid={project.image.childImageSharp.fluid} />
         </div>
         <div className="portfolio__item-text-container">
-          <div className="portfolio__item-bottom fadeIn">
+          <div className="portfolio__item-bottom">
             <div className="porfolio__item-details">
               <h2>{project.header}</h2>
               <p>{project.description}</p>
