@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {useStaticQuery, graphql} from "gatsby";
 import PortfolioItem from "./portfolioItem";
 
@@ -6,11 +6,7 @@ import PortfolioItem from "./portfolioItem";
 
 
 const PortfolioCollection = () => {
-  const [doFade, setDoFade] = useState(true);
 
-  const setFade = () => {
-    setDoFade(false);
-  }
   const data = useStaticQuery(graphql`
       query {
         allPortfolioDataJson {
@@ -40,10 +36,7 @@ const PortfolioCollection = () => {
   return (
     portfolio.map(
       (project) => (
-        <PortfolioItem project={project} 
-                       setFade={setFade} 
-                       fadeState={doFade} 
-                       key={project.classname} 
+        <PortfolioItem project={project} key={project.classname} 
         />
       )
     )

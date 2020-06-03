@@ -11,7 +11,7 @@ const Banner = () => {
           <div className="main-text">Evanoff</div>
           <div className="fade-in">
             <div className="float">
-              <img src={ReactSVG} className="react-icon spin" />
+              <img src={ReactSVG} className="react-icon spin" width="300px"/>
             </div>
           </div>
         <BannerTypewriter dataText={skills}/>

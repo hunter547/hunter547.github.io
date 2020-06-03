@@ -13,9 +13,9 @@ const Footer = () => {
           <p>2020 &copy; | Created by Hunter Evanoff</p>
         </div>
         <div className="footer__right-content">
-          <a href="https://www.github.com/hunter547" target="_blank" rel="noreferrer"><img src={GithubSVG} className="footer__icon" /></a>
-          <a href="https://www.linkedin.com/in/hunterevanoff" target="_blank" rel="noreferrer"><img src={LinkedInSVG} className="footer__icon" /></a>
-          <a href="https://medium.com/@hunterevanoff" target="_blank" rel="noreferrer"><img src={MediumSVG} className="footer__icon" /></a>
+          <a href="https://www.github.com/hunter547" target="_blank" rel="noreferrer"><img src={GithubSVG} className="footer__icon" width="32px"/></a>
+          <a href="https://www.linkedin.com/in/hunterevanoff" target="_blank" rel="noreferrer"><img src={LinkedInSVG} className="footer__icon" width="32px"/></a>
+          <a href="https://medium.com/@hunterevanoff" target="_blank" rel="noreferrer"><img src={MediumSVG} className="footer__icon" width="32px"/></a>
         </div>
       </div>
     </section>

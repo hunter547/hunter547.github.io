@@ -1,9 +1,6 @@
 import React , { useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { useIntersection } from "react-use";
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import Img from "gatsby-image"
-import { Link } from "gatsby"
 import gsap from "gsap"
 import PortfolioCollection from "./portfolioCollection";
 
