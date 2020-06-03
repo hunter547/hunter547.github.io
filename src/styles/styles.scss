@@ -18,6 +18,7 @@ $main-padding: 5%;
 
 html,
 body {
+  visibility: hidden;
   font-family: $font;
   font-size: 16px;
   background-color: $off-white;
@@ -201,6 +202,73 @@ header {
     }
 }
 
+// Intro Overlay
+.intro-overlay {
+  .top {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    z-index: 11;
+    .overlay-top {
+      position: absolute;
+      height: 100%;
+      width: 33.333vw;
+      background: $black;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      @media(max-width: 750px) {
+        width: 100vw;
+      }
+      &:nth-child(2) {
+        left: 33.333%;
+        @media(max-width: 750px) {
+          display: none;
+        }
+      }
+      &:nth-child(3) {
+        left: 66.666%;
+        @media(max-width: 750px) {
+          display: none;
+        }
+      }
+    }
+  }
+  .bottom {
+    height: 50vh;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 11;
+    .overlay-bottom {
+      position: absolute;
+      height: 100%;
+      width: 33.333vw;
+      background: $black;
+      bottom: 0;
+      right: 66.666%;
+      @media(max-width: 750px) {
+        right: 0;
+        width: 100vw;
+      }
+      &:nth-child(2) {
+        right: 33.333%;
+        @media(max-width: 750px) {
+          width: 100vw;
+          top: 100%;
+          right: 0;
+        }
+      }
+      &:nth-child(3) {
+        right: 0;
+        @media(max-width: 750px) {
+          width: 100vw;
+          top: 200%;
+        }
+      }
+    }
+  }
+}
 
 // Banner
 .banner {
@@ -214,6 +282,7 @@ header {
     position: relative;
     width: 100%;
     .main-text {
+      display: inline-flex;
       white-space: nowrap;
       font-size: 5.8rem;
       text-transform: uppercase;
@@ -223,7 +292,12 @@ header {
       position: relative;
       top: 50%;
       mix-blend-mode: difference;
-      z-index: 9;
+      z-index: 12;
+      margin-right: 1.5%;
+      &:nth-child(2) {
+        margin-right: 0;
+        margin-left: 1.5%;
+      }
       @media (max-width: 1750px) {
         font-size: 4.4rem;
         letter-spacing: 36px;
