@@ -8,6 +8,8 @@ const IntroOverlay = () => {
           <div className="overlay-top"></div>
           <div className="overlay-top"></div>
           <div className="overlay-top"></div>
+          <div className="overlay-top"></div>
+          <div className="overlay-top"></div>
         </div>
       </div>   
     </>

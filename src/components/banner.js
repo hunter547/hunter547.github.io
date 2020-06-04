@@ -1,5 +1,6 @@
 import React from "react";
 import ReactSVG from '../../assets/smooth-triangle.svg';
+import MeSVG from "../../assets/method-draw-image.svg"
 import BannerTypewriter from './bannerTypewriter';
 
 const Banner = () => {

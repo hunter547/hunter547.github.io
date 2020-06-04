@@ -13,7 +13,7 @@ const Portfolio = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(()=> {
-    gsap.from('.portfolio__summary h3', {
+    gsap.from('.portfolio__summary h3', 1, {
       scrollTrigger: {
         trigger: '.portfolio__summary h3',
         start: 'top 95%',
@@ -27,7 +27,7 @@ const Portfolio = () => {
       },
       opacity: 0,
     });
-    gsap.from('.portfolio__summary p', {
+    gsap.from('.portfolio__summary p', 1, {
       scrollTrigger: {
         trigger: '.portfolio__summary p',
         start: 'top 95%',

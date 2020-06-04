@@ -15,20 +15,19 @@ const IndexPage = () => {
 
     let tl = gsap.timeline();
 
-    tl.from(".main-text", 1, {
-      y: 100,
+    tl.from(".main-text", 1.7, {
+      y: 120,
       ease: "power4.out",
       delay: 1,
-      skewY: 3,
       stagger: {
         amount: 0.3
       },
-      opacity: 0,
+      }).to('.row', 0, {css:{overflow:'visible'}
       }).to('.main-text:first-child', 0.6, {
-        marginRight: '1.5%',
+        marginRight: '1%',
         ease: "power4.out"
       }).to('.main-text:nth-child(2)', 0.6, {
-        marginLeft: '1.5%',
+        marginLeft: '1%',
         delay: -0.6,
         ease: "power4.out"
       }).to('.overlay-top', 1.6, {
@@ -41,7 +40,8 @@ const IndexPage = () => {
         css:{ display:'none' }
       }).to('.main-text', 0, {
         css: { zIndex: 9}
-      }).to('.react-icon, .fade-in, .float', 0, {css:{display:'block'}});
+      }).to('.react-icon, .fade-in, .float', 0, {css:{display:'block'}
+      });
   }, [])
   return(
     <>

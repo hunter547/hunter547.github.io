@@ -212,7 +212,7 @@ header {
     .overlay-top {
       position: absolute;
       height: 100%;
-      width: 33.333vw;
+      width: 20vw;
       background: $dark-blue;
       bottom: 0;
       left: 0;
@@ -221,13 +221,25 @@ header {
         width: 100vw;
       }
       &:nth-child(2) {
-        left: 33.333%;
+        left: 20%;
         @media(max-width: 750px) {
           display: none;
         }
       }
       &:nth-child(3) {
-        left: 66.666%;
+        left: 40%;
+        @media(max-width: 750px) {
+          display: none;
+        }
+      }
+      &:nth-child(4) {
+        left: 60%;
+        @media(max-width: 750px) {
+          display: none;
+        }
+      }
+      &:nth-child(5) {
+        left: 80%;
         @media(max-width: 750px) {
           display: none;
         }
@@ -247,13 +259,14 @@ header {
   .row {
     position: relative;
     width: 100%;
+    overflow: hidden;
     .main-text {
       display: inline-flex;
       white-space: nowrap;
       font-size: 5.8rem;
       text-transform: uppercase;
       letter-spacing: 42px;
-      font-weight: 700;
+      font-weight: 300;
       color: $off-white;
       position: relative;
       top: 50%;
@@ -361,7 +374,7 @@ header {
 // Typewriter
 .typewriter {
   margin: 0 auto;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 1px;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -695,11 +708,11 @@ header {
 
 @keyframes fadeIn {
   0% {
-    transform: translateY(-300%);
+    opacity: 0;
 
   }
   100% {
-    transform: translateY(0%);
+    opacity: 1;
   }
 }
 
