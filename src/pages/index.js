@@ -41,6 +41,11 @@ const IndexPage = () => {
       }).to('.main-text', 0, {
         css: { zIndex: 9}
       }).to('.react-icon, .fade-in, .float', 0, {css:{display:'block'}
+      }).to('.draw-triangle', 3, {
+        strokeDashoffset: 0,
+      }).to('.draw-triangle', 1, {
+        fill: '#023440',
+        delay: -0.5
       });
   }, [])
   return(

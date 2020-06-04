@@ -309,11 +309,17 @@ header {
         position: absolute;
         height: 100%;
         width: 100%;
-        .react-icon {
+        .draw-triangle {
           position: absolute;
           width: 300px;
           bottom: 150px;
           left: 100px;
+          stroke-dasharray: 1000;
+          stroke-dashoffset: 1000;
+          fill: transparent;
+          stroke: $dark-blue;
+          stroke-width: 1.5px;
+          overflow: visible;
           @media (max-width: 1750px) {
             width: 260px;
           }
@@ -708,7 +714,7 @@ header {
 
 @keyframes fadeIn {
   0% {
-    opacity: 0;
+    transform: translateY(-20%);
 
   }
   100% {
