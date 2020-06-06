@@ -91,7 +91,10 @@ const PortfolioItem = ({ project }) => {
             </div>
             <div className="portfolio__item-button-wrapper">
               <a href={project.githubLink} target="_blank" rel="noreferrer" className="portfolio__item-button">GitHub</a>
-              <a href={project.applicationLink} target="_blank" rel="noreferrer" className="portfolio__item-button">Application</a>
+              {project.applicationLink ? 
+                <a href={project.applicationLink} target="_blank" rel="noreferrer" className="portfolio__item-button">Application</a> 
+                : 
+                null}
               <button onClick={openModal} className="portfolio__item-button">Demo</button>
             </div>
           </div>

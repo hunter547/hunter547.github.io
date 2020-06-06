@@ -535,12 +535,13 @@ header {
             $dark-blue 100% 
           );
           .portfolio__item-bottom{
-            padding: 2rem;
+            padding: 2rem 2rem .75rem 2rem;
             border-radius: 1rem;
             opacity: 0;
             background-color: $off-white;
             .portfolio__item-button-wrapper {
               display: flex;
+              flex-wrap: wrap;
               .portfolio__item-button {
                 border: 1px solid $dark-blue;
                 color: $dark-blue;
@@ -550,6 +551,8 @@ header {
                 text-decoration: none;
                 transition: 0.3s;
                 font-size: 1rem;
+                background-color: transparent;
+                margin-bottom: 20px;
                 &:last-child {
                   margin-right: 0;
                 }
@@ -576,6 +579,7 @@ header {
   }
 }
 
+// Video Modal
 .portfolio__item-modal {
   position: fixed;
   top: 50%;
@@ -588,8 +592,8 @@ header {
   outline: none;
 }
 
-.vp-center {
-  border: none;
+.ReactModal__Overlay--after-open {
+  z-index: 99;
 }
 
 // About
