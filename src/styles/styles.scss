@@ -52,10 +52,14 @@ header {
     width: 100%;
     .logo {
       button {
+        position: relative;
+        z-index: 11;
         font-weight: 700;
         text-decoration: none;
         letter-spacing: 1.5px;
-        color: $black;
+        color: $white;
+        mix-blend-mode: difference;
+        margin-left: 1.5rem;
         border: none;
         cursor: pointer;
         padding: 0;
@@ -65,6 +69,20 @@ header {
         &:focus {
           outline: none;
         }
+      }
+      .logo-triangle {
+        position: absolute;
+        z-index: 10;
+        width: 4rem;
+        left: 16px;
+        bottom: 11px;
+        fill: transparent;
+        stroke-dasharray: 400;
+        stroke-dashoffset: 400;
+        stroke: $dark-blue;
+        stroke-width: 1.5px;
+        overflow: visible;
+        transform: rotate(90deg);
       }
     }
     .navigation {
@@ -531,6 +549,7 @@ header {
                 margin-right: 20px;
                 text-decoration: none;
                 transition: 0.3s;
+                font-size: 1rem;
                 &:last-child {
                   margin-right: 0;
                 }
@@ -538,6 +557,10 @@ header {
               .portfolio__item-button:hover {
                 background-color: $dark-blue;
                 color: $white;
+                cursor: pointer;
+              }
+              .portfolio__item-button:focus {
+                outline: 0;
               }
             }
           }
@@ -551,6 +574,22 @@ header {
       }
     }
   }
+}
+
+.portfolio__item-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  margin: auto;
+  transform: translate(-50%, -50%);
+  outline: none;
+}
+
+.vp-center {
+  border: none;
 }
 
 // About
@@ -714,7 +753,7 @@ header {
 
 @keyframes fadeIn {
   0% {
-    transform: translateY(-20%);
+    opacity: 1;
 
   }
   100% {

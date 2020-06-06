@@ -1,6 +1,9 @@
-import React, { useRef, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "gatsby-image";
 import gsap from "gsap";
+import Modal from "react-modal";
+import SyncLoader from "react-spinners/SyncLoader";
+import { css } from "@emotion/core";
 
 const PortfolioItem = ({ project }) => {
 
@@ -22,8 +25,56 @@ const PortfolioItem = ({ project }) => {
         },
         opacity: 1,
         y: 0,
-      }); 
+      });
+      Modal.setAppElement('body');
   }, []);
+
+  const override = css`
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    margin: auto;
+    transform: translate(-50%, -50%);
+    border-color: #023440;
+`;
+  
+  const [modalIsOpen,setIsOpen] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [multiplier, setMultiplier] = useState(0);
+
+  const openModal = () => {
+    setIsOpen(true);
+    setLoading(true);
+    determineSize();
+  }
+ 
+  const closeModal = () => {
+    setIsOpen(false);
+    setLoading(false)
+  }
+
+  const stopLoad = () => {
+    setLoading(false);
+  }
+
+  const determineSize = () => {
+    let width = window.innerWidth;
+    switch (true) {
+      case (width>1500):
+        setMultiplier(0.5)
+        break;
+      case (width > 1000 && width <= 1500):
+        setMultiplier(0.7)
+        break;
+      case (width <= 1000):
+        setMultiplier(0.9)
+        break;
+    }
+  }
 
   
   return (
@@ -41,10 +92,40 @@ const PortfolioItem = ({ project }) => {
             <div className="portfolio__item-button-wrapper">
               <a href={project.githubLink} target="_blank" rel="noreferrer" className="portfolio__item-button">GitHub</a>
               <a href={project.applicationLink} target="_blank" rel="noreferrer" className="portfolio__item-button">Application</a>
+              <button onClick={openModal} className="portfolio__item-button">Demo</button>
             </div>
           </div>
         </div>
       </div>
+      {modalIsOpen ? <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          contentLabel="Code Demo Video"
+          className="portfolio__item-modal"
+        >
+          <SyncLoader
+            css={override}
+            color={"#023440"}
+            loading={loading}
+          />
+          <div className="video">
+            <iframe
+              src={project.video.URL}
+              title={project.video.title}
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              width={window.innerWidth*multiplier}
+              height={window.innerWidth*multiplier*.65}
+              frameBorder="0"
+              webkitallowfullscreen="true"
+              mozallowfullscreen="true"
+              allowFullScreen
+              onLoad={stopLoad}
+            />
+          </div>
+      </Modal>
+      :
+      null}
+      
     </div>
   )
 }

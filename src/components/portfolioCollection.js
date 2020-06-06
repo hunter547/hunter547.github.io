@@ -25,6 +25,10 @@ const PortfolioCollection = () => {
               description
               githubLink
               applicationLink
+              video {
+                URL
+                title
+              }
             }
           }
         }

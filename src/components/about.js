@@ -13,7 +13,7 @@ const About = () => {
             <h3>Meet Hunter</h3>
             <h4>An accounting graduate turned developer, coding an enjoyable career</h4>
             <p>Hi there, I'm Hunter, a driven web developer with a passion for aesthetic UI, 
-              backend server processing, and web animation. I started coding in 2016 when pursing a 
+              server side processing, and web animation. I started coding in 2016 when pursing a 
               double major in Computer Information Systems to reach the 150 credits required to take 
               the CPA exam. I had completed my 120 credit accounting program, meaning I lived
               and breathed code for a year, surpassing many of my classmates on programming assignments 

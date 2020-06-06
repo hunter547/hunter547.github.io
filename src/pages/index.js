@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import gsap from "gsap"
 import Header from "../components/header";
 import Banner from "../components/banner";
@@ -7,50 +7,63 @@ import Footer from "../components/footer";
 import About from "../components/about";
 import IntroOverlay from "../components/introOverlay";
 
+
+const introAnimation = (completeAnimation) => {
+  let tl = gsap.timeline();
+
+  tl.from(".main-text", 1.7, {
+    y: 120,
+    ease: "power4.out",
+    delay: 1,
+    stagger: {
+      amount: 0.3
+    },
+    }).to('.row', 0, {css:{overflow:'visible'}
+    }).to('.main-text:first-child', 0.6, {
+      marginRight: '1%',
+      ease: "power4.out"
+    }).to('.main-text:nth-child(2)', 0.6, {
+      marginLeft: '1%',
+      delay: -0.6,
+      ease: "power4.out"
+    }).to('.overlay-top', 1.6, {
+      height: 0,
+      ease: 'expo.inOut',
+      stagger: {
+        amount: 0.4
+      }
+    }).to('.intro-overlay', 0, {
+      onComplete: completeAnimation
+    }).to('.main-text', 0, {
+      css: { zIndex: 9}
+    }).to('.react-icon, .fade-in, .float', 0, {css:{display:'block'}
+    }).to('.draw-triangle', 3, {
+      strokeDashoffset: 0,
+    }).to('.draw-triangle', 1, {
+      fill: '#023440',
+      delay: -0.5
+    });
+}
+
+
 const IndexPage = () => {
+
+  const [animationComplete, setAnimationComplete] = useState(false);
+
+  const completeAnimation = () => {
+    setAnimationComplete(true);
+  }
+  
   useEffect(() => {
     // Prevent initial load flashing
     gsap.to('body', 0, {css:{visibility:'visible'}});
-    gsap.to('.react-icon, .fade-in, .float', 0, {css:{display:'none'}})
+    gsap.to('.react-icon, .fade-in, .float', 0, {css:{display:'none'}});
 
-    let tl = gsap.timeline();
-
-    tl.from(".main-text", 1.7, {
-      y: 120,
-      ease: "power4.out",
-      delay: 1,
-      stagger: {
-        amount: 0.3
-      },
-      }).to('.row', 0, {css:{overflow:'visible'}
-      }).to('.main-text:first-child', 0.6, {
-        marginRight: '1%',
-        ease: "power4.out"
-      }).to('.main-text:nth-child(2)', 0.6, {
-        marginLeft: '1%',
-        delay: -0.6,
-        ease: "power4.out"
-      }).to('.overlay-top', 1.6, {
-        height: 0,
-        ease: 'expo.inOut',
-        stagger: {
-          amount: 0.4
-        }
-      }).to('.intro-overlay', 0, {
-        css:{ display:'none' }
-      }).to('.main-text', 0, {
-        css: { zIndex: 9}
-      }).to('.react-icon, .fade-in, .float', 0, {css:{display:'block'}
-      }).to('.draw-triangle', 3, {
-        strokeDashoffset: 0,
-      }).to('.draw-triangle', 1, {
-        fill: '#023440',
-        delay: -0.5
-      });
+    introAnimation(completeAnimation)
   }, [])
   return(
     <>
-    <IntroOverlay />
+    { animationComplete ? null : <IntroOverlay /> }
     <div className="container">
       <div className="content-wrapper">
         <Header />

@@ -13,12 +13,25 @@ const Portfolio = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(()=> {
-    gsap.from('.portfolio__summary h3', 1, {
+    gsap.fromTo('.portfolio__summary h3', {
+      y: 100,
+      ease: "power4.out",
+      skewY: 7,
+      stagger: {
+        amount: 0.3
+      },
+      opacity: 0,
+    },{
       scrollTrigger: {
         trigger: '.portfolio__summary h3',
         start: 'top 95%',
-        triggerActions: 'play none none none',
+        triggerActions: 'play none none none'
       },
+      opacity: 1,
+      y: 0,
+      skewY: 0
+    });
+    gsap.fromTo('.portfolio__summary p', {
       y: 100,
       ease: "power4.out",
       skewY: 7,
@@ -26,20 +39,15 @@ const Portfolio = () => {
         amount: 0.3
       },
       opacity: 0,
-    });
-    gsap.from('.portfolio__summary p', 1, {
+    },{
       scrollTrigger: {
         trigger: '.portfolio__summary p',
         start: 'top 95%',
-        triggerActions: 'play none none none',
+        triggerActions: 'play none none none'
       },
-      y: 100,
-      ease: "power4.out",
-      skewY: 7,
-      stagger: {
-        amount: 0.3
-      },
-      opacity: 0,
+      opacity: 1,
+      y: 0,
+      skewY: 0
     });
   })
 
