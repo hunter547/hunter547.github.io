@@ -1,56 +1,18 @@
 import { Link } from "gatsby";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/styles.scss";
 import scrollTo from "gatsby-plugin-smoothscroll";
 import gsap from "gsap";
 
-class Header extends React.Component {
+const Header = () => {
   
-  constructor() {
-    super();
-    this.updateMenu = this.updateMenu.bind(this);
-    this.state = {
-      menuClicked: false,
-      showMenu: false,
-      isLoaded: false
-    }
+  const [menuClicked, setMenuClicked] = useState(false);
+
+  const flipClass = () => {
+    setMenuClicked(!menuClicked);
   }
   
-  flipClass = () => {
-    this.setState(prevState => ({
-      menuClicked: !prevState.menuClicked
-    }));
-  }
-
-  updateMenu = () => {
-    if(window.innerWidth <= 750) {
-      this.setState({
-        showMenu: true,
-        isLoaded: true
-      });
-    }
-    else {
-      this.setState({
-        showMenu: false,
-        menuClicked: false,
-        isLoaded: true
-      })
-    }
-  }
-
-  componentDidMount() {
-    this.updateMenu();
-    window.addEventListener("resize", this.updateMenu)
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.updateMenu)
-  }
-
-  render() {
-    const { menuClicked, showMenu, isLoaded } = this.state;
-    if (!isLoaded) return null;
-    return(
+  return(
       <section id="header">
         <header>
           <div className="inner-header">
@@ -63,36 +25,31 @@ class Header extends React.Component {
                 />
               </svg>
             </div>
-            {showMenu ? null :
             <div className="navigation">
               <nav>
                 <button onClick={() => scrollTo('#portfolio')}>Portfolio</button>
                 <button onClick={() => scrollTo('#about')}>About</button>
-                <button onClick={() => scrollTo('#contact')}>Contact</button>
+                <a href="mailto:evanoffdev@gmail.com">Contact</a>
               </nav>
-            </div>}
-            {showMenu ? 
+            </div>
             <div className="menu-container">
-              <div className={`menu${menuClicked ? " change" : ""}`} onClick={this.flipClass}>
+              <div className={`menu${menuClicked ? " change" : ""}`} onClick={flipClass}>
               <div id="bar1" className="bar"></div>
               <div id="bar2" className="bar"></div>
               <div id="bar3" className="bar"></div>
               </div>
               <ul className={`menu-items${menuClicked ? " change" : ""}`}>
-                <li onClick={this.flipClass}><button onClick={() => scrollTo('#portfolio')}>Portfolio</button></li>
-                <li onClick={this.flipClass}><button onClick={() => scrollTo('#about')}>About</button></li>
-                <li onClick={this.flipClass}><button onClick={() => scrollTo('#contact')}>Contact</button></li>
+                <li onClick={flipClass}><button onClick={() => scrollTo('#portfolio')}>Portfolio</button></li>
+                <li onClick={flipClass}><button onClick={() => scrollTo('#about')}>About</button></li>
+                <li onClick={flipClass}><a href="mailto:evanoffdev@gmail.com">Contact</a></li>
               </ul>
               <div className={`menu-drap${menuClicked ? " drap" : ""}`}></div>
               <div className={`menu-bubble${menuClicked ? " menu-circle" : ""}`}></div>
             </div>
-            :
-            null}
           </div>
         </header>
       </section>
     )
-  }
 }
 
 export default Header

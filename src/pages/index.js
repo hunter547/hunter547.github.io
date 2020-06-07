@@ -39,9 +39,15 @@ const introAnimation = (completeAnimation) => {
     }).to('.react-icon, .fade-in, .float', 0, {css:{display:'block'}
     }).to('.draw-triangle', 3, {
       strokeDashoffset: 0,
+    }).to('.logo-triangle', 3, {
+      strokeDashoffset: 0,
+      delay: -3
     }).to('.draw-triangle', 1, {
       fill: '#023440',
       delay: -0.5
+    }).to('.logo-triangle', 1, {
+      fill: '#023440',
+      delay: -1
     });
 }
 
