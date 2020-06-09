@@ -1,16 +1,5 @@
 [
   {
-    "classname":"bobchat-app",
-    "header":"Bobchat App",
-    "image" : "../images/Bobchat-app.png",
-    "description":"This react native chat app utilizing react-gifted-chat delivers a real-time chat experience. It has Google Firestore for server side and storage services. Read the detailed readme.md in the GitHub link for more information.",
-    "githubLink":"https://github.com/hunter547/chat-app",
-    "video": {
-      "URL": "https://player.vimeo.com/video/426573803",
-      "title": "Bobchat App Demo"
-    }
-  },
-  {
     "classname":"meetup-app",
     "header":"Linkup App",
     "image" : "../images/Linkup-app.png",
@@ -32,6 +21,17 @@
     "video": {
       "URL": "https://player.vimeo.com/video/426563234",
       "title": "myFlix App Demo"
+    }
+  },
+  {
+    "classname":"bobchat-app",
+    "header":"Bobchat App",
+    "image" : "../images/Bobchat-app.png",
+    "description":"This react native chat app utilizing react-gifted-chat delivers a real-time chat experience. It has Google Firestore for server side and storage services. Read the detailed readme.md in the GitHub link for more information.",
+    "githubLink":"https://github.com/hunter547/chat-app",
+    "video": {
+      "URL": "https://player.vimeo.com/video/426573803",
+      "title": "Bobchat App Demo"
     }
   },  
   {

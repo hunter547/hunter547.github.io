@@ -13,7 +13,7 @@ class BannerTypewriter extends React.Component {
       text: '',
       isDeleting: false,
       loopNum: 0,
-      typingSpeed: 150
+      typingSpeed: 200
     }
   }
 
@@ -29,7 +29,7 @@ class BannerTypewriter extends React.Component {
 
     this.setState({
       text: isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1),
-      typingSpeed: isDeleting ? 60 : 150
+      typingSpeed: isDeleting ? 100 : 200
     });
 
     if (!isDeleting && text === fullText) {

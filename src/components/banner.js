@@ -1,5 +1,5 @@
 import React from "react";
-import BannerTypewriter from './bannerTypewriter';
+import LoopTypewriter from './loopTypewriter';
 
 const Banner = () => {
   const skills = ["React", "JavaScript", "CSS", "Gatsby","Redux"];
@@ -18,7 +18,7 @@ const Banner = () => {
               </svg>
             </div>
           </div>
-        <BannerTypewriter dataText={skills}/>
+        <LoopTypewriter dataText={skills} />
       </div>
       <div className="scroll">
         <span>Scroll down</span>
