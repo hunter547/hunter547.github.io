@@ -65,7 +65,7 @@ const IndexPage = () => {
   
   useEffect(() => {
     // Prevent initial load flashing
-    gsap.to('body', 0, {css:{visibility:'visible'}});
+    gsap.to('html, body', 0, {css:{backgroundColor:'#f2f4f5'}});
     gsap.to('.react-icon, .fade-in, .float', 0, {css:{display:'none'}});
 
     introAnimation(completeAnimation)

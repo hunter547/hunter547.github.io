@@ -28,7 +28,7 @@ const Portfolio = () => {
         start: 'top 95%',
         triggerActions: 'play none none none'
       },
-      startTyping
+     onComplete : startTyping
     });
     gsap.fromTo('.portfolio__summary p', {
       

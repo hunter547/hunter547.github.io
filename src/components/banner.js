@@ -20,9 +20,7 @@ const Banner = () => {
           </div>
         <LoopTypewriter dataText={skills} />
       </div>
-      <div className="scroll">
-        <span>Scroll down</span>
-      </div>
+      {/*<div className="scroll"></div> */}
         {/*<div className="fixed-misc">Full Stack Web Developer</div>*/}
     </div>
   )

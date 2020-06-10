@@ -18,10 +18,9 @@ $main-padding: 5%;
 
 html,
 body {
-  visibility: hidden;
   font-family: $font;
   font-size: 16px;
-  background-color: $off-white;
+  background-color: $dark-blue;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
@@ -59,7 +58,6 @@ header {
         letter-spacing: 1.5px;
         color: $white;
         mix-blend-mode: difference;
-        margin-left: 1.5rem;
         border: none;
         cursor: pointer;
         padding: 0;
@@ -381,15 +379,33 @@ header {
       }
     }
   }
+  
+  .scroll::before {
+    
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: $dark-blue;
+    margin-left: -4px;
+    top: 8px;
+    border-radius: 4px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+    left: 50%
+  }
   .scroll {
-    font-weight: 700;
-    font-size: 0.875rem;
-    letter-spacing: 1.5px;
-    color: $black;
-    text-transform: uppercase;
     position: absolute;
     bottom: 48px;
+    width: 40px;
+    height: 70px;
+    margin-top: -35px;
+    box-shadow: inset 0 0 0 1px $dark-blue;
+    border-radius: 25px;
+    left: 50%
   }
+  
   .fixed-misc {
     position: relative;
     white-space: nowrap;
@@ -426,6 +442,15 @@ header {
     letter-spacing: 0.8;
     font-weight: 300;
   }
+}
+
+.large-cursor {
+  position: absolute;
+  margin-left: 0.1;
+  border-left: 1em solid $black;
+  font-size: 1rem;
+  height: 1.6rem;
+  margin-top: 4px;
 }
 
 // Portfolio section
@@ -569,14 +594,20 @@ header {
                 text-decoration: none;
                 transition: 0.3s;
                 font-size: 1rem;
-                background-color: transparent;
+                background: linear-gradient(
+                  -45deg, 
+                  $dark-blue 50%,
+                  transparent 50%
+                );
+                background-size: 270% 100%;
+                background-position: left top;
                 margin-bottom: 20px;
                 &:last-child {
                   margin-right: 0;
                 }
               }
               .portfolio__item-button:hover {
-                background-color: $dark-blue;
+                background-position: right bottom;
                 color: $white;
                 cursor: pointer;
               }
@@ -786,5 +817,15 @@ header {
 @keyframes blink {
   50% {
     border-color: transparent;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
   }
 }
