@@ -1,7 +1,7 @@
-import React , { useEffect, useState } from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import { ScrollTrigger } from "gsap/ScrollTrigger"
-import gsap from "gsap"
+import React , { useEffect, useState } from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from "gsap";
 import PortfolioCollection from "./portfolioCollection";
 import Typewriter from "./typewriter";
 
@@ -20,17 +20,15 @@ const Portfolio = () => {
   }
 
   useEffect(() => {
-    gsap.fromTo('.portfolio__summary h3', {
-      
-    },{
+    gsap.to('.portfolio__summary h3', {
       scrollTrigger: {
         trigger: '.portfolio__summary h3',
-        start: 'top 95%',
-        triggerActions: 'play none none none'
+        start: 'top 99%',
+        triggerActions: 'play none none none',
       },
      onComplete : startTyping
     });
-    gsap.fromTo('.portfolio__summary p', {
+    gsap.from('.portfolio__summary p', {
       
     },{
       scrollTrigger: {
@@ -42,17 +40,6 @@ const Portfolio = () => {
     });
   })
 
-  const data = useStaticQuery(graphql`
-    query {
-      code: file(relativePath: { eq: "code.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
   return (
     <section id="portfolio">
       <div className="portfolio">

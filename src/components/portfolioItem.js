@@ -112,16 +112,10 @@ const PortfolioItem = ({ project }) => {
             loading={loading}
           />
           <div className="video">
-            <iframe
-              src={project.video.URL}
+            <embed 
+              src={project.video.URL} 
               title={project.video.title}
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              width={window.innerWidth*multiplier}
-              height={window.innerWidth*multiplier*.65}
-              frameBorder="0"
-              webkitallowfullscreen="true"
-              mozallowfullscreen="true"
-              allowFullScreen
+              className="embeded-video"
               onLoad={stopLoad}
             />
           </div>

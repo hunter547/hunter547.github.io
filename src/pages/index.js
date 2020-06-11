@@ -16,7 +16,7 @@ const introAnimation = (completeAnimation) => {
     ease: "power4.out",
     delay: 1,
     stagger: {
-      amount: 0.3
+      amount: 0.4
     },
     }).to('.row', 0, {css:{overflow:'visible'}
     }).to('.main-text:first-child', 0.6, {
