@@ -1,0 +1,22 @@
+@import '../variables.scss';
+@import '../animations.scss';
+
+.typewriter {
+  margin: 0 auto;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: $off-white;
+  mix-blend-mode: difference;
+  .cursor {
+    margin-left: 0.1em;
+    border-left: 0.1em solid $off-white;
+    animation: blink 0.7s steps(1) infinite;
+  }
+  @media (max-width: 750px) {
+    font-size: 1rem;
+    letter-spacing: 0.8;
+    font-weight: 300;
+  }
+}

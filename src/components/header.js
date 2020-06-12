@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 import React, { useEffect, useState } from "react";
-import "../styles/styles.scss";
+import "../styles/components/header.scss";
 import scrollTo from "gatsby-plugin-smoothscroll";
 import gsap from "gsap";
 

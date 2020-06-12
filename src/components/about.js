@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import '../styles/components/about.scss';
 import Profile from "../images/IMG_6155.jpg";
 import gsap from "gsap";
 import Typewriter from "./typewriter";

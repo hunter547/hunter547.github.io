@@ -1,0 +1,104 @@
+@import '../variables.scss';
+@import '../animations.scss';
+
+.portfolio__item {
+  border-radius: 1.2rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: 0.3s;
+  background-color: $dark-blue;
+  @media (max-width: 500px) {
+    box-shadow: none;
+  }
+  h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 1.2px;
+    margin-top: 0;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 300;
+  }
+  .portfolio__item-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 1rem;
+    .portfolio__item-image-container {
+      padding: 5% 5% 5% 5%;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+      background: linear-gradient(
+        -45deg, 
+        $dark-blue 0%,
+        $dark-blue 70%,
+        $pink 70%,
+        $pink 100% 
+      );
+      .portfolio__item-image {
+        border-radius: 1rem;
+        opacity: 0;
+      }
+    }
+    .portfolio__item-text-container {
+      padding: 0 5% 5% 5%;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      background: linear-gradient(
+        -45deg, 
+        $medium-blue 0%,
+        $medium-blue 20%,
+        $dark-blue 20%,
+        $dark-blue 100% 
+      );
+      .portfolio__item-bottom{
+        padding: 2rem 2rem .75rem 2rem;
+        border-radius: 1rem;
+        opacity: 0;
+        background-color: $off-white;
+        .portfolio__item-button-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          .portfolio__item-button {
+            border: 1px solid $dark-blue;
+            color: $dark-blue;
+            border-radius: 0.3rem;
+            padding: 0.5rem;
+            margin-right: 20px;
+            text-decoration: none;
+            transition: 0.3s;
+            font-size: 1rem;
+            background: linear-gradient(
+              -45deg, 
+              $dark-blue 50%,
+              transparent 50%
+            );
+            background-size: 270% 100%;
+            background-position: left top;
+            margin-bottom: 20px;
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+          .portfolio__item-button:hover {
+            background-position: right bottom;
+            color: $white;
+            cursor: pointer;
+          }
+          .portfolio__item-button:focus {
+            outline: 0;
+          }
+        }
+      }
+    }
+  }
+}
+.portfolio__item:hover {
+  box-shadow: 0 7px 14px rgba(32,62,80,0.25), 0 5px 5px rgba(32,62,80,0.22);
+  @media (max-width: 500px) {
+    box-shadow: none;
+  }
+}

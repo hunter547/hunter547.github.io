@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState } from "react";
+import '../styles/index.scss';
 import gsap from "gsap"
 import Header from "../components/header";
 import Banner from "../components/banner";
 import Portfolio from "../components/portfolio";
 import Footer from "../components/footer";
 import About from "../components/about";
+import SEO from "../components/seo";
 import IntroOverlay from "../components/introOverlay";
 
 
@@ -72,6 +74,7 @@ const IndexPage = () => {
   }, [])
   return(
     <>
+    <SEO />
     { animationComplete ? null : <IntroOverlay /> }
     <div className="container">
       <div className="content-wrapper">

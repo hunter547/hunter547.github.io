@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Hunter Evanoff`,
-    description: `Full Stack Web Developer`,
-    author: `Hunter Evanoff`,
+    title: "Hunter Evanoff",
+    description: "Full Stack Web Developer",
+    author: "Hunter Evanoff",
+    url: "https://www.evanoff.dev",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

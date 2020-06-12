@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import '../styles/components/typewriter.scss';
  
 const Typewriter = ({dataText}) => {
   const[i, setI] = useState(0);

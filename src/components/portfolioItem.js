@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import '../styles/components/portfolioItem.scss';
+import '../styles/components/videoModal.scss';
 import Image from "gatsby-image";
 import gsap from "gsap";
 import Modal from "react-modal";

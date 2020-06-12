@@ -1,4 +1,5 @@
 import React from "react";
+import '../styles/components/loopTypewriter.scss';
 
 class BannerTypewriter extends React.Component {
 

@@ -1,4 +1,5 @@
 import React from "react";
+import '../styles/components/banner.scss';
 import LoopTypewriter from './loopTypewriter';
 
 const Banner = () => {

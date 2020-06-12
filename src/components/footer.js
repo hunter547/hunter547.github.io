@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/styles.scss";
+import "../styles/components/footer.scss";
 import { Link } from "gatsby";
 import GithubSVG from '../images/github.svg';
 import LinkedInSVG from '../images/linkedin.svg';
