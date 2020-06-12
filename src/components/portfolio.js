@@ -33,7 +33,7 @@ const Portfolio = () => {
     },{
       scrollTrigger: {
         trigger: '.portfolio__summary p',
-        start: 'top 95%',
+        start: 'top 99%',
         triggerActions: 'play none none none'
       },
       

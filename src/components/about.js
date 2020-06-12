@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Profile from "../images/IMG_6155.jpg";
+import gsap from "gsap";
+import Typewriter from "./typewriter";
 
 const About = () => {
+  const [doType, setDoType] = useState(false);
+
+  const startTyping = () => {
+    setDoType(true);
+  }
+
+  useEffect(() => {
+    gsap.to('.about__text-container h3', {
+      scrollTrigger: {
+        trigger: '.about__text-container',
+        start: 'top 99%',
+        triggerActions: 'play none none none'
+      },
+      onComplete: startTyping
+    });
+  });
   return (
     <section id="about">
       <div className="about">
@@ -10,7 +28,11 @@ const About = () => {
             <img src={Profile} className="about__profile-picture" width="230px"/>
           </div>
           <div className="about__text-container">
-            <h3>Meet Hunter</h3>
+            {!doType ? 
+             <h3></h3>
+             :
+             <h3><Typewriter dataText="Meet Hunter" /></h3>
+            }
             <h4>An accounting graduate turned developer, coding an enjoyable career</h4>
             <p>Hi there, I'm Hunter, a driven web developer with a passion for aesthetic UI, 
               server side processing, and web animation. I started coding in 2016 when pursing a 
