@@ -66,13 +66,15 @@
           width: 300px;
           bottom: 150px;
           left: 100px;
-          stroke-dasharray: 775;
-          stroke-dashoffset: 775;
           fill: transparent;
+          stroke-dasharray: 850;
+          stroke-dashoffset: 850;
           stroke: $dark-blue;
           stroke-width: 1.5px;
           overflow: visible;
           @media (max-width: 1750px) {
+            stroke-dasharray: 775;
+            stroke-dashoffset: 775;
             width: 260px;
           }
           @media (max-width: 1500px) {
