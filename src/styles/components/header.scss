@@ -147,6 +147,7 @@ header {
         font-family: $font;
         font-size: 1rem;
         padding: 0;
+        transition: 9s;
         cursor: pointer;
         &:focus {
           outline: none;
@@ -172,7 +173,7 @@ header {
         width: 480px;
         height: 470px;
       }
-      .menu-drap {
+      .menu-drape {
         z-index: 0;
         position: absolute;
         top: 0;
@@ -202,7 +203,7 @@ header {
       .change #bar2 {
         opacity: 0;
       }
-      .drap {
+      .drape {
         width: 2500px;
         height: 2500px;
         background-color: $white;

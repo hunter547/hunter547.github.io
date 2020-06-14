@@ -66,8 +66,8 @@
           width: 300px;
           bottom: 150px;
           left: 100px;
-          stroke-dasharray: 1000;
-          stroke-dashoffset: 1000;
+          stroke-dasharray: 775;
+          stroke-dashoffset: 775;
           fill: transparent;
           stroke: $dark-blue;
           stroke-width: 1.5px;
@@ -77,23 +77,33 @@
           }
           @media (max-width: 1500px) {
             width: 220px;
+            stroke-dashoffset: 660;
+            stroke-dasharray: 660;
           }
           @media (max-width: 1250px) {
+            stroke-dashoffset: 540;
+            stroke-dasharray: 540;
             bottom: 100px;
             left: 25px;
             width: 180px;
           }
           @media (max-width: 1000px) {
+            stroke-dashoffset: 417;
+            stroke-dasharray: 417;
             bottom: 70px;
             width: 140px;
           }
           @media (max-width: 750px) {
-            bottom: 60px;
-            width: 100px;
+            stroke-dashoffset: 358;
+            stroke-dasharray: 358;
+            bottom: 65px;
+            width: 120px;
           }
           @media (max-width: 500px) {
+            stroke-dashoffset: 298;
+            stroke-dasharray: 298;
             left: 0px;
-            bottom: 50px;
+            bottom: 60px;
             width: 100px;
           }
           @media (max-width: 250px) {

@@ -5,7 +5,7 @@ import LoopTypewriter from './loopTypewriter';
 const Banner = () => {
   const skills = ["React", "JavaScript", "CSS", "Gatsby","Redux"];
   return (
-    <div className="banner">
+    <div className="banner" onMouseMove={this}>
       <div className="row">
           <div className="main-text">Hunter</div>
           <div className="main-text">Evanoff</div>

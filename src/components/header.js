@@ -43,7 +43,7 @@ const Header = () => {
                 <li onClick={flipClass}><button onClick={() => scrollTo('#about')}>About</button></li>
                 <li onClick={flipClass}><a href="mailto:evanoffdev@gmail.com">Contact</a></li>
               </ul>
-              <div className={`menu-drap${menuClicked ? " drap" : ""}`}></div>
+              <div className={`menu-drape${menuClicked ? " drape" : ""}`}></div>
               <div className={`menu-bubble${menuClicked ? " menu-circle" : ""}`}></div>
             </div>
           </div>

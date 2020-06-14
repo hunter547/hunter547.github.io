@@ -43,7 +43,7 @@ const introAnimation = (completeAnimation) => {
       strokeDashoffset: 0,
     }).to('.draw-triangle', 1, {
       fill: '#023440',
-      delay: -0.5
+      delay: 0.5
     });
 }
 

@@ -61,12 +61,12 @@ const SEO = () => {
           content: description,
         },
       ]}
-      link={
+      link={[
         {
           rel: 'canonical',
-          href: {url}
+          href: url
         }
-      }
+      ]}
     />
   )
 
