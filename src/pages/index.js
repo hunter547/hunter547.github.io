@@ -13,13 +13,15 @@ import IntroOverlay from "../components/introOverlay";
 const introAnimation = (completeAnimation) => {
   let tl = gsap.timeline();
 
-  tl.from(".main-text", 1.7, {
-    y: 120,
-    ease: "power4.out",
-    delay: 1,
-    stagger: {
-      amount: 0.4
-    },
+  tl.to('.main-text', 0, {
+      css: {color: '#f2f4f5'},
+    }).from(".main-text", 1.7, {
+      y: 120,
+      ease: "power4.out",
+      delay: 1,
+      stagger: {
+        amount: 0.4
+      },
     }).to('.row', 0, {css:{overflow:'visible'}
     }).to('.main-text:first-child', 0.6, {
       marginRight: '1%',
