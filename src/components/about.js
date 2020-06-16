@@ -44,7 +44,7 @@ const About = () => {
           </div>
           <div className="about__text-container">
             {!doType ? 
-             <h3>""</h3>
+             <h3></h3>
              :
              <h3><Typewriter dataText="Meet Hunter" /></h3>
             }

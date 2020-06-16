@@ -51,6 +51,21 @@
     @media (max-width: 460px) {
       width: 100%;
     }
+    @media (max-width: 414px) {
+      h3 {
+        width: 62%;
+      }
+    }
+    @media (max-width: 400px) {
+      h3 {
+        width: 67%;
+      }
+    }
+    @media (max-width: 320px) {
+      h3 {
+        width: 80%;
+      }
+    }
   }
   .portfolio__grid {
     width: 60%;

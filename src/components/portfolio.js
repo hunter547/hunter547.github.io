@@ -45,7 +45,7 @@ const Portfolio = () => {
       <div className="portfolio">
         <div className="portfolio__summary">
           {!doType ? 
-            <h3>""</h3>
+            <h3></h3>
             :
             <h3><Typewriter dataText="Development Projects" /></h3>}
           <p>
