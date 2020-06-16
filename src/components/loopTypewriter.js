@@ -52,7 +52,7 @@ class BannerTypewriter extends React.Component {
   render() {    
     return (
       <div className="typewriter">
-        <span>&#60;{ this.state.text }<span className="cursor"/> /&#62;</span>
+        <span>&#123; { this.state.text }<span className="cursor"/> &#125;</span>
       </div>
     );
     

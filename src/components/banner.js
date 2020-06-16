@@ -1,11 +1,12 @@
 import React from "react";
 import '../styles/components/banner.scss';
 import LoopTypewriter from './loopTypewriter';
+import scrollTo from "gatsby-plugin-smoothscroll";
 
 const Banner = () => {
   const skills = ["React", "JavaScript", "CSS", "Gatsby","Redux"];
   return (
-    <div className="banner" onMouseMove={this}>
+    <div className="banner">
       <div className="row">
           <div className="main-text">Hunter</div>
           <div className="main-text">Evanoff</div>
@@ -21,7 +22,7 @@ const Banner = () => {
           </div>
         <LoopTypewriter dataText={skills} />
       </div>
-      {/*<div className="scroll"></div> */}
+      <button className="scroll-label" onClick={() => scrollTo('#portfolio')}><span></span>Scroll</button>
         {/*<div className="fixed-misc">Full Stack Web Developer</div>*/}
     </div>
   )

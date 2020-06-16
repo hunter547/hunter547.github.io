@@ -49,16 +49,6 @@ const introAnimation = (completeAnimation) => {
     });
 }
 
-{/*.to('.logo-triangle', 3, {
-      strokeDashoffset: 0,
-      delay: -3
-    })*/}
-
-{/*.to('.logo-triangle', 1, {
-      fill: '#023440',
-      delay: -1
-    })*/}
-
 const IndexPage = () => {
 
   const [animationComplete, setAnimationComplete] = useState(false);

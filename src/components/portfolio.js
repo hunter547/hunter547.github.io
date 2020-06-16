@@ -1,6 +1,5 @@
 import React , { useEffect, useState } from "react";
 import '../styles/components/portfolio.scss';
-import { useStaticQuery, graphql } from "gatsby";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import PortfolioCollection from "./portfolioCollection";
@@ -46,7 +45,7 @@ const Portfolio = () => {
       <div className="portfolio">
         <div className="portfolio__summary">
           {!doType ? 
-            <h3></h3>
+            <h3>""</h3>
             :
             <h3><Typewriter dataText="Development Projects" /></h3>}
           <p>

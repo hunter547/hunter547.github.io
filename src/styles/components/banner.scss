@@ -157,4 +157,57 @@
       right: -112px;
     }
   }
+  .scroll-label {
+    position: absolute;
+    bottom: 9%;
+    left: 0;
+    background-color: transparent;
+    border: none;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    outline: none;
+    cursor: pointer;
+    font-weight: 700;
+    span {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      margin-top: 20px;
+      margin-left: 15px;
+      border-left: 1px solid $black;
+      border-bottom: 1px solid $black;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-animation: sdb05 1.5s infinite;
+      animation: sdb05 1.5s infinite;
+      box-sizing: border-box;
+    }
+  }
+  @-webkit-keyframes sdb05 {
+    0% {
+      -webkit-transform: rotate(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+  }
+  @keyframes sdb05 {
+    0% {
+      transform: rotate(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+  }
 }

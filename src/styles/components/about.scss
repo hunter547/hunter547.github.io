@@ -26,9 +26,22 @@
     .about__picture-container {
       margin-right: 5rem;
       margin-bottom: 2rem;
-      .about__profile-picture {
-        width: 230px;
-        border-radius: 5%;
+      .about__picture-frame {
+        padding: 1rem;
+        border-radius: 1rem;
+        background: linear-gradient(
+        -45deg,
+        $medium-blue 0%,
+        $medium-blue 15%,
+        $dark-blue 15%,
+        $dark-blue 70%,
+        $pink 70%,
+        $pink 100% 
+      );
+        .about__profile-picture {
+          width: 230px;
+          border-radius: 5%;
+        }
       }
     }
     .about__text-container {
@@ -46,13 +59,12 @@
         font-weight: 400;
         font-size: 1.3rem;
         letter-spacing: 1px;
-        margin: 0;
+        margin: 3rem 0 2rem 0;
       }
       p {
         font-size: 1rem;
-        line-height: 2rem;
+        line-height: 2.5rem;
         font-weight: 300;
-        margin: 40px 0 72px;
       }
     }
   }

@@ -33,25 +33,15 @@ header {
           outline: none;
         }
       }
-      .logo-triangle {
-        position: absolute;
-        z-index: 10;
-        width: 4rem;
-        left: 16px;
-        bottom: 11px;
-        fill: transparent;
-        stroke-dasharray: 200;
-        stroke-dashoffset: 200;
-        stroke: $dark-blue;
-        stroke-width: 1.5px;
-        overflow: visible;
-        transform: rotate(90deg);
-      }
     }
     .navigation {
       nav {
+        overflow: hidden;
         button,
         a {
+          overflow: hidden;
+          padding: 0 4px;
+          height: 1em;
           margin: 0 20px;
           text-decoration: none;
           letter-spacing: 1.75px;
@@ -62,30 +52,36 @@ header {
           cursor: pointer;
           background-color: transparent;
           padding: 0;
-          //&::after {
-          //  content: "";
-          //  position: absolute;
-          //  width: 0;
-          //  height: 2px;
-          //  display: block;
-          //  margin-top: 5px;
-          //  right: 0;
-          //  background: $black;
-          //  transition: 0.4s ease;
-          // }
           &:last-child {
             margin-right: 0px;
           }
           &:focus {
             outline: none;
           }
-          // &:hover {
-          //   &::after {
-          //     width: 100%;
-          //     left: 0;
-          //     background: $black;
-          //   }
-          // }
+          span {
+            position: relative;
+            display: inline-block;
+            -webkit-transition: -webkit-transform 0.3s;
+            -moz-transition: -moz-transform 0.3s;
+            transition: transform 0.3s;
+          }
+          span::before {
+            position: absolute;
+            top: 100%;
+            content: attr(data-hover);
+            font-weight: 700;
+            -webkit-transform: translate3d(0,0,0);
+            -moz-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+          }
+          &:hover span {
+            -webkit-transform: translateY(-100%);
+            -moz-transform: translateY(-100%);
+            transform: translateY(-100%);
+          }
+        }
+        a {
+          margin-left: 0;
         }
       }
       @media (max-width: 750px) {

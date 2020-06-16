@@ -46,12 +46,10 @@ const PortfolioItem = ({ project }) => {
   
   const [modalIsOpen,setIsOpen] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [multiplier, setMultiplier] = useState(0);
 
   const openModal = () => {
     setIsOpen(true);
     setLoading(true);
-    determineSize();
   }
  
   const closeModal = () => {
@@ -63,27 +61,12 @@ const PortfolioItem = ({ project }) => {
     setLoading(false);
   }
 
-  const determineSize = () => {
-    let width = window.innerWidth;
-    switch (true) {
-      case (width>1500):
-        setMultiplier(0.5)
-        break;
-      case (width > 1000 && width <= 1500):
-        setMultiplier(0.7)
-        break;
-      case (width <= 1000):
-        setMultiplier(0.9)
-        break;
-    }
-  }
-
   
   return (
     <div className={`portfolio__item ${project.classname}`}>
       <div className="portfolio__item-wrapper">
         <div className="portfolio__item-image-container">
-          <Image className="portfolio__item-image" fluid={project.image.childImageSharp.fluid} />
+          <Image loading="eager" className="portfolio__item-image" fluid={project.image.childImageSharp.fluid} alt={`${project.header} visual`}/>
         </div>
         <div className="portfolio__item-text-container">
           <div className="portfolio__item-bottom">
