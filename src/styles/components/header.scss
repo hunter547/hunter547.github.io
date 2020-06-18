@@ -36,9 +36,7 @@ header {
     }
     .navigation {
       nav {
-        overflow: hidden;
-        button,
-        a {
+        button, a {
           overflow: hidden;
           padding: 0 4px;
           height: 1em;
@@ -80,9 +78,19 @@ header {
             transform: translateY(-100%);
           }
         }
+
         a {
-          margin-left: 0;
+          border: 1px solid $dark-blue;
+          color: $dark-blue;
+          border-radius: 0.3rem;
+          padding: 0.5rem;
+          margin-right: 20px;
+          text-decoration: none;
+          transition: 0.3s;
+          font-size: .75rem;
+          overflow: visible;
         }
+
       }
       @media (max-width: 750px) {
         display: none !important;

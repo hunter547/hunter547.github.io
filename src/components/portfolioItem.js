@@ -70,8 +70,10 @@ const PortfolioItem = ({ project }) => {
         </div>
         <div className="portfolio__item-text-container">
           <div className="portfolio__item-bottom">
-            <div className="porfolio__item-details">
+            <div className="porfolio__item-header">
               <h2>{project.header}</h2>
+            </div>
+            <div className="portfolio__item-description">
               <p>{project.description}</p>
             </div>
             <div className="portfolio__item-button-wrapper">

@@ -21,7 +21,7 @@ const Header = () => {
               <nav>
                 <button onClick={() => scrollTo('#portfolio')}><span data-hover="Portfolio">Portfolio</span></button>
                 <button onClick={() => scrollTo('#about')}><span data-hover="About">About</span></button>
-                <button><a href="mailto:evanoffdev@gmail.com"><span data-hover="Contact">Contact</span></a></button>
+                <a href="/Hunter-Evanoff-Resume.pdf" target="_blank">Resume</a>
               </nav>
             </div>
             <div className="menu-container">
@@ -33,7 +33,7 @@ const Header = () => {
               <ul className={`menu-items${menuClicked ? " change" : ""}`}>
                 <li onClick={flipClass}><button onClick={() => scrollTo('#portfolio')}>Portfolio</button></li>
                 <li onClick={flipClass}><button onClick={() => scrollTo('#about')}>About</button></li>
-                <li onClick={flipClass}><a href="mailto:evanoffdev@gmail.com">Contact</a></li>
+                <li onClick={flipClass}><a href="/Hunter-Evanoff-Resume.pdf" target="_blank">Resume</a></li>
               </ul>
               <div className={`menu-drape${menuClicked ? " drape" : ""}`}></div>
               <div className={`menu-bubble${menuClicked ? " menu-circle" : ""}`}></div>
