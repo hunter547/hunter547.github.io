@@ -12,22 +12,22 @@
   transform: translate(-50%, -50%);
   outline: none;
   width: 60%;
-  @media(max-width: 1000px) {
+  @media(max-width: 62.5rem) {
     width: 65%;
   }
-  @media(max-width: 900px) {
+  @media(max-width: 56.25rem) {
     width: 70%;
   }
-  @media(max-width: 800px) {
+  @media(max-width: 50rem) {
     width: 75%;
   }
-  @media(max-width: 700px) {
+  @media(max-width: 43.75rem) {
     width: 80%;
   }
-  @media(max-width: 600px) {
+  @media(max-width: 37.5rem) {
     width: 85%;
   }
-  @media(max-width: 500px) {
+  @media(max-width: 31.25rem) {
     width: 90%;
   }
 }

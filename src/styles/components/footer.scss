@@ -3,7 +3,7 @@
 
 .footer {
   margin-top: 5rem;
-  height: 100px;
+  height: 6.25rem;
   position: absolute;
   bottom: 0;
   display: flex;
@@ -11,7 +11,7 @@
   justify-content: space-between;
   min-width: 100%;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
   font-weight: 400;
   background-color: $dark-blue;
   color: $white;
@@ -24,9 +24,9 @@
   }
   .footer__icon {
     cursor: pointer;
-    margin: 0 30px;
+    margin: 0 1.875rem;
   }
-  @media (max-width: 700px) {
+  @media (max-width: 43.75rem) {
     flex-direction: column-reverse;
     .footer__right-content{
       padding-right: 0;
@@ -36,12 +36,12 @@
       padding-left: 0;
     }
     .footer__icon {
-      margin: 0 10px;
+      margin: 0 0.625rem;
     }
   }
   
 }
-@media (max-width: 350px) {
+@media (max-width: 21.875rem) {
   .footer {
     font-size: .8rem;
   }

@@ -15,30 +15,30 @@
       bottom: 0;
       left: 0;
       right: 0;
-      @media(max-width: 750px) {
+      @media(max-width: 46.875rem) {
         width: 100vw;
       }
       &:nth-child(2) {
         left: 20%;
-        @media(max-width: 750px) {
+        @media(max-width: 46.875rem) {
           display: none;
         }
       }
       &:nth-child(3) {
         left: 40%;
-        @media(max-width: 750px) {
+        @media(max-width: 46.875rem) {
           display: none;
         }
       }
       &:nth-child(4) {
         left: 60%;
-        @media(max-width: 750px) {
+        @media(max-width: 46.875rem) {
           display: none;
         }
       }
       &:nth-child(5) {
         left: 80%;
-        @media(max-width: 750px) {
+        @media(max-width: 46.875rem) {
           display: none;
         }
       }
