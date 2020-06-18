@@ -44,6 +44,7 @@
       }
     }
     .portfolio__item-text-container {
+      height: 100%;
       padding: 0 5% 5% 5%;
       border-bottom-left-radius: 1rem;
       border-bottom-right-radius: 1rem;
@@ -55,41 +56,51 @@
         $dark-blue 100% 
       );
       .portfolio__item-bottom{
-        padding: 2rem 2rem .75rem 2rem;
+        height: 100%;
         border-radius: 1rem;
         opacity: 0;
         background-color: $off-white;
-        .portfolio__item-button-wrapper {
+        .portfolio__item-bottom-wrapper {
           display: flex;
-          flex-wrap: wrap;
-          .portfolio__item-button {
-            border: 0.0625rem solid $dark-blue;
-            color: $dark-blue;
-            border-radius: 0.3rem;
-            padding: 0.5rem;
-            margin-right: 1.25rem;
-            text-decoration: none;
-            transition: 0.3s;
-            font-size: 1rem;
-            background: linear-gradient(
-              -45deg, 
-              $dark-blue 50%,
-              transparent 50%
-            );
-            background-size: 270% 100%;
-            background-position: left top;
-            margin-bottom: 1.25rem;
-            &:last-child {
-              margin-right: 0;
+          flex-direction: column;
+          justify-content: space-between;
+          height: calc(100% - 2.75rem);
+          padding: 2rem 2rem .75rem 2rem;
+          border-radius: 1rem;
+          .portfolio__item-button-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            .portfolio__item-button {
+              border: 0.0625rem solid $dark-blue;
+              color: $dark-blue;
+              letter-spacing: 0.109375rem;
+              text-transform: uppercase;
+              border-radius: 0.3rem;
+              padding: 0.5rem;
+              margin-right: 1.25rem;
+              text-decoration: none;
+              transition: 0.3s;
+              font-size: 0.75rem;
+              background: linear-gradient(
+                -45deg,
+                $dark-blue 50%,
+                transparent 50%
+              );
+              background-size: 270% 100%;
+              background-position: left top;
+              margin-bottom: 1.25rem;
+              &:last-child {
+                margin-right: 0;
+              }
             }
-          }
-          .portfolio__item-button:hover {
-            background-position: right bottom;
-            color: $white;
-            cursor: pointer;
-          }
-          .portfolio__item-button:focus {
-            outline: 0;
+            .portfolio__item-button:hover {
+              background-position: right bottom;
+              color: $white;
+              cursor: pointer;
+            }
+            .portfolio__item-button:focus {
+              outline: 0;
+            }
           }
         }
       }

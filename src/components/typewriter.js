@@ -13,14 +13,14 @@ const Typewriter = ({dataText}) => {
   }
   
   return (
-    <div>
+    <>
       {dataText.substring(0, i)}
       {dataText.length > i ? 
        <span className="large-cursor"></span>
        :
        null
       }
-    </div>
+    </>
   );
 }
  

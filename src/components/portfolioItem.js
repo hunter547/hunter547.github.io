@@ -70,19 +70,19 @@ const PortfolioItem = ({ project }) => {
         </div>
         <div className="portfolio__item-text-container">
           <div className="portfolio__item-bottom">
-            <div className="porfolio__item-header">
-              <h2>{project.header}</h2>
-            </div>
-            <div className="portfolio__item-description">
-              <p>{project.description}</p>
-            </div>
-            <div className="portfolio__item-button-wrapper">
-              <a href={project.githubLink} target="_blank" rel="noreferrer" className="portfolio__item-button">GitHub</a>
-              {project.applicationLink ? 
-                <a href={project.applicationLink} target="_blank" rel="noreferrer" className="portfolio__item-button">Application</a> 
-                : 
-                null}
-              <button onClick={openModal} className="portfolio__item-button">Demo</button>
+            <div className="portfolio__item-bottom-wrapper">
+              <div className="porfolio__item-header">
+                <h2>{project.header}</h2>
+                <p>{project.description}</p>
+              </div>
+              <div className="portfolio__item-button-wrapper">
+                <a href={project.githubLink} target="_blank" rel="noreferrer" className="portfolio__item-button">Code</a>
+                {project.applicationLink ? 
+                  <a href={project.applicationLink} target="_blank" rel="noreferrer" className="portfolio__item-button">Application</a> 
+                  : 
+                  null}
+                <button onClick={openModal} className="portfolio__item-button">Demo</button>
+              </div>
             </div>
           </div>
         </div>

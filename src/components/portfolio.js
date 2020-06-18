@@ -49,10 +49,9 @@ const Portfolio = () => {
             :
             <h3><Typewriter dataText="Development Projects" /></h3>}
           <p>
-            I've been working on a variety of projects that have helped me
-            gain proficiency with different web application frameworks,
-            programming languages, and server side processing. My most recent
-            projects have heavily focused on React and React Native.
+            I've been a developer for 3 years and I love making applications for the web, 
+            they're fun to build and can be reached by anyone on the internet. My most recent
+            projects have been focused on Javascript frameworks with a preference for React.js.
           </p>{/*
           <div className="btn-row">
             <Link to="/work">View projects</Link>

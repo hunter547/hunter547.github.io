@@ -57,8 +57,8 @@ const About = () => {
               use code versioning tools, and test products thoroughly for quality assurance.
             </p>
             <p>
-              I graduated from CareerFoundry's
-              Full Stack Web Development bootcamp in June, 2020. During my time at the bootcamp, I spent upwards of 30
+              I also completed CareerFoundry's
+              Full Stack Web Development bootcamp. During my time at the bootcamp, I spent upwards of 30
               hours a week for 8 months learning web development, along side my full time job at JMU. The course started
               from the basics of HTML and CSS all the way to a full stack web application using Node.js, a hand built API, 
               and MongoDB backend with a React and Bootstrap UI frontend. My projects are located above, please take a look. 

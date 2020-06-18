@@ -46,7 +46,12 @@ class BannerTypewriter extends React.Component {
       
     }
 
-    setTimeout(this.handleType, typingSpeed);
+    if (!isDeleting && text === fullText) {
+      setTimeout(this.handleType, 2500)
+    }
+    else {
+      setTimeout(this.handleType, typingSpeed);
+    }
   };
 
   render() {    
