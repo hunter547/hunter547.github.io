@@ -24,7 +24,7 @@ const About = () => {
   });
   const data = useStaticQuery(graphql`
       query {
-        portrait: file(relativePath: { eq: "IMG_6155.webp" }) {
+        portrait: file(relativePath: { eq: "IMG_6155.png" }) {
           childImageSharp {
             fluid(quality:100) {
               ...GatsbyImageSharpFluid

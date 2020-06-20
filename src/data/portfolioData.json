@@ -2,7 +2,7 @@
   {
     "classname":"meetup-app",
     "header":"Linkup App",
-    "image" : "../images/Linkup-app.webp",
+    "image" : "../images/Linkup-app.png",
     "description":"This is a Lambda AWS serverless app using the Meetup API to show upcoming events in a user's area. This leverages other tools, such as recharts for interesting visuals to get quick information and the CI tool Atatus, and is also PWS compatible.",
     "githubLink":"https://github.com/hunter547/meetup-app",
     "applicationLink": "https://hunter547.github.io/meetup-app",
@@ -14,7 +14,7 @@
   {
     "classname":"movie-app",
     "header":"myFlix App",
-    "image" : "../images/Movie-app.webp",
+    "image" : "../images/Movie-app.png",
     "description":"This full stack application using React, JWT, and Node.js for serverside (which queries a REST API built from scratch) allows you to create a profile, browse movies, favorite movies, explore directors, and update information.",
     "githubLink":"https://github.com/hunter547/movie_api",
     "applicationLink": "https://my-flix-api-evanoff.herokuapp.com/client/register",
@@ -26,7 +26,7 @@
   {
     "classname":"bobchat-app",
     "header":"Bobchat App",
-    "image" : "../images/Bobchat-app.webp",
+    "image" : "../images/Bobchat-app.png",
     "description":"This react native chat app utilizing react-gifted-chat delivers a real-time chat experience. It has Google Firestore for server side and storage services. Read the detailed readme.md in the GitHub link for more information.",
     "githubLink":"https://github.com/hunter547/chat-app",
     "video": {
@@ -37,7 +37,7 @@
   {
     "classname":"harry-app",
     "header":"Harry Potter Index",
-    "image" : "../images/Harry-potter-app.webp",
+    "image" : "../images/Harry-potter-app.png",
     "description":"This front end Bootstrap and jQuery focused app uses an existing Harry Potter REST API to show modal driven displays about Harry Potter characters.",
     "githubLink":"https://github.com/hunter547/harry-potter-jquery-app",
     "applicationLink": "https://hunter547.github.io/harry-potter-jquery-app",
@@ -49,7 +49,7 @@
   {
     "classname":"angular-app",
     "header":"Angular Quiz",
-    "image" : "../images/Angular-app.webp",
+    "image" : "../images/Angular-app.png",
     "description":"This application was written using Angular to create a responsive quiz application with welcome, quiz, questions, and result components.",
     "githubLink":"https://github.com/hunter547/angular-quiz",
     "applicationLink": "https://hunter547.github.io/angular-quiz/welcome",
@@ -61,7 +61,7 @@
   {
     "classname":"vue-app",
     "header":"Vue Todo App",
-    "image" : "../images/Vue-app.webp",
+    "image" : "../images/Vue-app.png",
     "description":"A todo list app that was written using Vue to provide a responsive application that allows a user to add, edit, complete, and delete todo items with clean Material Design UI. Also implemented the Vue.Draggable package that allows the user to sort todo items.",
     "githubLink":"https://github.com/hunter547/vue-todo-app",
     "applicationLink": "https://hunter547.github.io/vue-todo-app",
