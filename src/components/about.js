@@ -24,7 +24,7 @@ const About = () => {
   });
   const data = useStaticQuery(graphql`
       query {
-        portrait: file(relativePath: { eq: "IMG_6155.png" }) {
+        portrait: file(relativePath: { eq: "IMG_6155.jpg" }) {
           childImageSharp {
             fluid(quality:100) {
               ...GatsbyImageSharpFluid
@@ -67,8 +67,8 @@ const About = () => {
             </p>
             <p>
               In my free time, I enjoy spending time with my wife, and our great dane Zeus. We all enjoy hiking in the 
-              Appalachian range or sitting around campfire together. I have a 1985 motorcycle that I've been repairing and retrofitting 
-              as a hobby. I also occasionally ride it when the motorcycle is in the mood. I also enjoy 3D modeling with Blender 
+              Appalachian range or sitting around the campfire together. I have a 1985 motorcycle that I've been repairing and retrofitting 
+              as a hobby. I get to occasionally ride it when it's in the mood. I also enjoy 3D modeling with Blender 
               to make photorealistic models. Finally, not surprisingly, I love coding and creating immersive apps outside of work.
             </p>
           </div>
