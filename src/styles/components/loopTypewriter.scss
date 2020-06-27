@@ -9,10 +9,14 @@
   text-transform: uppercase;
   color: $off-white;
   mix-blend-mode: difference;
-  .cursor {
+  .cursor-show {
     margin-left: 0.1em;
     border-left: 0.1em solid $off-white;
     animation: blink 0.7s steps(1) infinite;
+  }
+  .cursor-hide {
+    margin-left: 0.1em;
+    border-left: 0.1em solid transparent;
   }
   @media (max-width: 46.875rem) {
     font-size: 1rem;

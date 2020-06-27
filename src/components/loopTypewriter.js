@@ -14,7 +14,8 @@ class BannerTypewriter extends React.Component {
       text: '',
       isDeleting: false,
       loopNum: 0,
-      typingSpeed: 200
+      typingSpeed: 200,
+      showCursor: true
     }
   }
 
@@ -47,9 +48,11 @@ class BannerTypewriter extends React.Component {
     }
 
     if (!isDeleting && text === fullText) {
+      this.setState({ showCursor: false})
       setTimeout(this.handleType, 2500)
     }
     else {
+      this.setState({ showCursor: true })
       setTimeout(this.handleType, typingSpeed);
     }
   };
@@ -57,7 +60,7 @@ class BannerTypewriter extends React.Component {
   render() {    
     return (
       <div className="typewriter">
-        <span>&#123; { this.state.text }<span className="cursor"/> &#125;</span>
+        <span>&#123; { this.state.text }{}<span className={this.state.showCursor ? "cursor-show" : "cursor-hide"}/> &#125;</span>
       </div>
     );
     
