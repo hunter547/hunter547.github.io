@@ -11,11 +11,13 @@
   mix-blend-mode: difference;
   .cursor-show {
     margin-left: 0.1em;
+    margin-right: -0.1em;
     border-left: 0.1em solid $off-white;
     animation: blink 0.7s steps(1) infinite;
   }
   .cursor-hide {
     margin-left: 0.1em;
+    margin-right: -0.1em;
     border-left: 0.1em solid transparent;
   }
   @media (max-width: 46.875rem) {

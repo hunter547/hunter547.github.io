@@ -8,9 +8,11 @@ import Footer from "../components/footer";
 import About from "../components/about";
 import SEO from "../components/seo";
 import IntroOverlay from "../components/introOverlay";
+import ScaleLoader from "react-spinners/ScaleLoader";
+import { css } from "@emotion/core";
 
 
-const introAnimation = (completeAnimation) => {
+const introAnimation = (completeAnimation, loadingStopped) => {
   let tl = gsap.timeline();
 
   tl.to('.main-text', 0, {
@@ -22,6 +24,7 @@ const introAnimation = (completeAnimation) => {
       stagger: {
         amount: 0.4
       },
+      onStart: loadingStopped
     }).to('.row', 0, {css:{overflow:'visible'}
     }).to('.main-text:first-child', 0.6, {
       marginRight: '1%',
@@ -52,9 +55,29 @@ const introAnimation = (completeAnimation) => {
 const IndexPage = () => {
 
   const [animationComplete, setAnimationComplete] = useState(false);
+  const [appLoading, setAppLoading] = useState(true);
+
+  const override = css`
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 48%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    margin: auto;
+    transform: translate(-50%, -50%);
+    border-color: #fdcbbf;
+    z-index: 100;
+    opacity: .8;
+`;
 
   const completeAnimation = () => {
     setAnimationComplete(true);
+  }
+
+  const loadingStopped = () => {
+    setAppLoading(false)
   }
   
   useEffect(() => {
@@ -62,22 +85,27 @@ const IndexPage = () => {
     gsap.to('html, body', 0, {css:{backgroundColor:'#f2f4f5'}});
     gsap.to('.react-icon, .fade-in, .float', 0, {css:{display:'none'}});
 
-    introAnimation(completeAnimation)
+    introAnimation(completeAnimation, loadingStopped)
   }, [])
   return(
     <>
-    <SEO />
-    { animationComplete ? null : <IntroOverlay /> }
-    <div className="container">
-      <div className="content-wrapper">
-        <Header />
-        <Banner />
-        <Portfolio />
-        <About />
+      <ScaleLoader
+        css={override}
+        color={"#fdcbbf"}
+        loading={appLoading}
+      />
+      <SEO />
+      { animationComplete ? null : <IntroOverlay /> }
+      <div className="container">
+        <div className="content-wrapper">
+          <Header />
+          <Banner />
+          <Portfolio />
+          <About />
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
-  </>
+    </>
   )
 }
 
