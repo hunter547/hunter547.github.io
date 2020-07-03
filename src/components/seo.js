@@ -1,7 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import ogImage from "../images/ogImage.png";
 
 const SEO = () => {
   const data = useStaticQuery(graphql`
@@ -39,7 +38,7 @@ const SEO = () => {
         },
         {
           property: `og:image`,
-          content: ogImage
+          content: `https://evanoff.dev/ogImage.png`
         },
         {
           property: `og:description`,
