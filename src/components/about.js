@@ -27,7 +27,7 @@ const About = () => {
         portrait: file(relativePath: { eq: "IMG_6155.jpg" }) {
           childImageSharp {
             fluid(quality:100) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
