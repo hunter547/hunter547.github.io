@@ -50,25 +50,25 @@ const About = () => {
             }
             <h4>An accounting graduate turned developer, coding an enjoyable career</h4>
             <p>
-              Hi there, I'm Hunter, a driven web developer with a passion for aesthetic UI, 
+              I'm a driven web developer with a passion for aesthetic UI, 
               server side processing, and web animation. I’ve been working as a software 
-              developer during the past 3 years for James Madison University. In that time I've developed and pushed many projects
+              developer for the past 3 years at James Madison University. In that time I've developed and pushed many projects
               from beginning to end, collaborated with customers and coworkers in a team setting, written detailed documentation, 
-              use code versioning tools, and test products thoroughly for quality assurance.
+              used code versioning tools, and tested products thoroughly for quality assurance.
             </p>
             <p>
-              I also completed CareerFoundry's
-              Full Stack Web Development bootcamp. During my time at the bootcamp, I spent upwards of 30
+              I completed CareerFoundry's
+              Full Stack Web Development bootcamp in June 2020. During my time at the bootcamp, I spent upwards of 30
               hours a week for 8 months learning web development, along side my full time job at JMU. The course started
-              from the basics of HTML and CSS all the way to a full stack web application using Node.js, a hand built API, 
+              from the basics of HTML and CSS all the way to a full stack web application using Node.js, building an API, 
               and MongoDB backend with a React and Bootstrap UI frontend. My projects are located above, please take a look. 
               With my years of coding experience prior to this course and my current knowledge of web development, I can offer 
               a large array of skills to any project.
             </p>
             <p>
-              In my free time, I enjoy spending time with my wife, and our great dane Zeus. We all enjoy hiking in the 
+              In my free time, I enjoy spending time with my wife and our great dane Zeus. We all enjoy hiking in the 
               Appalachian range or sitting around the campfire together. I have a 1985 motorcycle that I've been repairing and retrofitting 
-              as a hobby. I get to occasionally ride it when it's in the mood. I also enjoy 3D modeling with Blender 
+              as a hobby. I get to occasionally ride it when it's in the mood. I enjoy 3D modeling with Blender 
               to make photorealistic models. Finally, not surprisingly, I love coding and creating immersive apps outside of work.
             </p>
           </div>
