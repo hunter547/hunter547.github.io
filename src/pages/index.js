@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import '../styles/index.scss';
-import gsap from "gsap"
+import gsap from "gsap";
+import { document } from 'browser-monads';
 import Header from "../components/header";
 import Banner from "../components/banner";
 import Portfolio from "../components/portfolio";
