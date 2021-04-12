@@ -15,9 +15,11 @@ import { css } from "@emotion/core";
 const introAnimation = (completeAnimation, loadingStopped) => {
   let tl = gsap.timeline();
 
-  tl.to('.main-text', 0, {
+  tl.to('.main-text',  {
+      duration: 0,
       css: {color: '#f2f4f5'},
-    }).from(".main-text", 1.7, {
+    }).from(".main-text",  {
+      duration: 1.7,
       y: 120,
       ease: "power4.out",
       delay: 1,
@@ -25,28 +27,36 @@ const introAnimation = (completeAnimation, loadingStopped) => {
         amount: 0.4
       },
       onStart: loadingStopped
-    }).to('.row', 0, {css:{overflow:'visible'}
-    }).to('.main-text:first-child', 0.6, {
+    }).to('.row', {duration: 0, css:{overflow:'visible'}
+    }).to('.main-text:first-child',  {
+      duration: 0.6,
       marginRight: '1%',
       ease: "power4.out"
-    }).to('.main-text:nth-child(2)', 0.6, {
+    }).to('.main-text:nth-child(2)',  {
+      duration: 0.6,
       marginLeft: '1%',
       delay: -0.6,
       ease: "power4.out"
-    }).to('.overlay-top', 1.6, {
+    }).to('.overlay-top',  {
+      duration: 1.6,
       height: 0,
       ease: 'expo.inOut',
       stagger: {
         amount: 0.4
       }
-    }).to('.intro-overlay', 0, {
+    }).to('.intro-overlay', {duration: 0,
       onComplete: completeAnimation
-    }).to('.main-text', 0, {
+    }).to('.main-text',  {
+      duration: 0,
       css: { zIndex: 9}
-    }).to('.react-icon, .fade-in, .float', 0, {css:{display:'block'}
-    }).to('.draw-triangle', 3, {
+    }).to('.react-icon, .fade-in, .float',  {
+      duration: 0,
+      css:{display:'block'}
+    }).to('.draw-triangle',  {
+      duration: 3,
       strokeDashoffset: 0,
-    }).to('.draw-triangle', 1, {
+    }).to('.draw-triangle',  {
+      duration: 1,
       fill: '#023440',
       delay: 0.5
     });
@@ -82,18 +92,23 @@ const IndexPage = () => {
   
   useEffect(() => {
     // Prevent initial load flashing
-    gsap.to('html, body', 0, {css:{backgroundColor:'#f2f4f5'}});
-    gsap.to('.react-icon, .fade-in, .float', 0, {css:{display:'none'}});
+    gsap.to('html, body', {duration: 0, css:{backgroundColor:'#f2f4f5'}});
+    gsap.to('.react-icon, .fade-in, .float', {duration: 0, css:{display:'none'}});
 
     introAnimation(completeAnimation, loadingStopped)
   }, [])
   return(
     <>
-      <ScaleLoader
-        css={override}
-        color={"#fdcbbf"}
-        loading={appLoading}
-      />
+      {
+        /* If the user is at the top of the page when loading, show loading bars. */
+        document.body.scrollTop === 0 && (
+          <ScaleLoader
+            css={override}
+            color={"#fdcbbf"}
+            loading={appLoading}
+          />
+        )
+      }
       <SEO />
       { animationComplete ? null : <IntroOverlay /> }
       <div className="container">
