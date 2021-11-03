@@ -12,6 +12,18 @@
     }
   },
   {
+    "classname":"bouqs-app",
+    "header": "The Bouqs",
+    "image": "../images/Bouqs.png",
+    "description":"This full stack application challenge leverages a React/Redux front-end and JSON Server w/ faker.js backend (running on Heroku). This ecommerce concept app allows users to read product descriptions, add items to their cart, and review their checkout page. TDD approach to development using Jest + Enzyme.",
+    "githubLink": "https://github.com/hunter547/fe-code-challenge",
+    "applicationLink":"https://bouqs-fe-challenge.netlify.app/",
+    "video": {
+      "URL": "https://player.vimeo.com/video/641757936",
+      "title": "The Bouqs Demo"
+    }
+  },
+  {
     "classname":"movie-app",
     "header":"myFlix App",
     "image" : "../images/Movie-app.png",
@@ -44,18 +56,6 @@
     "video": {
       "URL": "https://player.vimeo.com/video/426565301",
       "title": "Harry Potter App Demo"
-    }
-  },  
-  {
-    "classname":"angular-app",
-    "header":"Angular Quiz",
-    "image" : "../images/Angular-app.png",
-    "description":"This application was written using Angular to create a responsive quiz application with welcome, quiz, questions, and result components.",
-    "githubLink":"https://github.com/hunter547/angular-quiz",
-    "applicationLink": "https://hunter547.github.io/angular-quiz/welcome",
-    "video": {
-      "URL": "https://player.vimeo.com/video/426568352",
-      "title": "Angular Quiz App Demo"
     }
   },  
   {
