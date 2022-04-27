@@ -1,10 +1,34 @@
 [
   {
-    "classname":"meetup-app",
-    "header":"Linkup App",
-    "image" : "../images/Linkup-app.png",
-    "description":"This is a Lambda AWS serverless app using the Meetup API to show upcoming events in a user's area. This leverages other tools, such as recharts for interesting visuals to get quick information and the CI tool Atatus, and is also PWS compatible.",
-    "githubLink":"https://github.com/hunter547/meetup-app",
+    "classname": "smoothgeodesic-app",
+    "header": "Leaflet.SmoothGeodesic",
+    "image": "../images/Leaflet-SmoothGeodesic-app.png",
+    "description": "Created an npm package for the public to use that extends the Leaflet Path class. This allows for smooth geodesic (Great Circle) curves from a source coordinate to a destination coordinate.",
+    "githubLink": "https://github.com/hunter547/Leaflet.SmoothGeodesic",
+    "applicationLink": "https://leaflet-smoothgeodesic.netlify.app/",
+    "video": {
+      "URL": "https://player.vimeo.com/video/703865032",
+      "title": "Leaflet.SmoothGeodesic Demo"
+    }
+  },
+  {
+    "classname": "bouqs-app",
+    "header": "The Bouqs",
+    "image": "../images/Bouqs.png",
+    "description": "This full stack application challenge leverages a React/Redux front-end and JSON Server w/ faker.js backend (running on Heroku). This ecommerce concept app allows users to read product descriptions, add items to their cart, and review their checkout page. TDD approach to development using Jest + Enzyme.",
+    "githubLink": "https://github.com/hunter547/fe-code-challenge",
+    "applicationLink": "https://bouqs-fe-challenge.netlify.app/",
+    "video": {
+      "URL": "https://player.vimeo.com/video/641757936",
+      "title": "The Bouqs Demo"
+    }
+  },
+  {
+    "classname": "meetup-app",
+    "header": "Linkup App",
+    "image": "../images/Linkup-app.png",
+    "description": "This is a Lambda AWS serverless app using the Meetup API to show upcoming events in a user's area. This leverages other tools, such as recharts for interesting visuals to get quick information and the CI tool Atatus, and is also PWS compatible.",
+    "githubLink": "https://github.com/hunter547/meetup-app",
     "applicationLink": "https://hunter547.github.io/meetup-app",
     "video": {
       "URL": "https://player.vimeo.com/video/426355455",
@@ -12,23 +36,22 @@
     }
   },
   {
-    "classname":"bouqs-app",
-    "header": "The Bouqs",
-    "image": "../images/Bouqs.png",
-    "description":"This full stack application challenge leverages a React/Redux front-end and JSON Server w/ faker.js backend (running on Heroku). This ecommerce concept app allows users to read product descriptions, add items to their cart, and review their checkout page. TDD approach to development using Jest + Enzyme.",
-    "githubLink": "https://github.com/hunter547/fe-code-challenge",
-    "applicationLink":"https://bouqs-fe-challenge.netlify.app/",
+    "classname": "bobchat-app",
+    "header": "Bobchat App",
+    "image": "../images/Bobchat-app.png",
+    "description": "This react native chat app utilizing react-gifted-chat delivers a real-time chat experience. It has Google Firestore for server side and storage services. Read the detailed readme.md in the GitHub link for more information.",
+    "githubLink": "https://github.com/hunter547/chat-app",
     "video": {
-      "URL": "https://player.vimeo.com/video/641757936",
-      "title": "The Bouqs Demo"
+      "URL": "https://player.vimeo.com/video/426573803",
+      "title": "Bobchat App Demo"
     }
   },
   {
-    "classname":"movie-app",
-    "header":"myFlix App",
-    "image" : "../images/Movie-app.png",
-    "description":"This full stack application using React, JWT, and Node.js for serverside (which queries a REST API built from scratch) allows you to create a profile, browse movies, favorite movies, explore directors, and update information.",
-    "githubLink":"https://github.com/hunter547/movie_api",
+    "classname": "movie-app",
+    "header": "myFlix App",
+    "image": "../images/Movie-app.png",
+    "description": "This full stack application using React, JWT, and Node.js for serverside (which queries a REST API built from scratch) allows you to create a profile, browse movies, favorite movies, explore directors, and update information.",
+    "githubLink": "https://github.com/hunter547/movie_api",
     "applicationLink": "https://my-flix-api-evanoff.herokuapp.com/client/register",
     "video": {
       "URL": "https://player.vimeo.com/video/426563234",
@@ -36,34 +59,11 @@
     }
   },
   {
-    "classname":"bobchat-app",
-    "header":"Bobchat App",
-    "image" : "../images/Bobchat-app.png",
-    "description":"This react native chat app utilizing react-gifted-chat delivers a real-time chat experience. It has Google Firestore for server side and storage services. Read the detailed readme.md in the GitHub link for more information.",
-    "githubLink":"https://github.com/hunter547/chat-app",
-    "video": {
-      "URL": "https://player.vimeo.com/video/426573803",
-      "title": "Bobchat App Demo"
-    }
-  },  
-  {
-    "classname":"harry-app",
-    "header":"Harry Potter Index",
-    "image" : "../images/Harry-potter-app.png",
-    "description":"This front end Bootstrap and jQuery focused app uses an existing Harry Potter REST API to show modal driven displays about Harry Potter characters.",
-    "githubLink":"https://github.com/hunter547/harry-potter-jquery-app",
-    "applicationLink": "https://hunter547.github.io/harry-potter-jquery-app",
-    "video": {
-      "URL": "https://player.vimeo.com/video/426565301",
-      "title": "Harry Potter App Demo"
-    }
-  },  
-  {
-    "classname":"vue-app",
-    "header":"Vue Todo App",
-    "image" : "../images/Vue-app.png",
-    "description":"A todo list app that was written using Vue to provide a responsive application that allows a user to add, edit, complete, and delete todo items with clean Material Design UI. Also implemented the Vue.Draggable package that allows the user to sort todo items.",
-    "githubLink":"https://github.com/hunter547/vue-todo-app",
+    "classname": "vue-app",
+    "header": "Vue Todo App",
+    "image": "../images/Vue-app.png",
+    "description": "A todo list app that was written using Vue to provide a responsive application that allows a user to add, edit, complete, and delete todo items with clean Material Design UI. Also implemented the Vue.Draggable package that allows the user to sort todo items.",
+    "githubLink": "https://github.com/hunter547/vue-todo-app",
     "applicationLink": "https://hunter547.github.io/vue-todo-app",
     "video": {
       "URL": "https://player.vimeo.com/video/426571067",
