@@ -27,6 +27,9 @@ const SEO = () => {
     <Helmet
       title = {title}
       titleTemplate={`%s | Developer`}
+      htmlAttributes={{
+        lang: 'en-US'
+      }}
       meta={[
         {
           name: `description`,

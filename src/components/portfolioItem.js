@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import '../styles/components/portfolioItem.scss';
 import '../styles/components/videoModal.scss';
-import Image from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import gsap from "gsap";
 import Modal from "react-modal";
 import SyncLoader from "react-spinners/SyncLoader";
-import { css } from "@emotion/core";
 
 const PortfolioItem = ({ project }) => {
 
@@ -31,18 +30,18 @@ const PortfolioItem = ({ project }) => {
       Modal.setAppElement('body');
   }, []);
 
-  const override = css`
-    display: block;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    right: auto;
-    bottom: auto;
-    margin-right: -50%;
-    margin: auto;
-    transform: translate(-50%, -50%);
-    border-color: #023440;
-`;
+  const override = {
+    display: "block",
+    position: "fixed",
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    margin: "auto",
+    transform: "translate(-50%, -50%)",
+    borderColor: "#023440",
+  }
   
   const [modalIsOpen,setIsOpen] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -66,7 +65,11 @@ const PortfolioItem = ({ project }) => {
     <div className={`portfolio__item ${project.classname}`}>
       <div className="portfolio__item-wrapper">
         <div className="portfolio__item-image-container">
-          <Image loading="eager" className="portfolio__item-image" fluid={project.image.childImageSharp.fluid} alt={`${project.header} visual`}/>
+          <GatsbyImage
+            image={project.image.childImageSharp.gatsbyImageData}
+            loading="eager"
+            className="portfolio__item-image"
+            alt={`${project.header} visual`} />
         </div>
         <div className="portfolio__item-text-container">
           <div className="portfolio__item-bottom">
@@ -94,7 +97,7 @@ const PortfolioItem = ({ project }) => {
           className="portfolio__item-modal"
         >
           <SyncLoader
-            css={override}
+            cssOverride={override}
             color={"#023440"}
             loading={loading}
           />
@@ -111,7 +114,7 @@ const PortfolioItem = ({ project }) => {
       null}
       
     </div>
-  )
+  );
 }
 
 export default PortfolioItem
