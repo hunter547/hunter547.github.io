@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import "../styles/components/about.scss"
 import { useStaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 import gsap from "gsap"
 import Typewriter from "./typewriter"
 
@@ -22,28 +22,24 @@ const About = () => {
       onComplete: startTyping,
     })
   })
-  const data = useStaticQuery(graphql`
-    query {
-      portrait: file(relativePath: { eq: "IMG_6155.jpg" }) {
-        childImageSharp {
-          fluid(quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
+  const data = useStaticQuery(graphql`{
+  portrait: file(relativePath: {eq: "IMG_6155.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(quality: 100, layout: FULL_WIDTH)
     }
-  `)
+  }
+}
+`)
   return (
     <section id="about">
       <div className="about">
         <div className="about__container">
           <div className="about__picture-container">
             <div className="about__picture-frame">
-              <Image
+              <GatsbyImage
+                image={data.portrait.childImageSharp.gatsbyImageData}
                 loading="eager"
-                fluid={data.portrait.childImageSharp.fluid}
-                className="about__profile-picture"
-              />
+                className="about__profile-picture" />
             </div>
           </div>
           <div className="about__text-container">
@@ -81,7 +77,7 @@ const About = () => {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 export default About

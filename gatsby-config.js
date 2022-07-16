@@ -15,6 +15,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-json`,
+    `gatsby-plugin-netlify`,
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -22,6 +23,7 @@ module.exports = {
         path: `${__dirname}/src/data`,
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

@@ -9,7 +9,6 @@ import About from "../components/about"
 import SEO from "../components/seo"
 import IntroOverlay from "../components/introOverlay"
 import ScaleLoader from "react-spinners/ScaleLoader"
-import { css } from "@emotion/core"
 
 const introAnimation = (completeAnimation, loadingStopped) => {
   let tl = gsap.timeline()
@@ -72,20 +71,20 @@ const IndexPage = () => {
   const [animationComplete, setAnimationComplete] = useState(false)
   const [appLoading, setAppLoading] = useState(true)
 
-  const override = css`
-    display: block;
-    position: fixed;
-    top: 50%;
-    left: 48%;
-    right: auto;
-    bottom: auto;
-    margin-right: -50%;
-    margin: auto;
-    transform: translate(-50%, -50%);
-    border-color: #fdcbbf;
-    z-index: 100;
-    opacity: 0.8;
-  `
+  const override = {
+    display: "block",
+    position: "fixed",
+    top: "50%",
+    left: "48%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    margin: "auto",
+    transform: "translate(-50%, -50%)",
+    borderColor: "#fdcbbf",
+    zIndex: 100,
+    opacity: 0.8,
+  }
 
   const completeAnimation = () => {
     setAnimationComplete(true)
@@ -107,7 +106,7 @@ const IndexPage = () => {
   }, [])
   return (
     <>
-      <ScaleLoader css={override} color={"#fdcbbf"} loading={appLoading} />
+      <ScaleLoader cssOverride={override} color={"#fdcbbf"} loading={appLoading} />
       <SEO />
       {animationComplete ? null : <IntroOverlay />}
       <div className="container">

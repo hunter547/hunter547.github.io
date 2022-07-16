@@ -7,33 +7,30 @@ import PortfolioItem from "./portfolioItem";
 
 const PortfolioCollection = () => {
 
-  const data = useStaticQuery(graphql`
-      query {
-        allPortfolioDataJson {
-          edges {
-            node {
-              classname
-              header
-              image {
-                relativePath
-                childImageSharp {
-                  fluid(quality:100) {
-                    ...GatsbyImageSharpFluid_withWebp
-                  }
-                }
-              }
-              description
-              githubLink
-              applicationLink
-              video {
-                URL
-                title
-              }
-            }
+  const data = useStaticQuery(graphql`{
+  allPortfolioDataJson {
+    edges {
+      node {
+        classname
+        header
+        image {
+          relativePath
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
           }
         }
+        description
+        githubLink
+        applicationLink
+        video {
+          URL
+          title
+        }
       }
-  `);
+    }
+  }
+}
+`);
   const portfolio = data.allPortfolioDataJson.edges.map(
     (project) => project.node
   );
