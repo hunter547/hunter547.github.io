@@ -1,0 +1,28 @@
+@import './themeColors.scss';
+
+$theme-transition: 0.5s;
+
+$themes: (
+  light: (
+    bg: $bg--light,
+    text: $text--light,
+    button-text: $button-text--light,
+    button-text-hover: $button-text-hover--light,
+    border: $border--light,
+    menu-bar: $menu-bar--light,
+    tri-fill: $tri-fill--light,
+    portfolio-item-bottom-bg: $portfolio-item-bottom-bg--light,
+    theme-transition: $theme-transition
+  ),
+  dark: (
+    bg: $bg--dark,
+    text: $text--dark,
+    button-text: $button-text--dark,
+    button-text-hover: $button-text-hover--dark,
+    border: $border--dark,
+    menu-bar: $menu-bar--dark,
+    tri-fill: $tri-fill--dark,
+    portfolio-item-bottom-bg: $portfolio-item-bottom-bg--dark,
+    theme-transition: $theme-transition
+  ),
+);

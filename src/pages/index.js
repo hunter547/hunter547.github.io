@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from "react"
 import "../styles/index.scss"
 import gsap from "gsap"
-import Header from "../components/header"
-import Banner from "../components/banner"
-import Portfolio from "../components/portfolio"
-import Footer from "../components/footer"
-import About from "../components/about"
 import SEO from "../components/seo"
 import IntroOverlay from "../components/introOverlay"
 import ScaleLoader from "react-spinners/ScaleLoader"
+import ThemeModeContextProvider from "../context/ThemeMode/ThemeModeContextProvider"
+import App from "../components/app"
 
 const introAnimation = (completeAnimation, loadingStopped) => {
   let tl = gsap.timeline()
@@ -52,18 +49,13 @@ const introAnimation = (completeAnimation, loadingStopped) => {
       duration: 0,
       css: { zIndex: 9 },
     })
-    .to(".react-icon, .fade-in, .float", {
+    .to(".float-container", {
       duration: 0,
       css: { display: "block" },
     })
     .to(".draw-triangle", {
       duration: 3,
       strokeDashoffset: 0,
-    })
-    .to(".draw-triangle", {
-      duration: 1,
-      fill: "#023440",
-      delay: 0.5,
     })
 }
 
@@ -95,30 +87,21 @@ const IndexPage = () => {
   }
 
   useEffect(() => {
-    // Prevent initial load flashing
-    gsap.to("html, body", { duration: 0, css: { backgroundColor: "#f2f4f5" } })
-    gsap.to(".react-icon, .fade-in, .float", {
+    gsap.to(".float-container", {
       duration: 0,
       css: { display: "none" },
     })
 
     introAnimation(completeAnimation, loadingStopped)
   }, [])
+
   return (
-    <>
+    <ThemeModeContextProvider>
       <ScaleLoader cssOverride={override} color={"#fdcbbf"} loading={appLoading} />
       <SEO />
       {animationComplete ? null : <IntroOverlay />}
-      <div className="container">
-        <div className="content-wrapper">
-          <Header />
-          <Banner />
-          <Portfolio />
-          <About />
-        </div>
-        <Footer />
-      </div>
-    </>
+      <App />
+    </ThemeModeContextProvider>
   )
 }
 
