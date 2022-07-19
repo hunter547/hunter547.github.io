@@ -13,16 +13,20 @@ $border--light: $dark-blue;
 // menu colors
 $menu-bar--light: $black;
 // portfolio item colors
-$portfolio-item-bottom-bg--light: $off-white;
+$portfolio-item-upper-top--light: $pink;
+$portfolio-item-upper-bottom--light: $dark-blue;
+$portfolio-item-lower-bg--light: $off-white;
+$portfolio-item-lower-top--light: $dark-blue;
+$portfolio-item-lower-bottom--light: $medium-blue;
 // triangle colors
 $tri-fill--light: $dark-blue;
 
 // DARK MODE
 
 // background colors
-$bg--dark: $medium-blue;
+$bg--dark: $dark-blue;
 // text colors
-$text--dark: $pink;
+$text--dark: $off-white;
 $button-text--dark: $pink;
 $button-text-hover--dark: $black;
 // border colors
@@ -30,6 +34,10 @@ $border--dark: $pink;
 // menu colors
 $menu-bar--dark: $pink;
 // portfolio item colors
-$portfolio-item-bottom-bg--dark: lighten($dark-blue, 3%);
+$portfolio-item-upper-top--dark: $light-blue;
+$portfolio-item-upper-bottom--dark: $medium-blue;
+$portfolio-item-lower-bg--dark: $dark-blue;
+$portfolio-item-lower-top--dark: $medium-blue;
+$portfolio-item-lower-bottom--dark: $medium-blue;
 // triangle colors:
 $tri-fill--dark: $off-white;
