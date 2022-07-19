@@ -1,0 +1,29 @@
+@import '../variables.scss';
+
+// LIGHT MODE
+
+// background colors
+$bg--light: $off-white;
+// text colors
+$text--light: $black;
+$button-text--light: $dark-blue;
+// border colors
+$border--light: $dark-blue;
+// menu colors
+$menu-bar--light: $black;
+// triangle colors
+$tri-fill--light: $dark-blue;
+
+// DARK MODE
+
+// background colors
+$bg--dark: $dark-blue;
+// text colors
+$text--dark: $pink;
+$button-text--dark: $pink;
+// border colors
+$border--dark: $pink;
+// menu colors
+$menu-bar--dark: $pink;
+// triangle colors:
+$tri-fill--dark: $violet;

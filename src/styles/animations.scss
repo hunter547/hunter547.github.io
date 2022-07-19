@@ -1,7 +1,5 @@
-.float {
-  animation: 96s infinite Floating linear;
-  //-webkit-animation: 48s infinite Floating ease-in-out;
-}
+@import './variables.scss';
+@import './theming/themify.scss';
 
 @keyframes Floating {
   from {
@@ -27,11 +25,6 @@
   }
 }
 
-.spin {
-  animation: 48s infinite Spinning linear;
-  //-webkit-animation: 20s infinite Spinning ease-in-out;
-}
-
 @keyframes Spinning {
   0% {
     -webkit-transform: rotate(0deg);
@@ -39,14 +32,6 @@
   100% {
     -webkit-transform: rotate(360deg);
   }
-}
-
-.fade-in {
-  animation: fadeIn ease-out 8s;
-  -webkit-animation: fadeIn ease-out 8s;
-  -moz-animation: fadeIn ease 8s;
-  -o-animation: fadeIn ease 8s;
-  -ms-animation: fadeIn ease 8s;
 }
 
 @keyframes fadeIn {
@@ -89,5 +74,14 @@
   100% {
     transform: rotate(-45deg) translate(-20px, 20px);
     opacity: 0;
+  }
+}
+
+@keyframes triangleFill {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: inherit;
   }
 }

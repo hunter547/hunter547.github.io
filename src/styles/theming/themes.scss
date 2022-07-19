@@ -1,0 +1,20 @@
+@import './themeColors.scss';
+
+$themes: (
+  light: (
+    bg: $bg--light,
+    text: $text--light,
+    button-text: $button-text--light,
+    border: $border--light,
+    menu-bar: $menu-bar--light,
+    tri-fill: $tri-fill--light
+  ),
+  dark: (
+    bg: $bg--dark,
+    text: $text--dark,
+    button-text: $button-text--dark,
+    border: $border--dark,
+    menu-bar: $menu-bar--dark,
+    tri-fill: $tri-fill--dark
+  ),
+);

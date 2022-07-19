@@ -52,18 +52,13 @@ const introAnimation = (completeAnimation, loadingStopped) => {
       duration: 0,
       css: { zIndex: 9 },
     })
-    .to(".react-icon, .fade-in, .float", {
+    .to(".float-container", {
       duration: 0,
       css: { display: "block" },
     })
     .to(".draw-triangle", {
       duration: 3,
       strokeDashoffset: 0,
-    })
-    .to(".draw-triangle", {
-      duration: 1,
-      fill: "#023440",
-      delay: 0.5,
     })
 }
 
@@ -95,9 +90,7 @@ const IndexPage = () => {
   }
 
   useEffect(() => {
-    // Prevent initial load flashing
-    gsap.to("html, body", { duration: 0, css: { backgroundColor: "#f2f4f5" } })
-    gsap.to(".react-icon, .fade-in, .float", {
+    gsap.to(".float-container", {
       duration: 0,
       css: { display: "none" },
     })
@@ -105,7 +98,7 @@ const IndexPage = () => {
     introAnimation(completeAnimation, loadingStopped)
   }, [])
   return (
-    <>
+    <div className="theme-dark">
       <ScaleLoader cssOverride={override} color={"#fdcbbf"} loading={appLoading} />
       <SEO />
       {animationComplete ? null : <IntroOverlay />}
@@ -118,7 +111,7 @@ const IndexPage = () => {
         </div>
         <Footer />
       </div>
-    </>
+    </div>
   )
 }
 

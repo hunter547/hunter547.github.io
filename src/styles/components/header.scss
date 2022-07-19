@@ -1,5 +1,6 @@
 @import "../variables.scss";
 @import '../animations.scss';
+@import '../theming/themify.scss';
 
 header {
   height: 5rem;
@@ -7,7 +8,9 @@ header {
   top: 0;
   width: calc(100% - 10%);
   z-index: 10;
-  background-color: $off-white;
+  @include themify($themes) {
+    background-color: themed('bg');
+  }
   .inner-header {
     display: flex;
     align-items: center;
@@ -21,14 +24,15 @@ header {
         font-weight: 700;
         text-decoration: none;
         letter-spacing: 0.09375rem;
-        color: $white;
-        mix-blend-mode: difference;
         border: none;
         cursor: pointer;
         padding: 0;
         font-size: 1rem;
         font-family: $font;
         background-color: transparent;
+        @include themify($themes) {
+          color: themed('text')
+        }
         &:focus {
           outline: none;
         }
@@ -45,11 +49,13 @@ header {
           letter-spacing: 0.109375rem;
           text-transform: uppercase;
           font-size: 0.75rem;
-          color: $black;
           border: none;
           cursor: pointer;
           background-color: transparent;
           padding: 0;
+          @include themify($themes) {
+            color: themed('button-text')
+          }
           &:last-child {
             margin-right: 0;
           }
@@ -62,6 +68,9 @@ header {
             -webkit-transition: -webkit-transform 0.3s;
             -moz-transition: -moz-transform 0.3s;
             transition: transform 0.3s;
+            @include themify($themes) {
+              color: themed('text');
+            }
           }
           span::before {
             position: absolute;
@@ -80,8 +89,10 @@ header {
         }
 
         a {
-          border: 0.0625rem solid $dark-blue;
-          color: $dark-blue;
+          @include themify($themes) {
+            border: 0.0625rem solid themed('border')
+          }
+
           border-radius: 0.3rem;
           padding: 0.5rem;
           margin-right: 1.25rem;
@@ -116,6 +127,9 @@ header {
           width: 100%;
           display: block;
           border-radius: 0.3125rem;
+          @include themify($themes) {
+            background-color: themed('menu-bar');
+          }
           background-color: $black;
           transition: 0.3s;
         }
