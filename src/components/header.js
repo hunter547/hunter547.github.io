@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "../styles/components/header.scss";
 import scrollTo from "gatsby-plugin-smoothscroll";
+import ThemeModeContext from "../context/ThemeMode/ThemeModeContext";
 
 const Header = () => {
   
   const [menuClicked, setMenuClicked] = useState(false);
+  const [themeMode, setThemeMode] = useContext(ThemeModeContext)
+  const checked = Boolean(themeMode === "theme-dark")
 
   const flipClass = () => {
     setMenuClicked(!menuClicked);
@@ -17,12 +20,25 @@ const Header = () => {
             <div className="logo">
               <button onClick={() => scrollTo('#header')}>&#123;HE&#125;</button>
             </div>
-            <div className="navigation">
-              <nav>
-                <button onClick={() => scrollTo('#portfolio')}><span data-hover="Portfolio">Portfolio</span></button>
-                <button onClick={() => scrollTo('#about')}><span data-hover="About">About</span></button>
-                <a href="/Hunter-Evanoff-2021-Resume.pdf" target="_blank">Resume</a>
-              </nav>
+            <div className="nav-and-mode-container">
+              {!menuClicked && (
+                <label className="icon-switcher" >
+                  <input 
+                    className="control" 
+                    type="checkbox" 
+                    checked={checked} 
+                    onChange={() => setThemeMode(`theme-${checked ? "light" : "dark"}`)} />
+                  <div className="peg"></div>
+                  <div className="bg"></div>
+                </label>
+              )}
+              <div className="navigation">
+                <nav>
+                  <button onClick={() => scrollTo('#portfolio')}><span data-hover="Portfolio">Portfolio</span></button>
+                  <button onClick={() => scrollTo('#about')}><span data-hover="About">About</span></button>
+                  <a href="/Hunter-Evanoff-2021-Resume.pdf" target="_blank">Resume</a>
+                </nav>
+              </div>
             </div>
             <div className="menu-container">
               <div className={`menu${menuClicked ? " change" : ""}`} onClick={flipClass}>

@@ -15,7 +15,8 @@ body {
   position: relative;
   @include themify($themes) {
     background-color: themed('bg');
-    color: themed('text')
+    color: themed('text');
+    transition: themed('theme-transition')
   }
   .content-wrapper {
     padding: 0% 5%;

@@ -5,7 +5,6 @@
 .portfolio__item {
   border-radius: 1.2rem;
   box-shadow: 0 0.0625rem 0.1875rem rgba(0,0,0,0.12), 0 0.0625rem 0.125rem rgba(0,0,0,0.24);
-  transition: 0.3s;
   @media (max-width: 31.25rem) {
     box-shadow: none;
   }
@@ -60,7 +59,7 @@
         border-radius: 1rem;
         opacity: 0;
         @include themify($themes) {
-          background-color: themed('bg');
+          background-color: themed('portfolio-item-bottom-bg');
         }
         .portfolio__item-bottom-wrapper {
           display: flex;
@@ -76,6 +75,14 @@
               @include themify($themes) {
                 color: themed('button-text');
                 border: 0.0625rem solid themed('border');
+                transition: themed('theme-transition');
+                background: linear-gradient(
+                  -45deg,
+                  themed('button-text') 50%,
+                  transparent 50%
+                );
+                background-position: left top;
+                background-size: 270% 100%;
               }
               letter-spacing: 0.109375rem;
               text-transform: uppercase;
@@ -83,15 +90,7 @@
               padding: 0.5rem;
               margin-right: 1.25rem;
               text-decoration: none;
-              transition: 0.3s;
               font-size: 0.75rem;
-              background: linear-gradient(
-                -45deg,
-                $dark-blue 50%,
-                transparent 50%
-              );
-              background-size: 270% 100%;
-              background-position: left top;
               margin-bottom: 1.25rem;
               &:last-child {
                 margin-right: 0;
@@ -99,6 +98,9 @@
             }
             .portfolio__item-button:hover {
               background-position: right bottom;
+              @include themify($themes) {
+                color: themed('button-text-hover')
+              }
               color: $white;
               cursor: pointer;
             }
