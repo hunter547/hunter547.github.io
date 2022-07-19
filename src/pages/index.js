@@ -75,7 +75,6 @@ const IndexPage = () => {
     transform: "translate(-50%, -50%)",
     borderColor: "#fdcbbf",
     zIndex: 100,
-    opacity: 0.8,
   }
 
   const completeAnimation = () => {

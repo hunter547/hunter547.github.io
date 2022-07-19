@@ -11,7 +11,11 @@ $themes: (
     border: $border--light,
     menu-bar: $menu-bar--light,
     tri-fill: $tri-fill--light,
-    portfolio-item-bottom-bg: $portfolio-item-bottom-bg--light,
+    portfolio-item-upper-top: $portfolio-item-upper-top--light,
+    portfolio-item-upper-bottom: $portfolio-item-upper-bottom--light,
+    portfolio-item-lower-bg: $portfolio-item-lower-bg--light,
+    portfolio-item-lower-top: $portfolio-item-lower-top--light,
+    portfolio-item-lower-bottom: $portfolio-item-lower-bottom--light,
     theme-transition: $theme-transition
   ),
   dark: (
@@ -22,7 +26,11 @@ $themes: (
     border: $border--dark,
     menu-bar: $menu-bar--dark,
     tri-fill: $tri-fill--dark,
-    portfolio-item-bottom-bg: $portfolio-item-bottom-bg--dark,
+    portfolio-item-upper-top: $portfolio-item-upper-top--dark,
+    portfolio-item-upper-bottom: $portfolio-item-upper-bottom--dark,
+    portfolio-item-lower-bg: $portfolio-item-lower-bg--dark,
+    portfolio-item-lower-top: $portfolio-item-lower-top--dark,
+    portfolio-item-lower-bottom: $portfolio-item-lower-bottom--dark,
     theme-transition: $theme-transition
   ),
 );

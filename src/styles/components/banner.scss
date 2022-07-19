@@ -75,7 +75,7 @@
         stroke: $dark-blue;
         stroke-width: 0.09375rem;
         overflow: visible;
-        animation: fadeIn ease-out 8s, triangleFill 500ms linear 9.2s 1 forwards,
+        animation: fadeIn ease-out 8s, triangleFill 500ms linear 3.7s 1 forwards,
           48s infinite Spinning linear;
         @media (max-width: 109.375rem) {
           stroke-dasharray: 775;
