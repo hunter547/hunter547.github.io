@@ -39,7 +39,9 @@ const About = () => {
               <GatsbyImage
                 image={data.portrait.childImageSharp.gatsbyImageData}
                 loading="eager"
-                className="about__profile-picture" />
+                className="about__profile-picture"
+                alt="Image of Hunter Evanoff"
+              />
             </div>
           </div>
           <div className="about__text-container">

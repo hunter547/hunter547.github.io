@@ -58,9 +58,6 @@
       position: absolute;
       height: 100%;
       animation: 96s infinite Floating linear;
-      @include themify($themes) {
-        fill: themed("tri-fill");
-      }
       .draw-triangle {
         position: absolute;
         width: 18.75rem;
@@ -71,11 +68,13 @@
         stroke-dashoffset: 900;
         @include themify($themes) {
           stroke: themed("tri-fill");
+          fill: themed("tri-fill");
         }
-        stroke: $dark-blue;
         stroke-width: 0.09375rem;
         overflow: visible;
-        animation: fadeIn ease-out 8s, triangleFill 500ms linear 3.7s 1 forwards,
+        -webkit-animation: fadeIn ease-out 8s, drawTriangle 3s, triangleFill 1.4s linear 3s forwards,
+          48s infinite Spinning linear;
+        animation: fadeIn ease-out 8s, drawTriangle 3s, triangleFill 1.4s linear 3s forwards,
           48s infinite Spinning linear;
         @media (max-width: 109.375rem) {
           stroke-dasharray: 775;

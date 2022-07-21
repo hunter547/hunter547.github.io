@@ -53,10 +53,6 @@ const introAnimation = (completeAnimation, loadingStopped) => {
       duration: 0,
       css: { display: "block" },
     })
-    .to(".draw-triangle", {
-      duration: 3,
-      strokeDashoffset: 0,
-    })
 }
 
 const IndexPage = () => {

@@ -281,8 +281,8 @@ header {
         border-radius: 50%;
         transition: 0.3s;
         right: 0%;
-        margin-top: 2.8rem;
-        margin-right: 1.5rem;
+        margin-top: -2.2rem;
+        margin-right: 1.1rem;
         will-change: transform;
         -webkit-transform: translate(60%, -30%);
         transform: translate(60%, -30%);
@@ -300,8 +300,8 @@ header {
         background: $dark-blue;
         border-radius: 50%;
         right: 0%;
-        margin-top: 2.8rem;
-        margin-right: 1.5rem;
+        margin-top: -2.2rem;
+        margin-right: 1.1rem;
         will-change: transform;
         -webkit-transform: translate(60%, -30%);
         transform: translate(60%, -30%);
@@ -310,7 +310,9 @@ header {
         display: block;
       }
       .change .bar {
-        background-color: $white;
+        @include themify($themes) {
+          background-color: $white;
+        }
       }
       .change #bar1 {
         transform: translateY(0.25rem) rotateZ(-45deg);
