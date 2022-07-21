@@ -1,5 +1,6 @@
 @import '../variables.scss';
 @import '../animations.scss';
+@import '../theming/themify.scss';
 
 .about {
   padding: 5rem 0;
@@ -29,15 +30,17 @@
       .about__picture-frame {
         padding: 1rem;
         border-radius: 1rem;
-        background: linear-gradient(
-        -45deg,
-        $medium-blue 0%,
-        $medium-blue 15%,
-        $dark-blue 15%,
-        $dark-blue 70%,
-        $pink 70%,
-        $pink 100% 
-      );
+        @include themify($themes) {
+          background: linear-gradient(
+            -45deg,
+            themed('portfolio-item-lower-bottom') 0%,
+            themed('portfolio-item-lower-bottom') 15%,
+            themed('portfolio-item-lower-top') 15%,
+            themed('portfolio-item-upper-bottom') 70%,
+            themed('portfolio-item-upper-top') 70%,
+            themed('portfolio-item-upper-top') 100%
+          )
+        }
         .about__profile-picture {
           width: 14.5rem;
           border-radius: 5%;
