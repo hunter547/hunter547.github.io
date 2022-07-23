@@ -5,6 +5,28 @@
 .portfolio__item {
   border-radius: 1.2rem;
   box-shadow: 0 0.0625rem 0.1875rem rgba(0,0,0,0.12), 0 0.0625rem 0.125rem rgba(0,0,0,0.24);
+  position: relative;
+  margin-bottom: 10%;
+  width: 42.5%;
+  &:first-child {
+    margin-top: 0;
+  }
+  &:nth-child(2n - 1) {
+    margin-right: 15%;
+  }
+  // Can uncomment below if zig-zag project display is desired.
+  // &:nth-child(2n) {
+  //   // transform: translateY(10%);
+  // }
+  @media(max-width: 62.5rem) {
+    &:nth-child(2n - 1) {
+      margin-right: 0;
+    }
+    width: 100%;
+    // &:nth-child(2n) {
+    //   transform: translateY(0);
+    // }
+  }
   @media (max-width: 31.25rem) {
     box-shadow: none;
   }

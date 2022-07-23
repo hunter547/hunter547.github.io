@@ -1,7 +1,7 @@
 [
   {
     "classname": "smoothgeodesic-app",
-    "header": "L.SmoothGeodesic",
+    "header": "Leaflet Smooth Geodesic",
     "image": "../images/Leaflet-SmoothGeodesic-app.png",
     "description": "Created an npm package for the public to use that extends the Leaflet Path class. This allows for smooth geodesic (Great Circle) curves from a source coordinate to a destination coordinate.",
     "githubLink": "https://github.com/hunter547/Leaflet.SmoothGeodesic",

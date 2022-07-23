@@ -2,7 +2,7 @@
 @import '../animations.scss';
 
 .portfolio {
-  padding: 5rem 0;
+  padding: 5rem 0 0 0;
   .portfolio__summary {
     width: 30%;
     h3 {
@@ -67,22 +67,20 @@
     }
   }
   .portfolio__grid {
-    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 15%;
-    row-gap: 5rem;
-    @media (max-width: 112.5rem) {
+    @media(max-width: 62.5rem) {
+      flex-direction: column;
+      align-items: center;
+      width: 70%;
+    }
+    @media(max-width: 37.5rem) {
       width: 80%;
     }
-    @media (max-width: 87.5rem) {
-      width: 90%;
-    }
-    @media (max-width: 50rem) {
-      grid-template-columns: 1fr;
-    }
-    @media (max-width: 31.25rem) {
+    @media(max-width: 31.25rem) {
       width: 100%;
     }
   }
