@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react"
 import "../styles/components/about.scss"
-import { useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image";
 import gsap from "gsap"
 import Typewriter from "./typewriter"
+import portraitSrcSet from "../images/IMG_6155.jpg?w=300;600;900&format=webp&as=srcset"
+import portraitSrc from "../images/IMG_6155.jpg?w=600&format=webp"
 
 const About = () => {
   const [doType, setDoType] = useState(false)
@@ -22,22 +22,16 @@ const About = () => {
       onComplete: startTyping,
     })
   })
-  const data = useStaticQuery(graphql`{
-  portrait: file(relativePath: {eq: "IMG_6155.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(quality: 100, layout: FULL_WIDTH)
-    }
-  }
-}
-`)
   return (
     <section id="about">
       <div className="about">
         <div className="about__container">
           <div className="about__picture-container">
             <div className="about__picture-frame">
-              <GatsbyImage
-                image={data.portrait.childImageSharp.gatsbyImageData}
+              <img
+                src={portraitSrc}
+                srcSet={portraitSrcSet}
+                sizes="(max-width: 600px) 90vw, 232px"
                 loading="eager"
                 className="about__profile-picture"
                 alt="Image of Hunter Evanoff"

@@ -1,6 +1,5 @@
-@import '../variables.scss';
-@import '../animations.scss';
-@import '../theming/themify.scss';
+@use '../animations';
+@use '../theming/themify' as *;
 
 .about {
   padding: 5rem 0;
@@ -42,7 +41,9 @@
           )
         }
         .about__profile-picture {
+          display: block;
           width: 14.5rem;
+          height: auto;
           border-radius: 5%;
         }
       }

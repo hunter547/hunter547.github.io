@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import "../styles/components/header.scss";
-import scrollTo from "gatsby-plugin-smoothscroll";
+import scrollTo from "../utils/scrollTo";
 import ThemeModeContext from "../context/ThemeMode/ThemeModeContext";
 
 const Header = () => {

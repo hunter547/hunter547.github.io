@@ -1,4 +1,4 @@
-@import './themeColors.scss';
+@use 'themeColors' as *;
 
 $theme-transition: 0.5s;
 

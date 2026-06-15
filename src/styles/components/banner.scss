@@ -1,6 +1,6 @@
-@import "../variables.scss";
-@import "../animations.scss";
-@import "../theming/themify.scss";
+@use '../variables' as *;
+@use '../animations';
+@use '../theming/themify' as *;
 
 .banner {
   display: flex;

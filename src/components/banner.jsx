@@ -1,7 +1,7 @@
 import React from "react";
 import '../styles/components/banner.scss';
 import LoopTypewriter from './loopTypewriter';
-import scrollTo from "gatsby-plugin-smoothscroll";
+import scrollTo from "../utils/scrollTo";
 
 const Banner = () => {
   const skills = ["React", "JavaScript", "CSS", "Gatsby","Redux"];

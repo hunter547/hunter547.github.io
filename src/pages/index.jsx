@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react"
 import "../styles/index.scss"
 import gsap from "gsap"
-import SEO from "../components/seo"
 import IntroOverlay from "../components/introOverlay"
-import ScaleLoader from "react-spinners/ScaleLoader"
+import { ScaleLoader } from "react-spinners"
 import ThemeModeContextProvider from "../context/ThemeMode/ThemeModeContextProvider"
 import App from "../components/app"
 
@@ -82,18 +81,21 @@ const IndexPage = () => {
   }
 
   useEffect(() => {
-    gsap.to(".float-container", {
-      duration: 0,
-      css: { display: "none" },
+    const ctx = gsap.context(() => {
+      gsap.to(".float-container", {
+        duration: 0,
+        css: { display: "none" },
+      })
+
+      introAnimation(completeAnimation, loadingStopped)
     })
 
-    introAnimation(completeAnimation, loadingStopped)
+    return () => ctx.revert()
   }, [])
 
   return (
     <ThemeModeContextProvider>
       <ScaleLoader cssOverride={override} color={"#fdcbbf"} loading={appLoading} />
-      <SEO />
       {animationComplete ? null : <IntroOverlay />}
       <App />
     </ThemeModeContextProvider>

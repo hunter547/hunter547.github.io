@@ -1,6 +1,6 @@
-@import '../variables.scss';
-@import '../animations.scss';
-@import '../theming/themify.scss';
+@use '../variables' as *;
+@use '../animations';
+@use '../theming/themify' as *;
 
 .portfolio__item {
   border-radius: 1.2rem;
@@ -64,6 +64,9 @@
       .portfolio__item-image {
         border-radius: 1rem;
         opacity: 0;
+        display: block;
+        width: 100%;
+        height: auto;
       }
     }
     .portfolio__item-text-container {

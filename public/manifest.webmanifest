@@ -1,0 +1,15 @@
+{
+  "name": "Hunter Evanoff",
+  "short_name": "Hunter Evanoff",
+  "start_url": "/",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+  "display": "minimal-ui",
+  "icons": [
+    {
+      "src": "/portfolio-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

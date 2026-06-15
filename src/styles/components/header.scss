@@ -1,6 +1,6 @@
-@import "../variables.scss";
-@import '../animations.scss';
-@import '../theming/themify.scss';
+@use '../variables' as *;
+@use '../animations';
+@use '../theming/themify' as *;
 
 header {
   height: 5rem;

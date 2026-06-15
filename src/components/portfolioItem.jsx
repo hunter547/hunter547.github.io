@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 import '../styles/components/portfolioItem.scss';
 import '../styles/components/videoModal.scss';
-import { GatsbyImage } from "gatsby-plugin-image";
 import gsap from "gsap";
 import Modal from "react-modal";
-import SyncLoader from "react-spinners/SyncLoader";
+import { SyncLoader } from "react-spinners";
 
-const PortfolioItem = ({ project }) => {
+const PortfolioItem = ({ project, imageSrc, imageSrcSet }) => {
 
   useEffect(() => {
     gsap.fromTo('.portfolio__item-image, .portfolio__item-bottom',
@@ -65,8 +64,10 @@ const PortfolioItem = ({ project }) => {
     <div className={`portfolio__item ${project.classname}`}>
       <div className="portfolio__item-wrapper">
         <div className="portfolio__item-image-container">
-          <GatsbyImage
-            image={project.image.childImageSharp.gatsbyImageData}
+          <img
+            src={imageSrc}
+            srcSet={imageSrcSet}
+            sizes="(max-width: 768px) 90vw, 45vw"
             loading="eager"
             className="portfolio__item-image"
             alt={`${project.header} visual`} />

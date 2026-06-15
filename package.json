@@ -1,56 +1,36 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "hunter-evanoff-portfolio",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Personal portfolio site for Hunter Evanoff",
   "version": "0.1.0",
   "author": "Hunter Evanoff",
+  "type": "module",
   "dependencies": {
-    "@emotion/react": "^11.9.3",
-    "gatsby": "^4.18.2",
-    "gatsby-image": "^3.11.0",
-    "gatsby-plugin-image": "^2.18.1",
-    "gatsby-plugin-manifest": "^4.18.1",
-    "gatsby-plugin-netlify": "^5.0.0",
-    "gatsby-plugin-offline": "^5.18.1",
-    "gatsby-plugin-react-helmet": "^5.18.0",
-    "gatsby-plugin-sass": "^5.18.1",
-    "gatsby-plugin-sharp": "^4.18.1",
-    "gatsby-plugin-smoothscroll": "^1.2.0",
-    "gatsby-source-filesystem": "^4.18.1",
-    "gatsby-transformer-json": "^4.18.0",
-    "gatsby-transformer-sharp": "^4.18.1",
-    "gsap": "^3.10.4",
-    "prop-types": "^15.8.1",
+    "gsap": "^3.15.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
     "react-modal": "^3.15.1",
     "react-spinners": "^0.13.3"
   },
   "devDependencies": {
-    "babel-plugin-emotion": "^11.0.0",
-    "gh-pages": "^4.0.0",
-    "prettier": "2.7.1"
+    "@vitejs/plugin-react": "^5.0.0",
+    "gh-pages": "^6.1.1",
+    "prettier": "2.7.1",
+    "sass": "^1.80.0",
+    "vite": "npm:rolldown-vite@latest",
+    "vite-imagetools": "^7.0.5"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "deploy": "vite build && gh-pages -d dist -b master"
   },
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/hunter547/hunter547.github.io"
   }
 }
