@@ -5,6 +5,7 @@ import Banner from "./banner"
 import Footer from "./footer"
 import Header from "./header"
 import Portfolio from "./portfolio"
+import ShadcnDemo from "./shadcnDemo"
 
 const App = () => {
   const [themeMode,] = useContext(ThemeModeContext)
@@ -15,6 +16,7 @@ const App = () => {
           <Header />
           <Banner />
           <Portfolio />
+          <ShadcnDemo />
           <About />
         </div>
         <Footer />
