@@ -1,65 +1,121 @@
-import React, { useState, useContext } from "react";
-import "../styles/components/header.scss";
-import scrollTo from "../utils/scrollTo";
-import ThemeModeContext from "../context/ThemeMode/ThemeModeContext";
+import React, { useCallback, useRef, useState } from "react"
+import "../styles/components/header.scss"
+import { Menu } from "lucide-react"
+import scrollTo from "../utils/scrollTo"
+import { Button } from "@/components/ui/button"
+import {
+  Navbar as NavbarComponent,
+  NavbarLeft,
+  NavbarRight,
+} from "@/components/ui/navbar"
+import {
+  Sheet,
+  SheetContent,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
+import Navigation from "./navigation"
+import ThemeToggle from "./themeToggle"
+
+const SHEET_CLOSE_DURATION = 300
+
+const mobileLinks = [
+  { text: "Portfolio", href: "#portfolio" },
+  { text: "About", href: "#about" },
+]
 
 const Header = () => {
-  
-  const [menuClicked, setMenuClicked] = useState(false);
-  const [themeMode, setThemeMode] = useContext(ThemeModeContext)
-  const checked = Boolean(themeMode === "theme-dark")
+  const [sheetOpen, setSheetOpen] = useState(false)
+  const timeoutRef = useRef(null)
 
-  const flipClass = () => {
-    setMenuClicked(!menuClicked);
-  }
-  
-  return(
-      <section id="header">
-        <header>
-          <div className="translate-header">
-            <div className="inner-header">
-              <div className="logo">
-                <button onClick={() => scrollTo('#header')}>&#123;HE&#125;</button>
-              </div>
-              <div className="nav-and-mode-container">
-                {!menuClicked && (
-                  <label className="icon-switcher" >
-                    <input 
-                      className="control" 
-                      type="checkbox" 
-                      checked={checked} 
-                      onChange={() => setThemeMode(`theme-${checked ? "light" : "dark"}`)} />
-                    <div className="peg"></div>
-                    <div className="bg"></div>
-                  </label>
-                )}
-                <div className="navigation">
-                  <nav>
-                    <button onClick={() => scrollTo('#portfolio')}><span data-hover="Portfolio">Portfolio</span></button>
-                    <button onClick={() => scrollTo('#about')}><span data-hover="About">About</span></button>
-                    <a href="/Hunter-Evanoff-2021-Resume.pdf" target="_blank">Resume</a>
-                  </nav>
-                </div>
-              </div>
-              <div className="menu-container">
-                <div className={`menu${menuClicked ? " change" : ""}`} onClick={flipClass}>
-                <div id="bar1" className="bar"></div>
-                <div id="bar2" className="bar"></div>
-                <div id="bar3" className="bar"></div>
-                </div>
-                <ul className={`menu-items${menuClicked ? " change" : ""}`}>
-                  <li onClick={flipClass}><button onClick={() => scrollTo('#portfolio')}>Portfolio</button></li>
-                  <li onClick={flipClass}><button onClick={() => scrollTo('#about')}>About</button></li>
-                  <li onClick={flipClass}><a href="/Hunter-Evanoff-2021-Resume.pdf" target="_blank">Resume</a></li>
-                </ul>
-                <div className={`menu-drape${menuClicked ? " drape" : ""}`}></div>
-                <div className={`menu-bubble${menuClicked ? " menu-circle" : ""}`}></div>
-              </div>
-            </div>
-          </div>
-        </header>
-      </section>
+  // Close the sheet first, then scroll once it has animated out.
+  const handleMobileLinkClick = useCallback((e, selector) => {
+    e.preventDefault()
+    if (timeoutRef.current) clearTimeout(timeoutRef.current)
+    setSheetOpen(false)
+    timeoutRef.current = setTimeout(
+      () => scrollTo(selector),
+      SHEET_CLOSE_DURATION
     )
+  }, [])
+
+  return (
+    <header
+      id="header"
+      className="absolute inset-x-0 top-0 z-10 px-[5%] pt-2 pb-4"
+    >
+      <div className="relative">
+        <NavbarComponent>
+          <NavbarLeft>
+            <a
+              href="#header"
+              onClick={e => {
+                e.preventDefault()
+                scrollTo("#header")
+              }}
+              className="flex items-center gap-2 text-base font-bold tracking-[0.09375rem]"
+            >
+              {"{HE}"}
+            </a>
+          </NavbarLeft>
+          <NavbarRight>
+            <Navigation />
+            <a
+              href="/Hunter-Evanoff-2021-Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="resume-link hidden text-xs uppercase tracking-[0.109375rem] -my-[0.3125rem] md:block"
+            >
+              Resume
+            </a>
+            <ThemeToggle />
+            <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
+              <SheetTrigger asChild>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="shrink-0 md:hidden"
+                >
+                  <Menu className="size-5" />
+                  <span className="sr-only">Toggle navigation menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right">
+                <SheetTitle className="sr-only">Navigation</SheetTitle>
+                <nav className="grid gap-6 p-6 text-lg font-medium">
+                  <a
+                    href="#header"
+                    className="flex items-center gap-2 text-xl font-bold"
+                    onClick={e => handleMobileLinkClick(e, "#header")}
+                  >
+                    Hunter Evanoff
+                  </a>
+                  {mobileLinks.map(link => (
+                    <a
+                      key={link.text}
+                      href={link.href}
+                      className="text-muted-foreground uppercase tracking-[0.109375rem] hover:text-foreground"
+                      onClick={e => handleMobileLinkClick(e, link.href)}
+                    >
+                      {link.text}
+                    </a>
+                  ))}
+                  <a
+                    href="/Hunter-Evanoff-2021-Resume.pdf"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-muted-foreground uppercase tracking-[0.109375rem] hover:text-foreground"
+                  >
+                    Resume
+                  </a>
+                </nav>
+              </SheetContent>
+            </Sheet>
+          </NavbarRight>
+        </NavbarComponent>
+      </div>
+    </header>
+  )
 }
 
 export default Header

@@ -4,11 +4,19 @@ import '../styles/components/videoModal.scss';
 import gsap from "gsap";
 import Modal from "react-modal";
 import { SyncLoader } from "react-spinners";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardFooter,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 const PortfolioItem = ({ project, imageSrc, imageSrcSet }) => {
 
   useEffect(() => {
-    gsap.fromTo('.portfolio__item-image, .portfolio__item-bottom',
+    gsap.fromTo('.portfolio__item-image, .portfolio__item-body',
       {
         opacity: 0,
         y: 60,
@@ -41,7 +49,7 @@ const PortfolioItem = ({ project, imageSrc, imageSrcSet }) => {
     transform: "translate(-50%, -50%)",
     borderColor: "#023440",
   }
-  
+
   const [modalIsOpen,setIsOpen] = useState(false);
   const [loading, setLoading] = useState(false);
 
@@ -49,7 +57,7 @@ const PortfolioItem = ({ project, imageSrc, imageSrcSet }) => {
     setIsOpen(true);
     setLoading(true);
   }
- 
+
   const closeModal = () => {
     setIsOpen(false);
     setLoading(false)
@@ -59,36 +67,39 @@ const PortfolioItem = ({ project, imageSrc, imageSrcSet }) => {
     setLoading(false);
   }
 
-  
   return (
-    <div className={`portfolio__item ${project.classname}`}>
-      <div className="portfolio__item-wrapper">
-        <div className="portfolio__item-image-container">
-          <img
-            src={imageSrc}
-            srcSet={imageSrcSet}
-            sizes="(max-width: 768px) 90vw, 45vw"
-            loading="eager"
-            className="portfolio__item-image"
-            alt={`${project.header} visual`} />
-        </div>
-        <div className="portfolio__item-text-container">
-          <div className="portfolio__item-bottom">
-            <div className="portfolio__item-bottom-wrapper">
-              <div className="porfolio__item-header">
-                <h2>{project.header}</h2>
-                <p>{project.description}</p>
-              </div>
-              <div className="portfolio__item-button-wrapper">
-                <a href={project.githubLink} target="_blank" rel="noreferrer" className="portfolio__item-button">Code</a>
-                {project.applicationLink ? 
-                  <a href={project.applicationLink} target="_blank" rel="noreferrer" className="portfolio__item-button">Application</a> 
-                  : 
-                  null}
-                <button onClick={openModal} className="portfolio__item-button">Demo</button>
-              </div>
-            </div>
-          </div>
+    <Card className={`portfolio__item ${project.classname} gap-0 overflow-hidden py-0`}>
+      <div className="portfolio__item-image-container">
+        <img
+          src={imageSrc}
+          srcSet={imageSrcSet}
+          sizes="(max-width: 768px) 90vw, 45vw"
+          loading="eager"
+          className="portfolio__item-image opacity-0"
+          alt={`${project.header} visual`} />
+      </div>
+      <div className="portfolio__item-text-container portfolio__item-body grow opacity-0">
+        <div className="portfolio__item-text-inner flex grow flex-col rounded-[0.5rem] p-5">
+          <CardHeader className="grow gap-3 px-0">
+            <CardTitle className="text-xl font-bold uppercase tracking-wide">
+              {project.header}
+            </CardTitle>
+            <CardDescription className="text-base leading-relaxed">
+              {project.description}
+            </CardDescription>
+          </CardHeader>
+          <CardFooter className="flex-wrap gap-3 px-0">
+            <Button asChild variant="outline" size="sm">
+              <a href={project.githubLink} target="_blank" rel="noreferrer">Code</a>
+            </Button>
+            {project.applicationLink ?
+              <Button asChild variant="outline" size="sm">
+                <a href={project.applicationLink} target="_blank" rel="noreferrer">Application</a>
+              </Button>
+              :
+              null}
+            <Button onClick={openModal} size="sm">Demo</Button>
+          </CardFooter>
         </div>
       </div>
       {modalIsOpen ? <Modal
@@ -103,18 +114,21 @@ const PortfolioItem = ({ project, imageSrc, imageSrcSet }) => {
             loading={loading}
           />
           <div className="video">
-            <embed 
-              src={project.video.URL} 
+            <iframe
+              src={project.video.URL}
               title={project.video.title}
               className="embeded-video"
+              frameBorder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
               onLoad={stopLoad}
             />
           </div>
       </Modal>
       :
       null}
-      
-    </div>
+
+    </Card>
   );
 }
 

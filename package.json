@@ -7,9 +7,12 @@
   "type": "module",
   "dependencies": {
     "@tailwindcss/vite": "^4.3.1",
+    "@types/canvas-confetti": "^1.9.0",
+    "canvas-confetti": "^1.9.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "gsap": "^3.15.0",
+    "lightweight-charts": "^5.2.0",
     "lucide-react": "^1.20.0",
     "radix-ui": "^1.6.0",
     "react": "^18.2.0",
@@ -34,6 +37,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "data:nq": "node scripts/fetch_nq_futures.mjs",
     "deploy": "vite build && gh-pages -d dist -b master"
   },
   "license": "MIT",
