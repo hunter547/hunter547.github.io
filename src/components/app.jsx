@@ -1,27 +1,19 @@
-import React, { useContext } from "react"
-import ThemeModeContext from "../context/ThemeMode/ThemeModeContext"
+import React from "react"
 import About from "./about"
 import Banner from "./banner"
-import Footer from "./footer"
-import Header from "./header"
 import Portfolio from "./portfolio"
 import TradeSimulator from "./tradeSimulator"
 
+// The home page content only. The theme wrapper, container, header and footer
+// are provided by the persistent layout (AnimatedLayout).
 const App = () => {
-  const [themeMode,] = useContext(ThemeModeContext)
   return (
-    <div className={themeMode}>
-      <div className="container">
-        <div className="content-wrapper">
-          <Header />
-          <Banner />
-          <Portfolio />
-          <TradeSimulator />
-          <About />
-        </div>
-        <Footer />
-      </div>
-    </div>
+    <>
+      <Banner />
+      <Portfolio />
+      <TradeSimulator />
+      <About />
+    </>
   )
 }
 

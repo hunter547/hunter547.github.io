@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import "../styles/components/header.scss";
 import ThemeModeContext from "../context/ThemeMode/ThemeModeContext";
 
 // The original hand-built sun/moon slider, relocated into the navbar.

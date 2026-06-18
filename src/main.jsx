@@ -1,10 +1,6 @@
-import React from "react"
-import { createRoot } from "react-dom/client"
-import "./styles/tailwind.css"
-import IndexPage from "./pages/index"
+import "./styles/tailwind.css";
+import "./styles/index.scss";
+import { ViteReactSSG } from "vite-react-ssg";
+import { routes } from "./routes";
 
-createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <IndexPage />
-  </React.StrictMode>
-)
+export const createRoot = ViteReactSSG({ routes });

@@ -1,0 +1,41 @@
+[
+  {
+    "slug": "trading-platforms",
+    "title": "Trading Platforms",
+    "tagline": "Real-time charting, backtesting, and execution UIs.",
+    "description": "I build fast, data-dense trading interfaces — from live candlestick charts and order tickets to paper-trading simulators and tape-replay backtesting harnesses.",
+    "highlights": [
+      "Real-time candlestick and depth charting (TradingView lightweight-charts)",
+      "Limit / market order entry with draggable take-profit and stop-loss management",
+      "Tape-replay backtesting and trade simulators with live P/L",
+      "Market-data ingestion pipelines (REST, WebSocket, yfinance)"
+    ],
+    "relatedProjects": []
+  },
+  {
+    "slug": "mapping-apis",
+    "title": "Mapping APIs",
+    "tagline": "Interactive maps, geospatial routing, and location data.",
+    "description": "From custom Leaflet overlays to great-circle routing, I integrate mapping and geospatial APIs into responsive, production-grade web apps.",
+    "highlights": [
+      "Leaflet and Mapbox integrations with custom layers and controls",
+      "Smooth geodesic (great-circle) routing between coordinates",
+      "Geocoding, marker clustering, and live location feeds",
+      "Published open-source mapping packages on npm"
+    ],
+    "relatedProjects": ["smoothgeodesic-app", "meetup-app"]
+  },
+  {
+    "slug": "wine-containerization",
+    "title": "Wine Containerization",
+    "tagline": "Dockerized commerce platforms for the beverage industry.",
+    "description": "Containerized, scalable ecommerce and inventory systems tailored to wineries and beverage brands — from storefront to reproducible deployment.",
+    "highlights": [
+      "Dockerized full-stack storefronts with CI/CD",
+      "Cart, checkout, and inventory management flows",
+      "Headless commerce APIs and product catalogs",
+      "Reproducible deploys on container platforms"
+    ],
+    "relatedProjects": ["bouqs-app"]
+  }
+]

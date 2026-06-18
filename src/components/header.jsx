@@ -1,7 +1,7 @@
 import React, { useCallback, useRef, useState } from "react"
 import "../styles/components/header.scss"
 import { Menu } from "lucide-react"
-import scrollTo from "../utils/scrollTo"
+import useSectionNav from "../hooks/useSectionNav"
 import { Button } from "@/components/ui/button"
 import {
   Navbar as NavbarComponent,
@@ -27,17 +27,21 @@ const mobileLinks = [
 const Header = () => {
   const [sheetOpen, setSheetOpen] = useState(false)
   const timeoutRef = useRef(null)
+  const sectionNav = useSectionNav()
 
-  // Close the sheet first, then scroll once it has animated out.
-  const handleMobileLinkClick = useCallback((e, selector) => {
-    e.preventDefault()
-    if (timeoutRef.current) clearTimeout(timeoutRef.current)
-    setSheetOpen(false)
-    timeoutRef.current = setTimeout(
-      () => scrollTo(selector),
-      SHEET_CLOSE_DURATION
-    )
-  }, [])
+  // Close the sheet first, then scroll/navigate once it has animated out.
+  const handleMobileLinkClick = useCallback(
+    (e, selector) => {
+      e.preventDefault()
+      if (timeoutRef.current) clearTimeout(timeoutRef.current)
+      setSheetOpen(false)
+      timeoutRef.current = setTimeout(
+        () => sectionNav(selector),
+        SHEET_CLOSE_DURATION
+      )
+    },
+    [sectionNav]
+  )
 
   return (
     <header
@@ -51,7 +55,7 @@ const Header = () => {
               href="#header"
               onClick={e => {
                 e.preventDefault()
-                scrollTo("#header")
+                sectionNav("#header")
               }}
               className="flex items-center gap-2 text-base font-bold tracking-[0.09375rem]"
             >

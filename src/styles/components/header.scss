@@ -1,6 +1,12 @@
 @use "../variables" as *;
 @use "../theming/themify" as *;
 
+// Hidden only while the home intro is running (the layout adds `.intro-active`).
+// Direct niche loads never get that class, so the header shows immediately.
+.intro-active #header {
+  display: none;
+}
+
 // Themed outline around the Resume link, restored from the original navbar.
 .resume-link {
   border-radius: 0.3rem;
