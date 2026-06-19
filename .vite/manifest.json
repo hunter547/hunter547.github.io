@@ -1,0 +1,205 @@
+{
+  "_IMG_6155-BCSeOP6V.webp": {
+    "file": "assets/IMG_6155-BCSeOP6V.webp",
+    "src": "_IMG_6155-BCSeOP6V.webp"
+  },
+  "_IMG_6155-DTxKLbXN.webp": {
+    "file": "assets/IMG_6155-DTxKLbXN.webp",
+    "src": "_IMG_6155-DTxKLbXN.webp"
+  },
+  "_IMG_6155-kxRAZGXC.webp": {
+    "file": "assets/IMG_6155-kxRAZGXC.webp",
+    "src": "_IMG_6155-kxRAZGXC.webp"
+  },
+  "_Leaflet-SmoothGeodesic-app-BujAXHsA.webp": {
+    "file": "assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
+    "src": "_Leaflet-SmoothGeodesic-app-BujAXHsA.webp"
+  },
+  "_Leaflet-SmoothGeodesic-app-d-wHKMX7.webp": {
+    "file": "assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
+    "src": "_Leaflet-SmoothGeodesic-app-d-wHKMX7.webp"
+  },
+  "_card--eV6UydM.js": {
+    "file": "assets/card--eV6UydM.js",
+    "name": "card",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "_ninjatrader-bridge-Bfuhe2_p.webp": {
+    "file": "assets/ninjatrader-bridge-Bfuhe2_p.webp",
+    "src": "_ninjatrader-bridge-Bfuhe2_p.webp"
+  },
+  "_ninjatrader-bridge-aexpZCWq.webp": {
+    "file": "assets/ninjatrader-bridge-aexpZCWq.webp",
+    "src": "_ninjatrader-bridge-aexpZCWq.webp"
+  },
+  "_ninjatrader-merlot-CFAdppUF.webp": {
+    "file": "assets/ninjatrader-merlot-CFAdppUF.webp",
+    "src": "_ninjatrader-merlot-CFAdppUF.webp"
+  },
+  "_ninjatrader-merlot-RAA4hH9l.webp": {
+    "file": "assets/ninjatrader-merlot-RAA4hH9l.webp",
+    "src": "_ninjatrader-merlot-RAA4hH9l.webp"
+  },
+  "_portfolio-icon-BE5PS0r3.webp": {
+    "file": "assets/portfolio-icon-BE5PS0r3.webp",
+    "src": "_portfolio-icon-BE5PS0r3.webp"
+  },
+  "_portfolio-icon-DP1p7q7g.webp": {
+    "file": "assets/portfolio-icon-DP1p7q7g.webp",
+    "src": "_portfolio-icon-DP1p7q7g.webp"
+  },
+  "_portfolio-icon-DoueLI3K.webp": {
+    "file": "assets/portfolio-icon-DoueLI3K.webp",
+    "src": "_portfolio-icon-DoueLI3K.webp"
+  },
+  "_rapier.es--SAcDlT7.js": {
+    "file": "assets/rapier.es--SAcDlT7.js",
+    "name": "rapier.es"
+  },
+  "_topstep-algo-trade-engine-BOgepR6-.webp": {
+    "file": "assets/topstep-algo-trade-engine-BOgepR6-.webp",
+    "src": "_topstep-algo-trade-engine-BOgepR6-.webp"
+  },
+  "_topstep-algo-trade-engine-UnJ6XKll.webp": {
+    "file": "assets/topstep-algo-trade-engine-UnJ6XKll.webp",
+    "src": "_topstep-algo-trade-engine-UnJ6XKll.webp"
+  },
+  "_topstep-algo-trade-engine-ehsa7aBx.webp": {
+    "file": "assets/topstep-algo-trade-engine-ehsa7aBx.webp",
+    "src": "_topstep-algo-trade-engine-ehsa7aBx.webp"
+  },
+  "_tradeSimulator-Do--fgo0.js": {
+    "file": "assets/tradeSimulator-Do--fgo0.js",
+    "name": "tradeSimulator",
+    "imports": [
+      "index.html",
+      "_card--eV6UydM.js"
+    ]
+  },
+  "index.html": {
+    "file": "assets/app-DVvhE-G-.js",
+    "name": "app",
+    "src": "index.html",
+    "isEntry": true,
+    "dynamicImports": [
+      "node_modules/react-dom/client.js",
+      "src/components/lanyard/Lanyard.jsx",
+      "_tradeSimulator-Do--fgo0.js",
+      "src/components/nicheMap.jsx",
+      "src/pages/index.jsx"
+    ],
+    "css": [
+      "assets/app-DWOl2NkO.css"
+    ],
+    "assets": [
+      "assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
+      "assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
+      "assets/ninjatrader-bridge-Bfuhe2_p.webp",
+      "assets/ninjatrader-bridge-aexpZCWq.webp",
+      "assets/ninjatrader-merlot-CFAdppUF.webp",
+      "assets/ninjatrader-merlot-RAA4hH9l.webp",
+      "assets/portfolio-icon-DP1p7q7g.webp",
+      "assets/portfolio-icon-DoueLI3K.webp",
+      "assets/portfolio-icon-BE5PS0r3.webp",
+      "assets/topstep-algo-trade-engine-ehsa7aBx.webp",
+      "assets/topstep-algo-trade-engine-BOgepR6-.webp",
+      "assets/topstep-algo-trade-engine-UnJ6XKll.webp"
+    ]
+  },
+  "node_modules/@dimforge/rapier3d-compat/rapier.es.js": {
+    "file": "assets/rapier.es-De-E7S93.js",
+    "name": "rapier.es",
+    "src": "node_modules/@dimforge/rapier3d-compat/rapier.es.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rapier.es--SAcDlT7.js"
+    ]
+  },
+  "node_modules/leaflet.smoothgeodesic/dist/leaflet.smoothgeodesic.js": {
+    "file": "assets/leaflet.smoothgeodesic-BNcwAMGK.js",
+    "name": "leaflet.smoothgeodesic",
+    "src": "node_modules/leaflet.smoothgeodesic/dist/leaflet.smoothgeodesic.js",
+    "isDynamicEntry": true
+  },
+  "node_modules/react-dom/client.js": {
+    "file": "assets/client-LAHGTMkc.js",
+    "name": "client",
+    "src": "node_modules/react-dom/client.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/components/lanyard/Lanyard.jsx": {
+    "file": "assets/Lanyard-DoTo_P8q.js",
+    "name": "Lanyard",
+    "src": "src/components/lanyard/Lanyard.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_rapier.es--SAcDlT7.js"
+    ],
+    "dynamicImports": [
+      "_rapier.es--SAcDlT7.js"
+    ],
+    "assets": [
+      "assets/card-BP4TWJmK.glb",
+      "assets/lanyard-BQfo1yFS.png"
+    ]
+  },
+  "src/components/lanyard/card.glb": {
+    "file": "assets/card-BP4TWJmK.glb",
+    "src": "src/components/lanyard/card.glb"
+  },
+  "src/components/lanyard/lanyard.png": {
+    "file": "assets/lanyard-BQfo1yFS.png",
+    "src": "src/components/lanyard/lanyard.png"
+  },
+  "src/components/nicheMap.jsx": {
+    "file": "assets/nicheMap-Qvgi4OTW.js",
+    "name": "nicheMap",
+    "src": "src/components/nicheMap.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_card--eV6UydM.js"
+    ],
+    "dynamicImports": [
+      "node_modules/leaflet.smoothgeodesic/dist/leaflet.smoothgeodesic.js"
+    ],
+    "css": [
+      "assets/nicheMap-vh-t_kPv.css"
+    ]
+  },
+  "src/components/tradeSimulator.jsx": {
+    "file": "assets/tradeSimulator-Cv5GNkg6.js",
+    "name": "tradeSimulator",
+    "src": "src/components/tradeSimulator.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_tradeSimulator-Do--fgo0.js",
+      "_card--eV6UydM.js"
+    ]
+  },
+  "src/pages/index.jsx": {
+    "file": "assets/pages-CdvffBon.js",
+    "name": "pages",
+    "src": "src/pages/index.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_tradeSimulator-Do--fgo0.js",
+      "_card--eV6UydM.js"
+    ],
+    "css": [
+      "assets/pages-DXNJjrla.css"
+    ],
+    "assets": [
+      "assets/IMG_6155-kxRAZGXC.webp",
+      "assets/IMG_6155-BCSeOP6V.webp",
+      "assets/IMG_6155-DTxKLbXN.webp"
+    ]
+  }
+}
