@@ -10,7 +10,8 @@
       "Tape-replay backtesting and trade simulators with live P/L",
       "Market-data ingestion pipelines (REST, WebSocket, yfinance)"
     ],
-    "relatedProjects": []
+    "relatedProjects": ["algo-trade-engine", "ninjatrader-bridge"],
+    "experience": []
   },
   {
     "slug": "mapping-apis",
@@ -23,19 +24,45 @@
       "Geocoding, marker clustering, and live location feeds",
       "Published open-source mapping packages on npm"
     ],
-    "relatedProjects": ["smoothgeodesic-app", "meetup-app"]
+    "relatedProjects": ["smoothgeodesic-app"],
+    "experience": [
+      {
+        "period": "2021",
+        "role": "Full-Stack Web Developer",
+        "company": "Boecore",
+        "summary": "Built a Leaflet threat-map dashboard — custom markers, clustering, and fly-to-coordinate navigation — giving commanders and cyber operators an at-a-glance view of threats across their area of responsibility (AOR).",
+        "badge": "/badges/boecore-card.jpg"
+      },
+      {
+        "period": "2022",
+        "role": "UI Engineer",
+        "company": "Conquest Cyber",
+        "summary": "Used Leaflet to map internet threats by converting IP addresses to latitude/longitude coordinates, plotting them on a global-scale map clustered by area — zooming into a cluster progressively revealed more precise locations.",
+        "badge": "/badges/conquest-card.jpg"
+      }
+    ]
   },
   {
     "slug": "wine-containerization",
     "title": "Wine Containerization",
-    "tagline": "Dockerized commerce platforms for the beverage industry.",
-    "description": "Containerized, scalable ecommerce and inventory systems tailored to wineries and beverage brands — from storefront to reproducible deployment.",
+    "tagline": "Running Windows software on Linux — Wine + Vulkan + D3D12, containerized.",
+    "description": "Packaging Windows applications — from AAA games to trading platforms — into reproducible Linux containers with the Wine compatibility layer and DirectX-to-Vulkan translation.",
     "highlights": [
-      "Dockerized full-stack storefronts with CI/CD",
-      "Cart, checkout, and inventory management flows",
-      "Headless commerce APIs and product catalogs",
-      "Reproducible deploys on container platforms"
+      "Containerizing Windows AAA games to run on Linux via the Wine compatibility layer",
+      "Containerizing popular Windows trading platforms like NinjaTrader for Linux deployment",
+      "DirectX-to-Vulkan translation (DXVK / VKD3D) for near-native graphics performance",
+      "Reproducible game images bundling Wine prefixes, runtimes, and GPU drivers",
+      "Tuning Wine configurations for controllers, save data, and stability"
     ],
-    "relatedProjects": ["bouqs-app"]
+    "relatedProjects": ["ninjatrader-merlot"],
+    "experience": [
+      {
+        "period": "2025",
+        "role": "Backend Engineer",
+        "company": "Samsung",
+        "summary": "Containerized Windows AAA games like Assassin's Creed Valhalla, CONTROL, and Subnautica to run on Linux using the Wine compatibility layer and Vulkan.",
+        "badge": "/badges/samsung-card.svg"
+      }
+    ]
   }
 ]

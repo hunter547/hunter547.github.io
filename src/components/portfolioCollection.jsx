@@ -3,7 +3,7 @@ import PortfolioItem from "./portfolioItem";
 import portfolioData from "../data/portfolioData.json";
 
 // Build responsive image maps at build time. Keys match the relative paths
-// stored in portfolioData.json (e.g. "../images/Bouqs.png").
+// stored in portfolioData.json (e.g. "../images/Leaflet-SmoothGeodesic-app.png").
 const srcSets = import.meta.glob("../images/*.png", {
   eager: true,
   import: "default",

@@ -17,6 +17,8 @@
   color: $white;
   white-space: nowrap;
   .footer__right-content {
+    display: flex;
+    align-items: center;
     padding-right: 2rem;
   }
   .footer__left-content {

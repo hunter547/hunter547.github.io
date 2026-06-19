@@ -1,0 +1,450 @@
+@use "../variables" as *;
+
+// ---------------------------------------------------------------------------
+// Niche "capability dossier" — editorial layout for the SSG niche pages.
+// Display: Fraunces · Labels/numbers: Space Mono · Body: site sans.
+// ---------------------------------------------------------------------------
+
+$display: $font;
+$mono: $font;
+
+.theme-light .niche {
+  --muted: #{rgba($dark-blue, 0.62)};
+  --line: #{rgba($dark-blue, 0.16)};
+  --accent: #{$light-orange};
+  --accent-inkc: #{$off-white};
+  --frame-a: #{$dark-blue};
+  --frame-b: #{$light-blue};
+  --card: #{$off-white};
+}
+
+.theme-dark .niche {
+  --muted: #{rgba($off-white, 0.6)};
+  --line: #{rgba($off-white, 0.16)};
+  --accent: #{$light-orange};
+  --accent-inkc: #{$off-white};
+  --frame-a: #{$medium-blue};
+  --frame-b: #{$light-blue};
+  --card: #{$dark-blue};
+}
+
+@keyframes niche-rise {
+  from {
+    opacity: 0;
+    transform: translateY(1.75rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.niche {
+  max-width: 74rem;
+  margin: 0 auto;
+  padding-top: 7.5rem;
+  padding-bottom: 5rem;
+
+  &__display {
+    font-family: $display;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 1.02;
+  }
+
+  &__mono {
+    font-family: $mono;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+  }
+
+  // ---- Hero masthead ------------------------------------------------------
+  &-hero {
+    > * {
+      animation: niche-rise 0.85s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+    > :nth-child(1) {
+      animation-delay: 0.02s;
+    }
+    > :nth-child(2) {
+      animation-delay: 0.08s;
+    }
+    > :nth-child(3) {
+      animation-delay: 0.16s;
+    }
+    > :nth-child(4) {
+      animation-delay: 0.24s;
+    }
+    > :nth-child(5) {
+      animation-delay: 0.32s;
+    }
+  }
+
+  &-kicker {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    font-family: $mono;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-size: 0.72rem;
+    color: var(--muted);
+    em {
+      font-style: normal;
+      color: var(--accent);
+    }
+  }
+
+  &-rule {
+    border: 0;
+    height: 0.0625rem;
+    background: var(--line);
+    margin: 1.1rem 0 2.4rem;
+    position: relative;
+    overflow: visible;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 0.0625rem;
+      width: 3.5rem;
+      background: var(--accent);
+    }
+  }
+
+  &-title {
+    font-family: $display;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 0.98;
+    font-size: clamp(2.9rem, 9vw, 6.5rem);
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  &-tagline {
+    font-family: $display;
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(1.25rem, 3vw, 1.9rem);
+    line-height: 1.25;
+    margin: 1.4rem 0 0;
+    max-width: 38ch;
+    color: var(--accent);
+  }
+
+  &-lead {
+    font-size: 1.0625rem;
+    line-height: 1.85;
+    margin: 1.6rem 0 0;
+    max-width: 52ch;
+    color: var(--muted);
+  }
+
+  // ---- Shared section scaffold -------------------------------------------
+  &-section {
+    margin-top: 6.5rem;
+  }
+
+  &-section-label {
+    font-family: $mono;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.72rem;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    margin: 0 0 2.4rem;
+    &::before {
+      content: "";
+      width: 0.4rem;
+      height: 0.4rem;
+      background: var(--accent);
+      transform: rotate(45deg);
+      flex: none;
+    }
+    &::after {
+      content: "";
+      flex: 1;
+      height: 0.0625rem;
+      background: var(--line);
+    }
+  }
+
+  // ---- Capabilities -------------------------------------------------------
+  &-caps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.25rem;
+    grid-template-columns: 1fr;
+    @media (min-width: 48rem) {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 3rem;
+    }
+  }
+
+  &-cap {
+    display: flex;
+    gap: 1.1rem;
+    align-items: baseline;
+    padding: 1.25rem 0.5rem 1.25rem 0;
+    border-bottom: 0.0625rem solid var(--line);
+    transition: padding-left 0.3s ease, background-color 0.3s ease;
+    &:hover {
+      padding-left: 0.9rem;
+    }
+    &-num {
+      font-family: $mono;
+      font-size: 0.78rem;
+      color: var(--accent);
+      flex: none;
+      padding-top: 0.15rem;
+    }
+    &-text {
+      font-size: 1.02rem;
+      line-height: 1.55;
+    }
+  }
+
+  // ---- Selected work / case files ----------------------------------------
+  &-work {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  &-case {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+    align-items: center;
+    @media (min-width: 52rem) {
+      grid-template-columns: 1.05fr 1fr;
+      gap: 3.5rem;
+      &[data-flip="true"] .niche-case-media {
+        order: 2;
+      }
+    }
+
+    &-media {
+      position: relative;
+    }
+
+    // diagonal two-tone frame echoing the portfolio cards
+    &-frame {
+      padding: 0.6rem;
+      border-radius: 0.85rem;
+      overflow: hidden;
+      background: linear-gradient(
+        -45deg,
+        var(--frame-a) 0%,
+        var(--frame-a) 64%,
+        var(--frame-b) 64%,
+        var(--frame-b) 100%
+      );
+      box-shadow: 0 1.5rem 3rem -1.5rem rgba(0, 0, 0, 0.45);
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 0.55rem;
+        transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+    }
+
+    &:hover .niche-case-frame img {
+      transform: scale(1.04);
+    }
+
+    &-eyebrow {
+      font-family: $mono;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-size: 0.66rem;
+      color: var(--muted);
+      margin: 0 0 0.9rem;
+    }
+
+    &-title {
+      font-family: $display;
+      font-weight: 600;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      line-height: 1.05;
+      margin: 0;
+    }
+
+    &-desc {
+      margin: 1.1rem 0 0;
+      font-size: 1rem;
+      line-height: 1.75;
+      color: var(--muted);
+      max-width: 46ch;
+    }
+
+    // Links use the shared `.case-links` / `.case-link` classes (index.scss),
+    // identical to the portfolio cards on the home page.
+  }
+
+  // ---- Experience timeline ------------------------------------------------
+  &-timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  &-tl {
+    position: relative;
+    padding: 0 0 5rem 2.8rem;
+    border-left: 0.0625rem solid var(--line);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: start;
+    @media (min-width: 52rem) {
+      grid-template-columns: minmax(0, 1fr) 18rem;
+      column-gap: 2.75rem;
+    }
+    &:last-child {
+      padding-bottom: 0;
+      border-left-color: transparent;
+    }
+    &-lanyard {
+      height: 27rem;
+      @media (max-width: 51.999rem) {
+        display: none;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: -0.41rem;
+      top: 0.55rem;
+      width: 0.75rem;
+      height: 0.75rem;
+      background: var(--accent);
+      transform: rotate(45deg);
+      transition: transform 0.3s ease;
+    }
+    &:hover::before {
+      transform: rotate(45deg) scale(1.45);
+    }
+    &-period {
+      font-family: $mono;
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+    }
+    &-role {
+      font-family: $display;
+      font-weight: 600;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      line-height: 1.05;
+      letter-spacing: -0.015em;
+      margin: 0.85rem 0 0;
+    }
+    &-company {
+      font-family: $mono;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin: 0.6rem 0 0;
+    }
+    &-summary {
+      margin: 1.3rem 0 0;
+      font-size: 1.0625rem;
+      line-height: 1.8;
+      color: var(--muted);
+      max-width: 60ch;
+    }
+  }
+
+  // ---- Closing CTA --------------------------------------------------------
+  &-cta {
+    margin-top: 7rem;
+    padding: 3.5rem 0 1rem;
+    border-top: 0.0625rem solid var(--line);
+    &-kicker {
+      font-family: $mono;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      font-size: 0.7rem;
+      color: var(--accent);
+    }
+    &-title {
+      font-family: $display;
+      font-weight: 600;
+      font-size: clamp(2rem, 5.5vw, 3.4rem);
+      line-height: 1.04;
+      margin: 1.1rem 0 2.2rem;
+      max-width: 18ch;
+    }
+    &-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+    }
+    &-btn {
+      font-family: $mono;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.74rem;
+      text-decoration: none;
+      background: var(--accent);
+      color: var(--accent-inkc);
+      padding: 1rem 1.6rem;
+      border-radius: 0.4rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      transition: transform 0.25s ease, gap 0.25s ease, filter 0.25s ease;
+      &:hover {
+        transform: translateY(-0.15rem);
+        gap: 0.85rem;
+        filter: brightness(1.05);
+      }
+    }
+    &-back {
+      font-family: $mono;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.72rem;
+      text-decoration: none;
+      color: var(--muted);
+      transition: color 0.25s ease;
+      &:hover {
+        color: inherit;
+      }
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .niche-hero > * {
+    animation: none;
+  }
+}
+
+// Per-item lanyard badge canvas (filled by LanyardBadge.jsx).
+.lanyard-canvas {
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  cursor: grab;
+  // The ReactBits component wraps its canvas in a full-viewport (h-screen) div;
+  // clamp it to the badge box.
+  > div {
+    height: 100% !important;
+  }
+  canvas {
+    outline: none;
+  }
+}

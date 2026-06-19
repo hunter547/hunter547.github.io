@@ -11,11 +11,27 @@ const niches = JSON.parse(
 
 export default defineConfig({
   base: "/",
+  // Treat 3D models as static assets (the lanyard's card.glb).
+  assetsInclude: ["**/*.glb"],
   plugins: [react(), tailwindcss(), imagetools()],
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
+  },
+  // Pre-bundle deps that are only reached through runtime dynamic imports
+  // (the lazy nicheExtras chunks). Without this, Vite discovers them late and
+  // triggers an on-the-fly re-optimization that aborts the in-flight import
+  // ("error loading dynamically imported module"). leaflet.smoothgeodesic comes
+  // in via nicheMap.jsx; lightweight-charts/canvas-confetti via tradeSimulator.jsx.
+  optimizeDeps: {
+    include: [
+      "leaflet",
+      "react-leaflet",
+      "leaflet.smoothgeodesic",
+      "lightweight-charts",
+      "canvas-confetti",
+    ],
   },
   build: {
     outDir: "dist",

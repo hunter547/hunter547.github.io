@@ -1,5 +1,34 @@
 [
   {
+    "classname": "ninjatrader-bridge",
+    "header": "NinjaTrader Bridge",
+    "image": "../images/ninjatrader-bridge.png",
+    "description": "A bridge add-on that exposes NinjaTrader 8 — an otherwise GUI-only desktop trading platform — as a programmable REST API with real-time SSE and WebSocket streaming. The C# add-on hosts endpoints on port 5000 for accounts, positions, orders, executions, round-trip trades, instruments, quotes, and historical OHLCV bars, alongside live market-data, order, and account-event streams and bracket/OCO order placement. Ships with a Python CLI and client library, and runs in Docker.",
+    "githubLink": "https://github.com/hunter547/ninjatrader-bridge"
+  },
+  {
+    "classname": "algo-trade-engine",
+    "header": "Topstep Algo Trade Engine",
+    "image": "../images/topstep-algo-trade-engine.png",
+    "description": "A full-stack algorithmic trading engine for TopstepX, Topstep's funded-account evaluation platform. A NestJS backend streams live market and account data over SignalR, runs event-driven trading strategies, and relays real-time updates to the client over Socket.IO. The Next.js dashboard tracks daily growth against the profit target and max-loss limit, live P/L, trade distribution by sector, and best/worst trades, charted with TradingView lightweight-charts. Fully containerized with Docker Compose.",
+    "githubLink": "https://github.com/hunter547/algo-trade-backend",
+    "video": {
+      "URL": "https://player.vimeo.com/video/1202922800",
+      "title": "Topstep Algo Trade Engine Demo"
+    }
+  },
+  {
+    "classname": "ninjatrader-merlot",
+    "header": "NinjaTrader Merlot",
+    "image": "../images/ninjatrader-merlot.png",
+    "description": "A Dockerized environment that runs NinjaTrader — a Windows-only futures trading platform — natively on Linux through the Wine compatibility layer. It packages a Wine prefix, the .NET/WPF runtime, Xvfb, and automated login into a reproducible image, exposing the desktop app through both a browser-based noVNC view and a native X11 display mode. Handles Tradovate brokerage authentication so the full trading platform runs headless in a container.",
+    "githubLink": "https://github.com/hunter547/ninjatrader-merlot",
+    "video": {
+      "URL": "https://player.vimeo.com/video/1202914780",
+      "title": "NinjaTrader Merlot Demo"
+    }
+  },
+  {
     "classname": "smoothgeodesic-app",
     "header": "Leaflet Smooth Geodesic",
     "image": "../images/Leaflet-SmoothGeodesic-app.png",
@@ -9,65 +38,6 @@
     "video": {
       "URL": "https://player.vimeo.com/video/703865032",
       "title": "Leaflet.SmoothGeodesic Demo"
-    }
-  },
-  {
-    "classname": "bouqs-app",
-    "header": "The Bouqs",
-    "image": "../images/Bouqs.png",
-    "description": "This full stack application challenge leverages a React/Redux front-end and JSON Server w/ faker.js backend (running on Heroku). This ecommerce concept app allows users to read product descriptions, add items to their cart, and review their checkout page. TDD approach to development using Jest + Enzyme.",
-    "githubLink": "https://github.com/hunter547/fe-code-challenge",
-    "applicationLink": "https://bouqs-fe-challenge.netlify.app/",
-    "video": {
-      "URL": "https://player.vimeo.com/video/641757936",
-      "title": "The Bouqs Demo"
-    }
-  },
-  {
-    "classname": "meetup-app",
-    "header": "Linkup App",
-    "image": "../images/Linkup-app.png",
-    "description": "This is a Lambda AWS serverless app using the Meetup API to show upcoming events in a user's area. This leverages other tools, such as recharts for interesting visuals to get quick information and the CI tool Atatus, and is also PWS compatible.",
-    "githubLink": "https://github.com/hunter547/meetup-app",
-    "applicationLink": "https://hunter547.github.io/meetup-app",
-    "video": {
-      "URL": "https://player.vimeo.com/video/426355455",
-      "title": "Linkup App Demo"
-    }
-  },
-  {
-    "classname": "bobchat-app",
-    "header": "Bobchat App",
-    "image": "../images/Bobchat-app.png",
-    "description": "This react native chat app utilizing react-gifted-chat delivers a real-time chat experience. It has Google Firestore for server side and storage services. Read the detailed readme.md in the GitHub link for more information.",
-    "githubLink": "https://github.com/hunter547/chat-app",
-    "video": {
-      "URL": "https://player.vimeo.com/video/426573803",
-      "title": "Bobchat App Demo"
-    }
-  },
-  {
-    "classname": "movie-app",
-    "header": "myFlix App",
-    "image": "../images/Movie-app.png",
-    "description": "This full stack application using React, JWT, and Node.js for serverside (which queries a REST API built from scratch) allows you to create a profile, browse movies, favorite movies, explore directors, and update information.",
-    "githubLink": "https://github.com/hunter547/movie_api",
-    "applicationLink": "https://my-flix-api-evanoff.herokuapp.com/client/register",
-    "video": {
-      "URL": "https://player.vimeo.com/video/426563234",
-      "title": "myFlix App Demo"
-    }
-  },
-  {
-    "classname": "vue-app",
-    "header": "Vue Todo App",
-    "image": "../images/Vue-app.png",
-    "description": "A todo list app that was written using Vue to provide a responsive application that allows a user to add, edit, complete, and delete todo items with clean Material Design UI. Also implemented the Vue.Draggable package that allows the user to sort todo items.",
-    "githubLink": "https://github.com/hunter547/vue-todo-app",
-    "applicationLink": "https://hunter547.github.io/vue-todo-app",
-    "video": {
-      "URL": "https://player.vimeo.com/video/426571067",
-      "title": "Vue Todo App Demo"
     }
   }
 ]

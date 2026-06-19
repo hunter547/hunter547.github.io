@@ -24,3 +24,46 @@ body {
     padding: 0 5% 6.25rem 5%;
   }
 }
+
+// Editorial text-links (Code / Live / Demo) shared by the portfolio cards on
+// the home page and the "Selected work" cases on the niche pages, so both read
+// identically. Self-contained: the accent is the site's $light-orange and the
+// underline is derived from currentColor, so it stays correct in either theme.
+.case-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.6rem;
+}
+
+.case-link {
+  font-family: $font;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.72rem;
+  text-decoration: none;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  // Reset UA <button> styling so a Demo trigger matches the <a> links.
+  appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 0 0.3rem;
+  border-bottom: 0.0625rem solid color-mix(in srgb, currentColor 16%, transparent);
+  transition: border-color 0.25s ease, color 0.25s ease, gap 0.25s ease;
+  span {
+    transition: transform 0.25s ease;
+  }
+  &:hover {
+    color: $light-orange;
+    border-color: $light-orange;
+    gap: 0.7rem;
+    span {
+      transform: translate(0.15rem, -0.15rem);
+    }
+  }
+}
