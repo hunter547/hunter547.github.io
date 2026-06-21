@@ -13,5 +13,7 @@ export const nicheExtras = {
 // Optional, per-niche component rendered in the open space beside the hero
 // masthead. Same lazy + browser-only treatment as nicheExtras.
 export const nicheHeroAsides = {
+  "trading-platforms": lazy(() => import("./candlePrinter")),
   "mapping-apis": lazy(() => import("./mappingGlobe")),
+  "wine-containerization": lazy(() => import("./wineTerminal")),
 }
