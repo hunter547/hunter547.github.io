@@ -20,6 +20,7 @@
   },
   "registries": {
     "@magicui": "https://magicui.design/r/{name}",
-    "@mapcn": "https://mapcn.dev/r/{name}.json"
+    "@mapcn": "https://mapcn.dev/r/{name}.json",
+    "@react-bits": "https://reactbits.dev/r/{name}.json"
   }
 }

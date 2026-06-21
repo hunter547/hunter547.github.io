@@ -3,6 +3,12 @@
     "classname": "ninjatrader-bridge",
     "header": "NinjaTrader Bridge",
     "image": "../images/ninjatrader-bridge.png",
+    "icons": [
+      "/icons/ninjatrader.svg",
+      "/icons/c-sharp.svg",
+      "/icons/python.svg",
+      "/icons/tradovate.svg"
+    ],
     "description": "A bridge add-on that exposes NinjaTrader 8 — an otherwise GUI-only desktop trading platform — as a programmable REST API with real-time SSE and WebSocket streaming. The C# add-on hosts endpoints on port 5000 for accounts, positions, orders, executions, round-trip trades, instruments, quotes, and historical OHLCV bars, alongside live market-data, order, and account-event streams and bracket/OCO order placement. Ships with a Python CLI and client library, and runs in Docker.",
     "githubLink": "https://github.com/hunter547/ninjatrader-bridge"
   },
@@ -10,6 +16,12 @@
     "classname": "algo-trade-engine",
     "header": "Topstep Algo Trade Engine",
     "image": "../images/topstep-algo-trade-engine.png",
+    "icons": [
+      "/icons/nestjs.svg",
+      "/icons/nextjs.svg",
+      "/icons/typescript.svg",
+      "/icons/shadcnui.svg"
+    ],
     "description": "A full-stack algorithmic trading engine for TopstepX, Topstep's funded-account evaluation platform. A NestJS backend streams live market and account data over SignalR, runs event-driven trading strategies, and relays real-time updates to the client over Socket.IO. The Next.js dashboard tracks daily growth against the profit target and max-loss limit, live P/L, trade distribution by sector, and best/worst trades, charted with TradingView lightweight-charts. Fully containerized with Docker Compose.",
     "githubLink": "https://github.com/hunter547/algo-trade-backend",
     "video": {
@@ -21,6 +33,11 @@
     "classname": "ninjatrader-merlot",
     "header": "NinjaTrader Merlot",
     "image": "../images/ninjatrader-merlot.png",
+    "icons": [
+      "/icons/ninjatrader.svg",
+      "/icons/c-sharp.svg",
+      "/icons/tradovate.svg"
+    ],
     "description": "A Dockerized environment that runs NinjaTrader — a Windows-only futures trading platform — natively on Linux through the Wine compatibility layer. It packages a Wine prefix, the .NET/WPF runtime, Xvfb, and automated login into a reproducible image, exposing the desktop app through both a browser-based noVNC view and a native X11 display mode. Handles Tradovate brokerage authentication so the full trading platform runs headless in a container.",
     "githubLink": "https://github.com/hunter547/ninjatrader-merlot",
     "video": {
@@ -32,6 +49,7 @@
     "classname": "smoothgeodesic-app",
     "header": "Leaflet Smooth Geodesic",
     "image": "../images/Leaflet-SmoothGeodesic-app.png",
+    "icons": ["/icons/npm.svg", "/icons/typescript.svg", "/icons/leaflet.svg"],
     "description": "Created an npm package for the public to use that extends the Leaflet Path class. This allows for smooth geodesic (Great Circle) curves from a source coordinate to a destination coordinate.",
     "githubLink": "https://github.com/hunter547/Leaflet.SmoothGeodesic",
     "applicationLink": "https://leaflet-smoothgeodesic.netlify.app/",

@@ -66,21 +66,18 @@
       }
     }
   }
+  // The project rows are the shared <CaseItem> component (.case-item, stacked by
+  // .case-list — see caseItem.scss). This wrapper just sets the column width.
   .portfolio__grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     width: 80%;
     margin: 0 auto;
-    @media(max-width: 62.5rem) {
-      flex-direction: column;
-      align-items: center;
+    @media (max-width: 62.5rem) {
       width: 70%;
     }
-    @media(max-width: 37.5rem) {
+    @media (max-width: 37.5rem) {
       width: 80%;
     }
-    @media(max-width: 31.25rem) {
+    @media (max-width: 31.25rem) {
       width: 100%;
     }
   }

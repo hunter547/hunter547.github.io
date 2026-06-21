@@ -6,7 +6,7 @@ import tailwindcss from "@tailwindcss/vite"
 import { imagetools } from "vite-imagetools"
 
 const niches = JSON.parse(
-  readFileSync(new URL("./src/data/niches.json", import.meta.url)),
+  readFileSync(new URL("./src/data/niches.json", import.meta.url))
 )
 
 export default defineConfig({
@@ -40,10 +40,10 @@ export default defineConfig({
   // page per niche (the rest of the routes are pre-rendered as-is).
   ssgOptions: {
     includedRoutes(paths) {
-      return paths.flatMap((path) =>
+      return paths.flatMap(path =>
         path.includes(":slug")
-          ? niches.map((niche) => `/niches/${niche.slug}`)
-          : path,
+          ? niches.map(niche => `/niches/${niche.slug}`)
+          : path
       )
     },
   },

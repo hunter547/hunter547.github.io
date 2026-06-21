@@ -1,10 +1,10 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from "react"
+import { Link } from "react-router-dom"
 
-import { cn } from "@/lib/utils";
-import useSectionNav from "../hooks/useSectionNav";
-import portfolioData from "../data/portfolioData.json";
-import niches from "../data/niches.json";
+import { cn } from "@/lib/utils"
+import useSectionNav from "../hooks/useSectionNav"
+import portfolioData from "../data/portfolioData.json"
+import niches from "../data/niches.json"
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -13,14 +13,14 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
+} from "@/components/ui/navigation-menu"
 
 export default function Navigation() {
-  const sectionNav = useSectionNav();
+  const sectionNav = useSectionNav()
   const go = (e, selector) => {
-    e.preventDefault();
-    sectionNav(selector);
-  };
+    e.preventDefault()
+    sectionNav(selector)
+  }
 
   return (
     <NavigationMenu className="hidden md:flex">
@@ -35,7 +35,7 @@ export default function Navigation() {
                 <NavigationMenuLink asChild>
                   <a
                     href="#portfolio"
-                    onClick={(e) => go(e, "#portfolio")}
+                    onClick={e => go(e, "#portfolio")}
                     className="from-muted/40 to-muted/10 flex h-full w-full flex-col justify-end rounded-md bg-gradient-to-b p-6 no-underline outline-hidden select-none focus:shadow-md"
                   >
                     <div className="mt-4 mb-2 text-lg font-medium">
@@ -48,12 +48,12 @@ export default function Navigation() {
                   </a>
                 </NavigationMenuLink>
               </li>
-              {portfolioData.map((project) => (
+              {portfolioData.map(project => (
                 <ListItem
                   key={project.classname}
                   title={project.header}
                   href="#portfolio"
-                  onClick={(e) => go(e, "#portfolio")}
+                  onClick={e => go(e, "#portfolio")}
                 >
                   {project.description}
                 </ListItem>
@@ -76,7 +76,7 @@ export default function Navigation() {
                   </p>
                 </div>
               </li>
-              {niches.map((niche) => (
+              {niches.map(niche => (
                 <ListItem
                   key={niche.slug}
                   title={niche.title}
@@ -93,25 +93,25 @@ export default function Navigation() {
           <NavigationMenuLink
             className={cn(
               navigationMenuTriggerStyle(),
-              "text-xs uppercase tracking-[0.109375rem]",
+              "text-xs uppercase tracking-[0.109375rem]"
             )}
             asChild
           >
-            <a href="#about" onClick={(e) => go(e, "#about")}>
+            <a href="#about" onClick={e => go(e, "#about")}>
               About
             </a>
           </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
-  );
+  )
 }
 
 function ListItem({ className, title, children, to, ...props }) {
   const classes = cn(
     "hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block space-y-1 rounded-md p-3 leading-none no-underline outline-hidden transition-colors select-none",
-    className,
-  );
+    className
+  )
   const content = (
     <>
       <div className="text-sm leading-none font-medium">{title}</div>
@@ -119,7 +119,7 @@ function ListItem({ className, title, children, to, ...props }) {
         {children}
       </p>
     </>
-  );
+  )
 
   return (
     <li>
@@ -135,5 +135,5 @@ function ListItem({ className, title, children, to, ...props }) {
         )}
       </NavigationMenuLink>
     </li>
-  );
+  )
 }

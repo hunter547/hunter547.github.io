@@ -1,6 +1,6 @@
-import * as React from "react";
+import * as React from "react"
 
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils"
 
 function Navbar({ className, ...props }) {
   return (
@@ -9,7 +9,7 @@ function Navbar({ className, ...props }) {
       className={cn("flex items-center justify-between py-4", className)}
       {...props}
     />
-  );
+  )
 }
 
 function NavbarLeft({ className, ...props }) {
@@ -19,7 +19,7 @@ function NavbarLeft({ className, ...props }) {
       className={cn("flex items-center justify-start gap-4", className)}
       {...props}
     />
-  );
+  )
 }
 
 function NavbarRight({ className, ...props }) {
@@ -29,7 +29,7 @@ function NavbarRight({ className, ...props }) {
       className={cn("flex items-center justify-end gap-4", className)}
       {...props}
     />
-  );
+  )
 }
 
 function NavbarCenter({ className, ...props }) {
@@ -39,7 +39,7 @@ function NavbarCenter({ className, ...props }) {
       className={cn("flex items-center justify-center gap-4", className)}
       {...props}
     />
-  );
+  )
 }
 
-export { Navbar, NavbarCenter, NavbarLeft, NavbarRight };
+export { Navbar, NavbarCenter, NavbarLeft, NavbarRight }

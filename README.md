@@ -21,13 +21,13 @@ npm run dev        # start dev server
 
 ## Scripts
 
-| Command           | Description                                  |
-| ----------------- | -------------------------------------------- |
-| `npm run dev`     | Start the Vite dev server                    |
-| `npm run build`   | Production build to `dist/`                  |
-| `npm run preview` | Preview the production build locally         |
+| Command           | Description                                                     |
+| ----------------- | --------------------------------------------------------------- |
+| `npm run dev`     | Start the Vite dev server                                       |
+| `npm run build`   | Production build to `dist/`                                     |
+| `npm run preview` | Preview the production build locally                            |
 | `npm run deploy`  | Build and publish `dist/` to the `master` branch via `gh-pages` |
-| `npm run format`  | Format files with Prettier                   |
+| `npm run format`  | Format files with Prettier                                      |
 
 ## Deployment
 

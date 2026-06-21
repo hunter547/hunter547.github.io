@@ -21,6 +21,7 @@
 // the navbar is now composed from the shadcn navbar / navigation-menu / sheet
 // primitives, so only this bespoke control remains in SCSS.
 .icon-switcher {
+  display: block;
   width: 3.125rem;
   height: 1.5rem;
   position: relative;

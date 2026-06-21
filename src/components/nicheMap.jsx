@@ -83,7 +83,8 @@ function GeodesicRoutes({ drawKey }) {
     const pluginReady = ensureSmoothGeodesic()
 
     // ---- promisified primitives, all cancellable via `active` ----
-    const wait = ms => new Promise(resolve => (holdTimer = setTimeout(resolve, ms)))
+    const wait = ms =>
+      new Promise(resolve => (holdTimer = setTimeout(resolve, ms)))
     // flyTo handles pan+zoom legs smoothly; resolve when the motion settles.
     const flyTo = (center, zoom) =>
       new Promise(resolve => {
@@ -96,7 +97,8 @@ function GeodesicRoutes({ drawKey }) {
     // _move({ flyTo: true }) path flyTo uses — that CSS-scales the existing
     // tiles and streams in new zoom levels, so tiles stay visible (plain
     // setView per frame resets the view and shows only the gray background).
-    const easeInOut = t => (t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2)
+    const easeInOut = t =>
+      t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2
     const center = L.latLng(COLORADO_SPRINGS)
     const zoomOut = () =>
       new Promise(resolve => {
@@ -110,9 +112,13 @@ function GeodesicRoutes({ drawKey }) {
           }
           const t = Math.min(1, (now - startTime) / dur)
           if (t < 1) {
-            map._move(center, CITY_ZOOM + (END_ZOOM - CITY_ZOOM) * easeInOut(t), {
-              flyTo: true,
-            })
+            map._move(
+              center,
+              CITY_ZOOM + (END_ZOOM - CITY_ZOOM) * easeInOut(t),
+              {
+                flyTo: true,
+              }
+            )
             rafId = requestAnimationFrame(frame)
           } else {
             map._move(center, END_ZOOM)._moveEnd(true)

@@ -1,11 +1,11 @@
-import React, { useContext } from "react";
-import "../styles/components/header.scss";
-import ThemeModeContext from "../context/ThemeMode/ThemeModeContext";
+import React, { useContext } from "react"
+import "../styles/components/header.scss"
+import ThemeModeContext from "../context/ThemeMode/ThemeModeContext"
 
 // The original hand-built sun/moon slider, relocated into the navbar.
 const ThemeToggle = () => {
-  const [themeMode, setThemeMode] = useContext(ThemeModeContext);
-  const checked = themeMode === "theme-dark";
+  const [themeMode, setThemeMode] = useContext(ThemeModeContext)
+  const checked = themeMode === "theme-dark"
 
   return (
     <label className="icon-switcher">
@@ -18,7 +18,7 @@ const ThemeToggle = () => {
       <div className="peg"></div>
       <div className="bg"></div>
     </label>
-  );
-};
+  )
+}
 
-export default ThemeToggle;
+export default ThemeToggle

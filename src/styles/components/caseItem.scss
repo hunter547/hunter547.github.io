@@ -1,0 +1,136 @@
+@use "../variables" as *;
+
+// ---------------------------------------------------------------------------
+// Shared "case file" item — the editorial project layout used by both the niche
+// pages (Selected work) and the home portfolio. An alternating two-column row:
+// a diagonal two-tone framed screenshot on one side, the write-up on the other.
+// ---------------------------------------------------------------------------
+
+$display: $font;
+$mono: $font;
+
+// CSS variables the frame/text rely on. Defined here (not scoped to .niche) so
+// the component renders identically on the home page and the niche pages.
+.theme-light .case-item {
+  --muted: #{rgba($dark-blue, 0.62)};
+  --frame-a: #{$dark-blue};
+  --frame-b: #{$light-blue};
+  --line: #{rgba($dark-blue, 0.16)};
+}
+.theme-dark .case-item {
+  --muted: #{rgba($off-white, 0.6)};
+  --frame-a: #{$medium-blue};
+  --frame-b: #{$light-blue};
+  --line: #{rgba($off-white, 0.16)};
+}
+
+// Vertical stack of case items with consistent spacing.
+.case-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.case-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+  align-items: center;
+
+  @media (min-width: 52rem) {
+    grid-template-columns: 1.05fr 1fr;
+    gap: 3.5rem;
+    &[data-flip="true"] .case-item-media {
+      order: 2;
+    }
+  }
+
+  &-media {
+    position: relative;
+  }
+
+  // diagonal two-tone frame
+  &-frame {
+    padding: 0.6rem;
+    border-radius: 0.85rem;
+    overflow: hidden;
+    background: linear-gradient(
+      -45deg,
+      var(--frame-a) 0%,
+      var(--frame-a) 64%,
+      var(--frame-b) 64%,
+      var(--frame-b) 100%
+    );
+    box-shadow: 0 1.5rem 3rem -1.5rem rgba(0, 0, 0, 0.45);
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 0.55rem;
+      transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+  }
+
+  &:hover .case-item-frame img {
+    transform: scale(1.04);
+  }
+
+  &-body {
+    position: relative;
+  }
+
+  &-eyebrow {
+    font-family: $mono;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.66rem;
+    color: var(--muted);
+    margin: 0 0 0.9rem;
+  }
+
+  &-title {
+    font-family: $display;
+    font-weight: 600;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    line-height: 1.05;
+    margin: 0;
+  }
+
+  &-desc {
+    margin: 1.1rem 0 0;
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--muted);
+    max-width: 46ch;
+  }
+
+  // ---- Actions row: the links sit on the left with the interactive icon cloud
+  // right beside them, sharing one vertical band closed off by a hairline.
+  &-actions {
+    // margin-top: 1.6rem;
+    padding-bottom: 1.4rem;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    // The actions row owns the top spacing (the shared .case-links default).
+    .case-links {
+      margin-top: 0;
+    }
+  }
+
+  &-cloud {
+    flex: 0 0 auto;
+    canvas {
+      display: block;
+      height: 10rem;
+      width: auto;
+      aspect-ratio: 1 / 1;
+      cursor: grab;
+      &:active {
+        cursor: grabbing;
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
-import React from 'react';
-import '../styles/components/introOverlay.scss';
+import React from "react"
+import "../styles/components/introOverlay.scss"
 
 const IntroOverlay = () => {
   return (
@@ -12,7 +12,7 @@ const IntroOverlay = () => {
         <div className="overlay-top"></div>
       </div>
     </div>
-  );
+  )
 }
 
 export default IntroOverlay

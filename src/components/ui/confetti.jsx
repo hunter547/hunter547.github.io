@@ -24,32 +24,41 @@ const ConfettiComponent = forwardRef((props, ref) => {
   } = props
   const instanceRef = useRef(null)
 
-  const canvasRef = useCallback((node) => {
-    if (node !== null) {
-      if (instanceRef.current) return
-      instanceRef.current = confetti.create(node, {
-        ...globalOptions,
-        resize: true,
-      })
-    } else {
-      if (instanceRef.current) {
-        instanceRef.current.reset()
-        instanceRef.current = null
+  const canvasRef = useCallback(
+    node => {
+      if (node !== null) {
+        if (instanceRef.current) return
+        instanceRef.current = confetti.create(node, {
+          ...globalOptions,
+          resize: true,
+        })
+      } else {
+        if (instanceRef.current) {
+          instanceRef.current.reset()
+          instanceRef.current = null
+        }
       }
-    }
-  }, [globalOptions])
+    },
+    [globalOptions]
+  )
 
-  const fire = useCallback(async (opts = {}) => {
-    try {
-      await instanceRef.current?.({ ...options, ...opts })
-    } catch (error) {
-      console.error("Confetti error:", error)
-    }
-  }, [options])
+  const fire = useCallback(
+    async (opts = {}) => {
+      try {
+        await instanceRef.current?.({ ...options, ...opts })
+      } catch (error) {
+        console.error("Confetti error:", error)
+      }
+    },
+    [options]
+  )
 
-  const api = useMemo(() => ({
-    fire,
-  }), [fire])
+  const api = useMemo(
+    () => ({
+      fire,
+    }),
+    [fire]
+  )
 
   useImperativeHandle(ref, () => api, [api])
 
@@ -70,7 +79,7 @@ const ConfettiComponent = forwardRef((props, ref) => {
       <canvas ref={canvasRef} {...rest} />
       {children}
     </ConfettiContext.Provider>
-  );
+  )
 })
 
 // Set display name immediately
@@ -79,12 +88,8 @@ ConfettiComponent.displayName = "Confetti"
 // Export as Confetti
 export const Confetti = ConfettiComponent
 
-const ConfettiButtonComponent = ({
-  options,
-  children,
-  ...props
-}) => {
-  const handleClick = async (event) => {
+const ConfettiButtonComponent = ({ options, children, ...props }) => {
+  const handleClick = async event => {
     try {
       const rect = event.currentTarget.getBoundingClientRect()
       const x = rect.left + rect.width / 2
@@ -105,7 +110,7 @@ const ConfettiButtonComponent = ({
     <Button onClick={handleClick} {...props}>
       {children}
     </Button>
-  );
+  )
 }
 
 ConfettiButtonComponent.displayName = "ConfettiButton"

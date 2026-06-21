@@ -61,23 +61,58 @@ $mono: $font;
 
   // ---- Hero masthead ------------------------------------------------------
   &-hero {
-    > * {
+    > .niche-rule,
+    .niche-hero-main > *,
+    > .niche-hero-aside {
       animation: niche-rise 0.85s cubic-bezier(0.16, 1, 0.3, 1) both;
     }
-    > :nth-child(1) {
+    > .niche-rule {
       animation-delay: 0.02s;
     }
-    > :nth-child(2) {
+    .niche-hero-main > :nth-child(1) {
       animation-delay: 0.08s;
     }
-    > :nth-child(3) {
+    .niche-hero-main > :nth-child(2) {
       animation-delay: 0.16s;
     }
-    > :nth-child(4) {
+    .niche-hero-main > :nth-child(3) {
       animation-delay: 0.24s;
     }
-    > :nth-child(5) {
+    > .niche-hero-aside {
       animation-delay: 0.32s;
+    }
+
+    // When a niche supplies a hero aside (e.g. the Mapping APIs globe), lay the
+    // masthead out with flex: the text block and the aside sit side by side.
+    // The aside is sized to fit within the copy's height, so the hero's own
+    // height stays driven by the text — unchanged from a niche without an aside.
+    &--with-aside {
+      @media (min-width: 60rem) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        column-gap: 3rem;
+        > .niche-rule {
+          flex: 0 0 100%;
+        }
+        .niche-hero-main {
+          flex: 1 1 0;
+          min-width: 0;
+        }
+        .niche-hero-aside {
+          flex: 0 0 auto;
+          width: 25rem;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  &-hero-aside {
+    width: 100%;
+    @media (max-width: 60rem) {
+      max-width: 18rem;
+      margin: 1.75rem auto 0;
     }
   }
 
@@ -213,83 +248,8 @@ $mono: $font;
   }
 
   // ---- Selected work / case files ----------------------------------------
-  &-work {
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-  }
-
-  &-case {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.75rem;
-    align-items: center;
-    @media (min-width: 52rem) {
-      grid-template-columns: 1.05fr 1fr;
-      gap: 3.5rem;
-      &[data-flip="true"] .niche-case-media {
-        order: 2;
-      }
-    }
-
-    &-media {
-      position: relative;
-    }
-
-    // diagonal two-tone frame echoing the portfolio cards
-    &-frame {
-      padding: 0.6rem;
-      border-radius: 0.85rem;
-      overflow: hidden;
-      background: linear-gradient(
-        -45deg,
-        var(--frame-a) 0%,
-        var(--frame-a) 64%,
-        var(--frame-b) 64%,
-        var(--frame-b) 100%
-      );
-      box-shadow: 0 1.5rem 3rem -1.5rem rgba(0, 0, 0, 0.45);
-      img {
-        display: block;
-        width: 100%;
-        height: auto;
-        border-radius: 0.55rem;
-        transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
-      }
-    }
-
-    &:hover .niche-case-frame img {
-      transform: scale(1.04);
-    }
-
-    &-eyebrow {
-      font-family: $mono;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      font-size: 0.66rem;
-      color: var(--muted);
-      margin: 0 0 0.9rem;
-    }
-
-    &-title {
-      font-family: $display;
-      font-weight: 600;
-      font-size: clamp(1.8rem, 4vw, 2.6rem);
-      line-height: 1.05;
-      margin: 0;
-    }
-
-    &-desc {
-      margin: 1.1rem 0 0;
-      font-size: 1rem;
-      line-height: 1.75;
-      color: var(--muted);
-      max-width: 46ch;
-    }
-
-    // Links use the shared `.case-links` / `.case-link` classes (index.scss),
-    // identical to the portfolio cards on the home page.
-  }
+  // The case rows are the shared <CaseItem> component (.case-item / .case-list),
+  // styled in caseItem.scss and used by the home portfolio too.
 
   // ---- Experience timeline ------------------------------------------------
   &-timeline {
@@ -428,7 +388,8 @@ $mono: $font;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .niche-hero > * {
+  .niche-hero > *,
+  .niche-hero-main > * {
     animation: none;
   }
 }

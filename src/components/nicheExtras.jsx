@@ -1,4 +1,4 @@
-import { lazy } from "react";
+import { lazy } from "react"
 
 // Optional, per-niche interactive component keyed by niche slug. Each entry is
 // lazy-loaded and rendered browser-only (see Niche.jsx) so the static SSG
@@ -8,4 +8,10 @@ import { lazy } from "react";
 export const nicheExtras = {
   "trading-platforms": lazy(() => import("./tradeSimulator")),
   "mapping-apis": lazy(() => import("./nicheMap")),
-};
+}
+
+// Optional, per-niche component rendered in the open space beside the hero
+// masthead. Same lazy + browser-only treatment as nicheExtras.
+export const nicheHeroAsides = {
+  "mapping-apis": lazy(() => import("./mappingGlobe")),
+}

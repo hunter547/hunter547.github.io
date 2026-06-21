@@ -1,13 +1,9 @@
-import React, { useEffect, useState } from "react";
-import Modal from "react-modal";
-// react-spinners is dual-published: the bundler resolves its ESM build (named
-// exports, no default) while the SSG pre-render loads the CommonJS build
-// (default = module.exports, named bindings unavailable). Namespace-import and
-// pick SyncLoader from whichever shape we get so both paths resolve.
-import * as ReactSpinners from "react-spinners";
-import "../styles/components/videoModal.scss";
+import React, { useEffect, useState } from "react"
+import Modal from "react-modal"
+import * as ReactSpinners from "react-spinners"
+import "../styles/components/videoModal.scss"
 
-const { SyncLoader } = ReactSpinners.default ?? ReactSpinners;
+const { SyncLoader } = ReactSpinners.default ?? ReactSpinners
 
 // Spinner shown while the embedded video iframe loads.
 const spinnerOverride = {
@@ -21,26 +17,26 @@ const spinnerOverride = {
   margin: "auto",
   transform: "translate(-50%, -50%)",
   borderColor: "#023440",
-};
+}
 
 // Controlled video lightbox shared by the portfolio grid and the niche pages.
 // Renders nothing without a `video` ({ URL, title }); the iframe only mounts
 // while open, keeping it out of the static pre-render.
 const VideoModal = ({ video, isOpen, onRequestClose }) => {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    if (typeof document !== "undefined") Modal.setAppElement("body");
-  }, []);
+    if (typeof document !== "undefined") Modal.setAppElement("body")
+  }, [])
 
   // Reset the spinner each time the modal is opened.
   useEffect(() => {
-    if (isOpen) setLoading(true);
-  }, [isOpen]);
+    if (isOpen) setLoading(true)
+  }, [isOpen])
 
   // Stay unmounted until opened so react-modal never renders during the
   // static pre-render (matching the portfolio grid's original behavior).
-  if (!video || !isOpen) return null;
+  if (!video || !isOpen) return null
 
   return (
     <Modal
@@ -49,7 +45,11 @@ const VideoModal = ({ video, isOpen, onRequestClose }) => {
       contentLabel={video.title || "Demo video"}
       className="portfolio__item-modal"
     >
-      <SyncLoader cssOverride={spinnerOverride} color={"#023440"} loading={loading} />
+      <SyncLoader
+        cssOverride={spinnerOverride}
+        color={"#023440"}
+        loading={loading}
+      />
       <div className="video">
         <iframe
           src={video.URL}
@@ -62,7 +62,7 @@ const VideoModal = ({ video, isOpen, onRequestClose }) => {
         />
       </div>
     </Modal>
-  );
-};
+  )
+}
 
-export default VideoModal;
+export default VideoModal
