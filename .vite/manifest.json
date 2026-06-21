@@ -19,9 +19,9 @@
     "file": "assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
     "src": "_Leaflet-SmoothGeodesic-app-d-wHKMX7.webp"
   },
-  "_card--eV6UydM.js": {
-    "file": "assets/card--eV6UydM.js",
-    "name": "card",
+  "_button-BI00KQcS.js": {
+    "file": "assets/button-BI00KQcS.js",
+    "name": "button",
     "imports": [
       "index.html"
     ]
@@ -70,28 +70,31 @@
     "file": "assets/topstep-algo-trade-engine-ehsa7aBx.webp",
     "src": "_topstep-algo-trade-engine-ehsa7aBx.webp"
   },
-  "_tradeSimulator-Do--fgo0.js": {
-    "file": "assets/tradeSimulator-Do--fgo0.js",
+  "_tradeSimulator-C1bMEvQh.js": {
+    "file": "assets/tradeSimulator-C1bMEvQh.js",
     "name": "tradeSimulator",
     "imports": [
       "index.html",
-      "_card--eV6UydM.js"
+      "_button-BI00KQcS.js"
     ]
   },
   "index.html": {
-    "file": "assets/app-DVvhE-G-.js",
+    "file": "assets/app-BsqMzFP9.js",
     "name": "app",
     "src": "index.html",
     "isEntry": true,
     "dynamicImports": [
       "node_modules/react-dom/client.js",
       "src/components/lanyard/Lanyard.jsx",
-      "_tradeSimulator-Do--fgo0.js",
+      "_tradeSimulator-C1bMEvQh.js",
       "src/components/nicheMap.jsx",
+      "src/components/candlePrinter.jsx",
+      "src/components/mappingGlobe.jsx",
+      "src/components/wineTerminal.jsx",
       "src/pages/index.jsx"
     ],
     "css": [
-      "assets/app-DWOl2NkO.css"
+      "assets/app-Co4etMqc.css"
     ],
     "assets": [
       "assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
@@ -124,7 +127,7 @@
     "isDynamicEntry": true
   },
   "node_modules/react-dom/client.js": {
-    "file": "assets/client-LAHGTMkc.js",
+    "file": "assets/client-BRV3y6pr.js",
     "name": "client",
     "src": "node_modules/react-dom/client.js",
     "isDynamicEntry": true,
@@ -132,8 +135,17 @@
       "index.html"
     ]
   },
+  "src/components/candlePrinter.jsx": {
+    "file": "assets/candlePrinter-CoSkMqAi.js",
+    "name": "candlePrinter",
+    "src": "src/components/candlePrinter.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
   "src/components/lanyard/Lanyard.jsx": {
-    "file": "assets/Lanyard-DoTo_P8q.js",
+    "file": "assets/Lanyard-iI9EqaO_.js",
     "name": "Lanyard",
     "src": "src/components/lanyard/Lanyard.jsx",
     "isDynamicEntry": true,
@@ -157,14 +169,23 @@
     "file": "assets/lanyard-BQfo1yFS.png",
     "src": "src/components/lanyard/lanyard.png"
   },
+  "src/components/mappingGlobe.jsx": {
+    "file": "assets/mappingGlobe-BhaVEar8.js",
+    "name": "mappingGlobe",
+    "src": "src/components/mappingGlobe.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
   "src/components/nicheMap.jsx": {
-    "file": "assets/nicheMap-Qvgi4OTW.js",
+    "file": "assets/nicheMap-5yzaZ3by.js",
     "name": "nicheMap",
     "src": "src/components/nicheMap.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_card--eV6UydM.js"
+      "_button-BI00KQcS.js"
     ],
     "dynamicImports": [
       "node_modules/leaflet.smoothgeodesic/dist/leaflet.smoothgeodesic.js"
@@ -174,27 +195,36 @@
     ]
   },
   "src/components/tradeSimulator.jsx": {
-    "file": "assets/tradeSimulator-Cv5GNkg6.js",
+    "file": "assets/tradeSimulator-FS_BITQi.js",
     "name": "tradeSimulator",
     "src": "src/components/tradeSimulator.jsx",
     "isDynamicEntry": true,
     "imports": [
-      "_tradeSimulator-Do--fgo0.js",
-      "_card--eV6UydM.js"
+      "_tradeSimulator-C1bMEvQh.js",
+      "_button-BI00KQcS.js"
+    ]
+  },
+  "src/components/wineTerminal.jsx": {
+    "file": "assets/wineTerminal-BGPZcmtb.js",
+    "name": "wineTerminal",
+    "src": "src/components/wineTerminal.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
     ]
   },
   "src/pages/index.jsx": {
-    "file": "assets/pages-CdvffBon.js",
+    "file": "assets/pages-Dt_puxUg.js",
     "name": "pages",
     "src": "src/pages/index.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_tradeSimulator-Do--fgo0.js",
-      "_card--eV6UydM.js"
+      "_tradeSimulator-C1bMEvQh.js",
+      "_button-BI00KQcS.js"
     ],
     "css": [
-      "assets/pages-DXNJjrla.css"
+      "assets/pages-CJYI10J1.css"
     ],
     "assets": [
       "assets/IMG_6155-kxRAZGXC.webp",

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" fill="#FF4200">
+  <!-- N: left bar + 45° diagonal slash -->
+  <path d="M150 332 L332 332 L868 868 L508 868 L150 510 Z" />
+  <!-- T: crossbar + stem -->
+  <path d="M510 332 L1048 332 L1048 512 L870 512 L870 868 L690 868 L690 512 L510 512 Z" />
+  <!-- square accent -->
+  <path d="M150 686 L330 686 L330 868 L150 868 Z" />
+</svg>

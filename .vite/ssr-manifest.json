@@ -56,7 +56,7 @@
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
   "node_modules/@babel/runtime/helpers/esm/extends.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
@@ -64,17 +64,17 @@
     "/assets/rapier.es--SAcDlT7.js"
   ],
   "node_modules/@monogrid/gainmap-js/dist/Loader-DLI-_JDP.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "node_modules/@monogrid/gainmap-js/dist/QuadRenderer-Bj1xl_EK.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "node_modules/@monogrid/gainmap-js/dist/decode.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
@@ -134,20 +134,6 @@
     "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
-  "node_modules/@radix-ui/react-dialog/dist/index.mjs": [
-    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
-    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
-    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
-    "/assets/ninjatrader-bridge-aexpZCWq.webp",
-    "/assets/ninjatrader-merlot-CFAdppUF.webp",
-    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
-    "/assets/portfolio-icon-DP1p7q7g.webp",
-    "/assets/portfolio-icon-DoueLI3K.webp",
-    "/assets/portfolio-icon-BE5PS0r3.webp",
-    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
-    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
-    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
-  ],
   "node_modules/@radix-ui/react-direction/dist/index.mjs": [
     "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
     "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
@@ -176,34 +162,6 @@
     "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
-  "node_modules/@radix-ui/react-focus-guards/dist/index.mjs": [
-    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
-    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
-    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
-    "/assets/ninjatrader-bridge-aexpZCWq.webp",
-    "/assets/ninjatrader-merlot-CFAdppUF.webp",
-    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
-    "/assets/portfolio-icon-DP1p7q7g.webp",
-    "/assets/portfolio-icon-DoueLI3K.webp",
-    "/assets/portfolio-icon-BE5PS0r3.webp",
-    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
-    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
-    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
-  ],
-  "node_modules/@radix-ui/react-focus-scope/dist/index.mjs": [
-    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
-    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
-    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
-    "/assets/ninjatrader-bridge-aexpZCWq.webp",
-    "/assets/ninjatrader-merlot-CFAdppUF.webp",
-    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
-    "/assets/portfolio-icon-DP1p7q7g.webp",
-    "/assets/portfolio-icon-DoueLI3K.webp",
-    "/assets/portfolio-icon-BE5PS0r3.webp",
-    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
-    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
-    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
-  ],
   "node_modules/@radix-ui/react-id/dist/index.mjs": [
     "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
     "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
@@ -219,20 +177,6 @@
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
   "node_modules/@radix-ui/react-navigation-menu/dist/index.mjs": [
-    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
-    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
-    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
-    "/assets/ninjatrader-bridge-aexpZCWq.webp",
-    "/assets/ninjatrader-merlot-CFAdppUF.webp",
-    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
-    "/assets/portfolio-icon-DP1p7q7g.webp",
-    "/assets/portfolio-icon-DoueLI3K.webp",
-    "/assets/portfolio-icon-BE5PS0r3.webp",
-    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
-    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
-    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
-  ],
-  "node_modules/@radix-ui/react-portal/dist/index.mjs": [
     "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
     "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
     "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
@@ -373,103 +317,103 @@
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
   "node_modules/@react-leaflet/core/lib/attribution.js": [
-    "/assets/nicheMap-Qvgi4OTW.js",
+    "/assets/nicheMap-5yzaZ3by.js",
     "/assets/nicheMap-vh-t_kPv.css"
   ],
   "node_modules/@react-leaflet/core/lib/component.js": [
-    "/assets/nicheMap-Qvgi4OTW.js",
+    "/assets/nicheMap-5yzaZ3by.js",
     "/assets/nicheMap-vh-t_kPv.css"
   ],
   "node_modules/@react-leaflet/core/lib/context.js": [
-    "/assets/nicheMap-Qvgi4OTW.js",
+    "/assets/nicheMap-5yzaZ3by.js",
     "/assets/nicheMap-vh-t_kPv.css"
   ],
   "node_modules/@react-leaflet/core/lib/element.js": [
-    "/assets/nicheMap-Qvgi4OTW.js",
+    "/assets/nicheMap-5yzaZ3by.js",
     "/assets/nicheMap-vh-t_kPv.css"
   ],
   "node_modules/@react-leaflet/core/lib/events.js": [
-    "/assets/nicheMap-Qvgi4OTW.js",
+    "/assets/nicheMap-5yzaZ3by.js",
     "/assets/nicheMap-vh-t_kPv.css"
   ],
   "node_modules/@react-leaflet/core/lib/generic.js": [
-    "/assets/nicheMap-Qvgi4OTW.js",
+    "/assets/nicheMap-5yzaZ3by.js",
     "/assets/nicheMap-vh-t_kPv.css"
   ],
   "node_modules/@react-leaflet/core/lib/grid-layer.js": [
-    "/assets/nicheMap-Qvgi4OTW.js",
+    "/assets/nicheMap-5yzaZ3by.js",
     "/assets/nicheMap-vh-t_kPv.css"
   ],
   "node_modules/@react-leaflet/core/lib/layer.js": [
-    "/assets/nicheMap-Qvgi4OTW.js",
+    "/assets/nicheMap-5yzaZ3by.js",
     "/assets/nicheMap-vh-t_kPv.css"
   ],
   "node_modules/@react-leaflet/core/lib/pane.js": [
-    "/assets/nicheMap-Qvgi4OTW.js",
+    "/assets/nicheMap-5yzaZ3by.js",
     "/assets/nicheMap-vh-t_kPv.css"
   ],
   "node_modules/@react-three/drei/core/Environment.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "node_modules/@react-three/drei/core/Gltf.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "node_modules/@react-three/drei/core/Lightformer.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "node_modules/@react-three/drei/core/Texture.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "node_modules/@react-three/drei/core/useEnvironment.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "node_modules/@react-three/drei/helpers/deprecated.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "node_modules/@react-three/drei/helpers/environment-assets.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "node_modules/@react-three/fiber/dist/events-776716bd.esm.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "node_modules/@react-three/fiber/dist/react-three-fiber.esm.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "node_modules/@react-three/fiber/node_modules/scheduler/cjs/scheduler.production.min.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "node_modules/@react-three/fiber/node_modules/scheduler/index.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "node_modules/@react-three/fiber/node_modules/zustand/esm/index.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "node_modules/@react-three/rapier/dist/react-three-rapier.esm.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
@@ -487,22 +431,8 @@
     "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
-  "node_modules/aria-hidden/dist/es2015/index.js": [
-    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
-    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
-    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
-    "/assets/ninjatrader-bridge-aexpZCWq.webp",
-    "/assets/ninjatrader-merlot-CFAdppUF.webp",
-    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
-    "/assets/portfolio-icon-DP1p7q7g.webp",
-    "/assets/portfolio-icon-DoueLI3K.webp",
-    "/assets/portfolio-icon-BE5PS0r3.webp",
-    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
-    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
-    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
-  ],
   "node_modules/canvas-confetti/dist/confetti.module.mjs": [
-    "/assets/tradeSimulator-Do--fgo0.js"
+    "/assets/tradeSimulator-C1bMEvQh.js"
   ],
   "node_modules/class-variance-authority/dist/index.mjs": [
     "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
@@ -532,6 +462,9 @@
     "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
+  "node_modules/cobe/dist/index.esm.js": [
+    "/assets/mappingGlobe-BhaVEar8.js"
+  ],
   "node_modules/exenv/index.js": [
     "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
     "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
@@ -547,19 +480,19 @@
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
   "node_modules/fancy-canvas/canvas-element-bitmap-size.mjs": [
-    "/assets/tradeSimulator-Do--fgo0.js"
+    "/assets/tradeSimulator-C1bMEvQh.js"
   ],
   "node_modules/fancy-canvas/canvas-rendering-target.mjs": [
-    "/assets/tradeSimulator-Do--fgo0.js"
+    "/assets/tradeSimulator-C1bMEvQh.js"
   ],
   "node_modules/fancy-canvas/device-pixel-ratio.mjs": [
-    "/assets/tradeSimulator-Do--fgo0.js"
+    "/assets/tradeSimulator-C1bMEvQh.js"
   ],
   "node_modules/fancy-canvas/index.mjs": [
-    "/assets/tradeSimulator-Do--fgo0.js"
+    "/assets/tradeSimulator-C1bMEvQh.js"
   ],
   "node_modules/fancy-canvas/size.mjs": [
-    "/assets/tradeSimulator-Do--fgo0.js"
+    "/assets/tradeSimulator-C1bMEvQh.js"
   ],
   "node_modules/framer-motion/dist/es/components/AnimatePresence/PopChild.mjs": [
     "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
@@ -1415,7 +1348,77 @@
     "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
-  "node_modules/get-nonce/dist/es2015/index.js": [
+  "node_modules/framer-motion/dist/es/value/use-combine-values.mjs": [
+    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
+    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
+    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
+    "/assets/ninjatrader-bridge-aexpZCWq.webp",
+    "/assets/ninjatrader-merlot-CFAdppUF.webp",
+    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
+    "/assets/portfolio-icon-DP1p7q7g.webp",
+    "/assets/portfolio-icon-DoueLI3K.webp",
+    "/assets/portfolio-icon-BE5PS0r3.webp",
+    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
+    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
+    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
+  ],
+  "node_modules/framer-motion/dist/es/value/use-computed.mjs": [
+    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
+    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
+    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
+    "/assets/ninjatrader-bridge-aexpZCWq.webp",
+    "/assets/ninjatrader-merlot-CFAdppUF.webp",
+    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
+    "/assets/portfolio-icon-DP1p7q7g.webp",
+    "/assets/portfolio-icon-DoueLI3K.webp",
+    "/assets/portfolio-icon-BE5PS0r3.webp",
+    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
+    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
+    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
+  ],
+  "node_modules/framer-motion/dist/es/value/use-follow-value.mjs": [
+    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
+    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
+    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
+    "/assets/ninjatrader-bridge-aexpZCWq.webp",
+    "/assets/ninjatrader-merlot-CFAdppUF.webp",
+    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
+    "/assets/portfolio-icon-DP1p7q7g.webp",
+    "/assets/portfolio-icon-DoueLI3K.webp",
+    "/assets/portfolio-icon-BE5PS0r3.webp",
+    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
+    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
+    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
+  ],
+  "node_modules/framer-motion/dist/es/value/use-motion-value.mjs": [
+    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
+    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
+    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
+    "/assets/ninjatrader-bridge-aexpZCWq.webp",
+    "/assets/ninjatrader-merlot-CFAdppUF.webp",
+    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
+    "/assets/portfolio-icon-DP1p7q7g.webp",
+    "/assets/portfolio-icon-DoueLI3K.webp",
+    "/assets/portfolio-icon-BE5PS0r3.webp",
+    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
+    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
+    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
+  ],
+  "node_modules/framer-motion/dist/es/value/use-spring.mjs": [
+    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
+    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
+    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
+    "/assets/ninjatrader-bridge-aexpZCWq.webp",
+    "/assets/ninjatrader-merlot-CFAdppUF.webp",
+    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
+    "/assets/portfolio-icon-DP1p7q7g.webp",
+    "/assets/portfolio-icon-DoueLI3K.webp",
+    "/assets/portfolio-icon-BE5PS0r3.webp",
+    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
+    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
+    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
+  ],
+  "node_modules/framer-motion/dist/es/value/use-transform.mjs": [
     "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
     "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
     "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
@@ -1430,39 +1433,60 @@
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
   "node_modules/gsap/CSSPlugin.js": [
-    "/assets/pages-CdvffBon.js",
-    "/assets/pages-DXNJjrla.css",
-    "/assets/IMG_6155-kxRAZGXC.webp",
-    "/assets/IMG_6155-BCSeOP6V.webp",
-    "/assets/IMG_6155-DTxKLbXN.webp"
+    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
+    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
+    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
+    "/assets/ninjatrader-bridge-aexpZCWq.webp",
+    "/assets/ninjatrader-merlot-CFAdppUF.webp",
+    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
+    "/assets/portfolio-icon-DP1p7q7g.webp",
+    "/assets/portfolio-icon-DoueLI3K.webp",
+    "/assets/portfolio-icon-BE5PS0r3.webp",
+    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
+    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
+    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
   "node_modules/gsap/Observer.js": [
-    "/assets/pages-CdvffBon.js",
-    "/assets/pages-DXNJjrla.css",
+    "/assets/pages-Dt_puxUg.js",
+    "/assets/pages-CJYI10J1.css",
     "/assets/IMG_6155-kxRAZGXC.webp",
     "/assets/IMG_6155-BCSeOP6V.webp",
     "/assets/IMG_6155-DTxKLbXN.webp"
   ],
   "node_modules/gsap/ScrollTrigger.js": [
-    "/assets/pages-CdvffBon.js",
-    "/assets/pages-DXNJjrla.css",
+    "/assets/pages-Dt_puxUg.js",
+    "/assets/pages-CJYI10J1.css",
     "/assets/IMG_6155-kxRAZGXC.webp",
     "/assets/IMG_6155-BCSeOP6V.webp",
     "/assets/IMG_6155-DTxKLbXN.webp"
   ],
   "node_modules/gsap/gsap-core.js": [
-    "/assets/pages-CdvffBon.js",
-    "/assets/pages-DXNJjrla.css",
-    "/assets/IMG_6155-kxRAZGXC.webp",
-    "/assets/IMG_6155-BCSeOP6V.webp",
-    "/assets/IMG_6155-DTxKLbXN.webp"
+    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
+    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
+    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
+    "/assets/ninjatrader-bridge-aexpZCWq.webp",
+    "/assets/ninjatrader-merlot-CFAdppUF.webp",
+    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
+    "/assets/portfolio-icon-DP1p7q7g.webp",
+    "/assets/portfolio-icon-DoueLI3K.webp",
+    "/assets/portfolio-icon-BE5PS0r3.webp",
+    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
+    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
+    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
   "node_modules/gsap/index.js": [
-    "/assets/pages-CdvffBon.js",
-    "/assets/pages-DXNJjrla.css",
-    "/assets/IMG_6155-kxRAZGXC.webp",
-    "/assets/IMG_6155-BCSeOP6V.webp",
-    "/assets/IMG_6155-DTxKLbXN.webp"
+    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
+    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
+    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
+    "/assets/ninjatrader-bridge-aexpZCWq.webp",
+    "/assets/ninjatrader-merlot-CFAdppUF.webp",
+    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
+    "/assets/portfolio-icon-DP1p7q7g.webp",
+    "/assets/portfolio-icon-DoueLI3K.webp",
+    "/assets/portfolio-icon-BE5PS0r3.webp",
+    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
+    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
+    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
   "node_modules/invariant/browser.js": [
     "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
@@ -1479,7 +1503,7 @@
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
   "node_modules/its-fine/dist/index.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
@@ -1487,15 +1511,15 @@
     "/assets/leaflet.smoothgeodesic-BNcwAMGK.js"
   ],
   "node_modules/leaflet/dist/leaflet-src.js": [
-    "/assets/nicheMap-Qvgi4OTW.js",
+    "/assets/nicheMap-5yzaZ3by.js",
     "/assets/nicheMap-vh-t_kPv.css"
   ],
   "node_modules/leaflet/dist/leaflet.css": [
-    "/assets/nicheMap-Qvgi4OTW.js",
+    "/assets/nicheMap-5yzaZ3by.js",
     "/assets/nicheMap-vh-t_kPv.css"
   ],
   "node_modules/lightweight-charts/dist/lightweight-charts.production.mjs": [
-    "/assets/tradeSimulator-Do--fgo0.js"
+    "/assets/tradeSimulator-C1bMEvQh.js"
   ],
   "node_modules/lucide-react/dist/esm/Icon.mjs": [
     "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
@@ -1554,34 +1578,6 @@
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
   "node_modules/lucide-react/dist/esm/icons/chevron-down.mjs": [
-    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
-    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
-    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
-    "/assets/ninjatrader-bridge-aexpZCWq.webp",
-    "/assets/ninjatrader-merlot-CFAdppUF.webp",
-    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
-    "/assets/portfolio-icon-DP1p7q7g.webp",
-    "/assets/portfolio-icon-DoueLI3K.webp",
-    "/assets/portfolio-icon-BE5PS0r3.webp",
-    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
-    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
-    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
-  ],
-  "node_modules/lucide-react/dist/esm/icons/menu.mjs": [
-    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
-    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
-    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
-    "/assets/ninjatrader-bridge-aexpZCWq.webp",
-    "/assets/ninjatrader-merlot-CFAdppUF.webp",
-    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
-    "/assets/portfolio-icon-DP1p7q7g.webp",
-    "/assets/portfolio-icon-DoueLI3K.webp",
-    "/assets/portfolio-icon-BE5PS0r3.webp",
-    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
-    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
-    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
-  ],
-  "node_modules/lucide-react/dist/esm/icons/x.mjs": [
     "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
     "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
     "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
@@ -1666,7 +1662,7 @@
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
   "node_modules/meshline/dist/index.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
@@ -3742,6 +3738,34 @@
     "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
+  "node_modules/motion-dom/dist/es/utils/transform.mjs": [
+    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
+    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
+    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
+    "/assets/ninjatrader-bridge-aexpZCWq.webp",
+    "/assets/ninjatrader-merlot-CFAdppUF.webp",
+    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
+    "/assets/portfolio-icon-DP1p7q7g.webp",
+    "/assets/portfolio-icon-DoueLI3K.webp",
+    "/assets/portfolio-icon-BE5PS0r3.webp",
+    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
+    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
+    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
+  ],
+  "node_modules/motion-dom/dist/es/value/follow-value.mjs": [
+    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
+    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
+    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
+    "/assets/ninjatrader-bridge-aexpZCWq.webp",
+    "/assets/ninjatrader-merlot-CFAdppUF.webp",
+    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
+    "/assets/portfolio-icon-DP1p7q7g.webp",
+    "/assets/portfolio-icon-DoueLI3K.webp",
+    "/assets/portfolio-icon-BE5PS0r3.webp",
+    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
+    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
+    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
+  ],
   "node_modules/motion-dom/dist/es/value/index.mjs": [
     "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
     "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
@@ -4512,6 +4536,9 @@
     "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
+  "node_modules/phenomenon/dist/phenomenon.mjs": [
+    "/assets/mappingGlobe-BhaVEar8.js"
+  ],
   "node_modules/prop-types/factoryWithThrowingShims.js": [
     "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
     "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
@@ -4554,6 +4581,34 @@
     "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
+  "node_modules/react-dom/cjs/react-dom-server-legacy.browser.production.min.js": [
+    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
+    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
+    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
+    "/assets/ninjatrader-bridge-aexpZCWq.webp",
+    "/assets/ninjatrader-merlot-CFAdppUF.webp",
+    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
+    "/assets/portfolio-icon-DP1p7q7g.webp",
+    "/assets/portfolio-icon-DoueLI3K.webp",
+    "/assets/portfolio-icon-BE5PS0r3.webp",
+    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
+    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
+    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
+  ],
+  "node_modules/react-dom/cjs/react-dom-server.browser.production.min.js": [
+    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
+    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
+    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
+    "/assets/ninjatrader-bridge-aexpZCWq.webp",
+    "/assets/ninjatrader-merlot-CFAdppUF.webp",
+    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
+    "/assets/portfolio-icon-DP1p7q7g.webp",
+    "/assets/portfolio-icon-DoueLI3K.webp",
+    "/assets/portfolio-icon-BE5PS0r3.webp",
+    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
+    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
+    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
+  ],
   "node_modules/react-dom/cjs/react-dom.production.min.js": [
     "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
     "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
@@ -4569,9 +4624,23 @@
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
   "node_modules/react-dom/client.js": [
-    "/assets/client-LAHGTMkc.js"
+    "/assets/client-BRV3y6pr.js"
   ],
   "node_modules/react-dom/index.js": [
+    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
+    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
+    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
+    "/assets/ninjatrader-bridge-aexpZCWq.webp",
+    "/assets/ninjatrader-merlot-CFAdppUF.webp",
+    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
+    "/assets/portfolio-icon-DP1p7q7g.webp",
+    "/assets/portfolio-icon-DoueLI3K.webp",
+    "/assets/portfolio-icon-BE5PS0r3.webp",
+    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
+    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
+    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
+  ],
+  "node_modules/react-dom/server.browser.js": [
     "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
     "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
     "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
@@ -4614,15 +4683,15 @@
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
   "node_modules/react-leaflet/lib/MapContainer.js": [
-    "/assets/nicheMap-Qvgi4OTW.js",
+    "/assets/nicheMap-5yzaZ3by.js",
     "/assets/nicheMap-vh-t_kPv.css"
   ],
   "node_modules/react-leaflet/lib/TileLayer.js": [
-    "/assets/nicheMap-Qvgi4OTW.js",
+    "/assets/nicheMap-5yzaZ3by.js",
     "/assets/nicheMap-vh-t_kPv.css"
   ],
   "node_modules/react-leaflet/lib/hooks.js": [
-    "/assets/nicheMap-Qvgi4OTW.js",
+    "/assets/nicheMap-5yzaZ3by.js",
     "/assets/nicheMap-vh-t_kPv.css"
   ],
   "node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js": [
@@ -4794,188 +4863,34 @@
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
   "node_modules/react-reconciler/cjs/react-reconciler-constants.production.min.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "node_modules/react-reconciler/cjs/react-reconciler.production.min.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "node_modules/react-reconciler/constants.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "node_modules/react-reconciler/index.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "node_modules/react-reconciler/node_modules/scheduler/cjs/scheduler.production.min.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "node_modules/react-reconciler/node_modules/scheduler/index.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
-  ],
-  "node_modules/react-remove-scroll-bar/dist/es2015/component.js": [
-    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
-    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
-    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
-    "/assets/ninjatrader-bridge-aexpZCWq.webp",
-    "/assets/ninjatrader-merlot-CFAdppUF.webp",
-    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
-    "/assets/portfolio-icon-DP1p7q7g.webp",
-    "/assets/portfolio-icon-DoueLI3K.webp",
-    "/assets/portfolio-icon-BE5PS0r3.webp",
-    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
-    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
-    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
-  ],
-  "node_modules/react-remove-scroll-bar/dist/es2015/constants.js": [
-    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
-    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
-    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
-    "/assets/ninjatrader-bridge-aexpZCWq.webp",
-    "/assets/ninjatrader-merlot-CFAdppUF.webp",
-    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
-    "/assets/portfolio-icon-DP1p7q7g.webp",
-    "/assets/portfolio-icon-DoueLI3K.webp",
-    "/assets/portfolio-icon-BE5PS0r3.webp",
-    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
-    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
-    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
-  ],
-  "node_modules/react-remove-scroll-bar/dist/es2015/index.js": [
-    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
-    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
-    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
-    "/assets/ninjatrader-bridge-aexpZCWq.webp",
-    "/assets/ninjatrader-merlot-CFAdppUF.webp",
-    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
-    "/assets/portfolio-icon-DP1p7q7g.webp",
-    "/assets/portfolio-icon-DoueLI3K.webp",
-    "/assets/portfolio-icon-BE5PS0r3.webp",
-    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
-    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
-    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
-  ],
-  "node_modules/react-remove-scroll-bar/dist/es2015/utils.js": [
-    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
-    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
-    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
-    "/assets/ninjatrader-bridge-aexpZCWq.webp",
-    "/assets/ninjatrader-merlot-CFAdppUF.webp",
-    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
-    "/assets/portfolio-icon-DP1p7q7g.webp",
-    "/assets/portfolio-icon-DoueLI3K.webp",
-    "/assets/portfolio-icon-BE5PS0r3.webp",
-    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
-    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
-    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
-  ],
-  "node_modules/react-remove-scroll/dist/es2015/Combination.js": [
-    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
-    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
-    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
-    "/assets/ninjatrader-bridge-aexpZCWq.webp",
-    "/assets/ninjatrader-merlot-CFAdppUF.webp",
-    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
-    "/assets/portfolio-icon-DP1p7q7g.webp",
-    "/assets/portfolio-icon-DoueLI3K.webp",
-    "/assets/portfolio-icon-BE5PS0r3.webp",
-    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
-    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
-    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
-  ],
-  "node_modules/react-remove-scroll/dist/es2015/SideEffect.js": [
-    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
-    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
-    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
-    "/assets/ninjatrader-bridge-aexpZCWq.webp",
-    "/assets/ninjatrader-merlot-CFAdppUF.webp",
-    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
-    "/assets/portfolio-icon-DP1p7q7g.webp",
-    "/assets/portfolio-icon-DoueLI3K.webp",
-    "/assets/portfolio-icon-BE5PS0r3.webp",
-    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
-    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
-    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
-  ],
-  "node_modules/react-remove-scroll/dist/es2015/UI.js": [
-    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
-    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
-    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
-    "/assets/ninjatrader-bridge-aexpZCWq.webp",
-    "/assets/ninjatrader-merlot-CFAdppUF.webp",
-    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
-    "/assets/portfolio-icon-DP1p7q7g.webp",
-    "/assets/portfolio-icon-DoueLI3K.webp",
-    "/assets/portfolio-icon-BE5PS0r3.webp",
-    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
-    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
-    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
-  ],
-  "node_modules/react-remove-scroll/dist/es2015/aggresiveCapture.js": [
-    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
-    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
-    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
-    "/assets/ninjatrader-bridge-aexpZCWq.webp",
-    "/assets/ninjatrader-merlot-CFAdppUF.webp",
-    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
-    "/assets/portfolio-icon-DP1p7q7g.webp",
-    "/assets/portfolio-icon-DoueLI3K.webp",
-    "/assets/portfolio-icon-BE5PS0r3.webp",
-    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
-    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
-    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
-  ],
-  "node_modules/react-remove-scroll/dist/es2015/handleScroll.js": [
-    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
-    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
-    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
-    "/assets/ninjatrader-bridge-aexpZCWq.webp",
-    "/assets/ninjatrader-merlot-CFAdppUF.webp",
-    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
-    "/assets/portfolio-icon-DP1p7q7g.webp",
-    "/assets/portfolio-icon-DoueLI3K.webp",
-    "/assets/portfolio-icon-BE5PS0r3.webp",
-    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
-    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
-    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
-  ],
-  "node_modules/react-remove-scroll/dist/es2015/medium.js": [
-    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
-    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
-    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
-    "/assets/ninjatrader-bridge-aexpZCWq.webp",
-    "/assets/ninjatrader-merlot-CFAdppUF.webp",
-    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
-    "/assets/portfolio-icon-DP1p7q7g.webp",
-    "/assets/portfolio-icon-DoueLI3K.webp",
-    "/assets/portfolio-icon-BE5PS0r3.webp",
-    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
-    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
-    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
-  ],
-  "node_modules/react-remove-scroll/dist/es2015/sidecar.js": [
-    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
-    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
-    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
-    "/assets/ninjatrader-bridge-aexpZCWq.webp",
-    "/assets/ninjatrader-merlot-CFAdppUF.webp",
-    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
-    "/assets/portfolio-icon-DP1p7q7g.webp",
-    "/assets/portfolio-icon-DoueLI3K.webp",
-    "/assets/portfolio-icon-BE5PS0r3.webp",
-    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
-    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
-    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
   "node_modules/react-router-dom/dist/index.js": [
     "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
@@ -5383,64 +5298,8 @@
     "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
-  "node_modules/react-style-singleton/dist/es2015/component.js": [
-    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
-    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
-    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
-    "/assets/ninjatrader-bridge-aexpZCWq.webp",
-    "/assets/ninjatrader-merlot-CFAdppUF.webp",
-    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
-    "/assets/portfolio-icon-DP1p7q7g.webp",
-    "/assets/portfolio-icon-DoueLI3K.webp",
-    "/assets/portfolio-icon-BE5PS0r3.webp",
-    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
-    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
-    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
-  ],
-  "node_modules/react-style-singleton/dist/es2015/hook.js": [
-    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
-    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
-    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
-    "/assets/ninjatrader-bridge-aexpZCWq.webp",
-    "/assets/ninjatrader-merlot-CFAdppUF.webp",
-    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
-    "/assets/portfolio-icon-DP1p7q7g.webp",
-    "/assets/portfolio-icon-DoueLI3K.webp",
-    "/assets/portfolio-icon-BE5PS0r3.webp",
-    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
-    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
-    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
-  ],
-  "node_modules/react-style-singleton/dist/es2015/index.js": [
-    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
-    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
-    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
-    "/assets/ninjatrader-bridge-aexpZCWq.webp",
-    "/assets/ninjatrader-merlot-CFAdppUF.webp",
-    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
-    "/assets/portfolio-icon-DP1p7q7g.webp",
-    "/assets/portfolio-icon-DoueLI3K.webp",
-    "/assets/portfolio-icon-BE5PS0r3.webp",
-    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
-    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
-    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
-  ],
-  "node_modules/react-style-singleton/dist/es2015/singleton.js": [
-    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
-    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
-    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
-    "/assets/ninjatrader-bridge-aexpZCWq.webp",
-    "/assets/ninjatrader-merlot-CFAdppUF.webp",
-    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
-    "/assets/portfolio-icon-DP1p7q7g.webp",
-    "/assets/portfolio-icon-DoueLI3K.webp",
-    "/assets/portfolio-icon-BE5PS0r3.webp",
-    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
-    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
-    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
-  ],
   "node_modules/react-use-measure/dist/index.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
@@ -5543,7 +5402,7 @@
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
   "node_modules/suspend-react/index.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
@@ -5562,148 +5421,64 @@
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
   "node_modules/three-stdlib/_polyfill/LoaderUtils.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "node_modules/three-stdlib/_polyfill/constants.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "node_modules/three-stdlib/libs/MeshoptDecoder.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "node_modules/three-stdlib/loaders/DRACOLoader.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "node_modules/three-stdlib/loaders/EXRLoader.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "node_modules/three-stdlib/loaders/GLTFLoader.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "node_modules/three-stdlib/loaders/RGBELoader.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "node_modules/three-stdlib/node_modules/fflate/esm/browser.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "node_modules/three-stdlib/objects/GroundProjectedEnv.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "node_modules/three-stdlib/utils/BufferGeometryUtils.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "node_modules/three/build/three.core.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "node_modules/three/build/three.module.js": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
-  ],
-  "node_modules/tslib/tslib.es6.js": [
-    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
-    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
-    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
-    "/assets/ninjatrader-bridge-aexpZCWq.webp",
-    "/assets/ninjatrader-merlot-CFAdppUF.webp",
-    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
-    "/assets/portfolio-icon-DP1p7q7g.webp",
-    "/assets/portfolio-icon-DoueLI3K.webp",
-    "/assets/portfolio-icon-BE5PS0r3.webp",
-    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
-    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
-    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
-  ],
-  "node_modules/use-callback-ref/dist/es2015/assignRef.js": [
-    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
-    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
-    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
-    "/assets/ninjatrader-bridge-aexpZCWq.webp",
-    "/assets/ninjatrader-merlot-CFAdppUF.webp",
-    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
-    "/assets/portfolio-icon-DP1p7q7g.webp",
-    "/assets/portfolio-icon-DoueLI3K.webp",
-    "/assets/portfolio-icon-BE5PS0r3.webp",
-    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
-    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
-    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
-  ],
-  "node_modules/use-callback-ref/dist/es2015/useMergeRef.js": [
-    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
-    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
-    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
-    "/assets/ninjatrader-bridge-aexpZCWq.webp",
-    "/assets/ninjatrader-merlot-CFAdppUF.webp",
-    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
-    "/assets/portfolio-icon-DP1p7q7g.webp",
-    "/assets/portfolio-icon-DoueLI3K.webp",
-    "/assets/portfolio-icon-BE5PS0r3.webp",
-    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
-    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
-    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
-  ],
-  "node_modules/use-callback-ref/dist/es2015/useRef.js": [
-    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
-    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
-    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
-    "/assets/ninjatrader-bridge-aexpZCWq.webp",
-    "/assets/ninjatrader-merlot-CFAdppUF.webp",
-    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
-    "/assets/portfolio-icon-DP1p7q7g.webp",
-    "/assets/portfolio-icon-DoueLI3K.webp",
-    "/assets/portfolio-icon-BE5PS0r3.webp",
-    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
-    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
-    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
-  ],
-  "node_modules/use-sidecar/dist/es2015/exports.js": [
-    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
-    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
-    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
-    "/assets/ninjatrader-bridge-aexpZCWq.webp",
-    "/assets/ninjatrader-merlot-CFAdppUF.webp",
-    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
-    "/assets/portfolio-icon-DP1p7q7g.webp",
-    "/assets/portfolio-icon-DoueLI3K.webp",
-    "/assets/portfolio-icon-BE5PS0r3.webp",
-    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
-    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
-    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
-  ],
-  "node_modules/use-sidecar/dist/es2015/medium.js": [
-    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
-    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
-    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
-    "/assets/ninjatrader-bridge-aexpZCWq.webp",
-    "/assets/ninjatrader-merlot-CFAdppUF.webp",
-    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
-    "/assets/portfolio-icon-DP1p7q7g.webp",
-    "/assets/portfolio-icon-DoueLI3K.webp",
-    "/assets/portfolio-icon-BE5PS0r3.webp",
-    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
-    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
-    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
   "node_modules/vite-react-ssg/dist/index.mjs": [
     "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
@@ -5817,26 +5592,60 @@
     "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
+  "src/components/CaseItem.jsx": [
+    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
+    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
+    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
+    "/assets/ninjatrader-bridge-aexpZCWq.webp",
+    "/assets/ninjatrader-merlot-CFAdppUF.webp",
+    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
+    "/assets/portfolio-icon-DP1p7q7g.webp",
+    "/assets/portfolio-icon-DoueLI3K.webp",
+    "/assets/portfolio-icon-BE5PS0r3.webp",
+    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
+    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
+    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
+  ],
+  "src/components/Globe.jsx": [
+    "/assets/mappingGlobe-BhaVEar8.js"
+  ],
+  "src/components/StaggeredMenu.jsx": [
+    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
+    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
+    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
+    "/assets/ninjatrader-bridge-aexpZCWq.webp",
+    "/assets/ninjatrader-merlot-CFAdppUF.webp",
+    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
+    "/assets/portfolio-icon-DP1p7q7g.webp",
+    "/assets/portfolio-icon-DoueLI3K.webp",
+    "/assets/portfolio-icon-BE5PS0r3.webp",
+    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
+    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
+    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
+  ],
   "src/components/about.jsx": [
-    "/assets/pages-CdvffBon.js",
-    "/assets/pages-DXNJjrla.css",
+    "/assets/pages-Dt_puxUg.js",
+    "/assets/pages-CJYI10J1.css",
     "/assets/IMG_6155-kxRAZGXC.webp",
     "/assets/IMG_6155-BCSeOP6V.webp",
     "/assets/IMG_6155-DTxKLbXN.webp"
   ],
   "src/components/app.jsx": [
-    "/assets/pages-CdvffBon.js",
-    "/assets/pages-DXNJjrla.css",
+    "/assets/pages-Dt_puxUg.js",
+    "/assets/pages-CJYI10J1.css",
     "/assets/IMG_6155-kxRAZGXC.webp",
     "/assets/IMG_6155-BCSeOP6V.webp",
     "/assets/IMG_6155-DTxKLbXN.webp"
   ],
   "src/components/banner.jsx": [
-    "/assets/pages-CdvffBon.js",
-    "/assets/pages-DXNJjrla.css",
+    "/assets/pages-Dt_puxUg.js",
+    "/assets/pages-CJYI10J1.css",
     "/assets/IMG_6155-kxRAZGXC.webp",
     "/assets/IMG_6155-BCSeOP6V.webp",
     "/assets/IMG_6155-DTxKLbXN.webp"
+  ],
+  "src/components/candlePrinter.jsx": [
+    "/assets/candlePrinter-CoSkMqAi.js"
   ],
   "src/components/footer.jsx": [
     "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
@@ -5881,7 +5690,7 @@
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
   "src/components/lanyard/Lanyard.jsx": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
@@ -5900,21 +5709,38 @@
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
   "src/components/lanyard/card.glb": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "src/components/lanyard/lanyard.png": [
-    "/assets/Lanyard-DoTo_P8q.js",
+    "/assets/Lanyard-iI9EqaO_.js",
     "/assets/card-BP4TWJmK.glb",
     "/assets/lanyard-BQfo1yFS.png"
   ],
   "src/components/loopTypewriter.jsx": [
-    "/assets/pages-CdvffBon.js",
-    "/assets/pages-DXNJjrla.css",
+    "/assets/pages-Dt_puxUg.js",
+    "/assets/pages-CJYI10J1.css",
     "/assets/IMG_6155-kxRAZGXC.webp",
     "/assets/IMG_6155-BCSeOP6V.webp",
     "/assets/IMG_6155-DTxKLbXN.webp"
+  ],
+  "src/components/mappingGlobe.jsx": [
+    "/assets/mappingGlobe-BhaVEar8.js"
+  ],
+  "src/components/mobileMenu.jsx": [
+    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
+    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
+    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
+    "/assets/ninjatrader-bridge-aexpZCWq.webp",
+    "/assets/ninjatrader-merlot-CFAdppUF.webp",
+    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
+    "/assets/portfolio-icon-DP1p7q7g.webp",
+    "/assets/portfolio-icon-DoueLI3K.webp",
+    "/assets/portfolio-icon-BE5PS0r3.webp",
+    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
+    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
+    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
   "src/components/navigation.jsx": [
     "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
@@ -5945,26 +5771,19 @@
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
   "src/components/nicheMap.jsx": [
-    "/assets/nicheMap-Qvgi4OTW.js",
+    "/assets/nicheMap-5yzaZ3by.js",
     "/assets/nicheMap-vh-t_kPv.css"
   ],
   "src/components/portfolio.jsx": [
-    "/assets/pages-CdvffBon.js",
-    "/assets/pages-DXNJjrla.css",
+    "/assets/pages-Dt_puxUg.js",
+    "/assets/pages-CJYI10J1.css",
     "/assets/IMG_6155-kxRAZGXC.webp",
     "/assets/IMG_6155-BCSeOP6V.webp",
     "/assets/IMG_6155-DTxKLbXN.webp"
   ],
   "src/components/portfolioCollection.jsx": [
-    "/assets/pages-CdvffBon.js",
-    "/assets/pages-DXNJjrla.css",
-    "/assets/IMG_6155-kxRAZGXC.webp",
-    "/assets/IMG_6155-BCSeOP6V.webp",
-    "/assets/IMG_6155-DTxKLbXN.webp"
-  ],
-  "src/components/portfolioItem.jsx": [
-    "/assets/pages-CdvffBon.js",
-    "/assets/pages-DXNJjrla.css",
+    "/assets/pages-Dt_puxUg.js",
+    "/assets/pages-CJYI10J1.css",
     "/assets/IMG_6155-kxRAZGXC.webp",
     "/assets/IMG_6155-BCSeOP6V.webp",
     "/assets/IMG_6155-DTxKLbXN.webp"
@@ -5984,16 +5803,22 @@
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
   "src/components/tradeSimulator.jsx": [
-    "/assets/tradeSimulator-Do--fgo0.js"
+    "/assets/tradeSimulator-C1bMEvQh.js"
   ],
   "src/components/typewriter.jsx": [
-    "/assets/pages-CdvffBon.js",
-    "/assets/pages-DXNJjrla.css",
+    "/assets/pages-Dt_puxUg.js",
+    "/assets/pages-CJYI10J1.css",
     "/assets/IMG_6155-kxRAZGXC.webp",
     "/assets/IMG_6155-BCSeOP6V.webp",
     "/assets/IMG_6155-DTxKLbXN.webp"
   ],
   "src/components/ui/button.jsx": [
+    "/assets/button-BI00KQcS.js"
+  ],
+  "src/components/ui/card.jsx": [
+    "/assets/button-BI00KQcS.js"
+  ],
+  "src/components/ui/icon-cloud.jsx": [
     "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
     "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
     "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
@@ -6006,9 +5831,6 @@
     "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
     "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
-  ],
-  "src/components/ui/card.jsx": [
-    "/assets/card--eV6UydM.js"
   ],
   "src/components/ui/navbar.jsx": [
     "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
@@ -6038,7 +5860,7 @@
     "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
-  "src/components/ui/sheet.jsx": [
+  "src/components/ui/tilted-card.jsx": [
     "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
     "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
     "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
@@ -6065,6 +5887,9 @@
     "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
     "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
+  ],
+  "src/components/wineTerminal.jsx": [
+    "/assets/wineTerminal-BGPZcmtb.js"
   ],
   "src/context/Intro/IntroContext.js": [
     "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
@@ -6109,7 +5934,7 @@
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
   "src/data/journey.json": [
-    "/assets/nicheMap-Qvgi4OTW.js",
+    "/assets/nicheMap-5yzaZ3by.js",
     "/assets/nicheMap-vh-t_kPv.css"
   ],
   "src/data/niches.json": [
@@ -6155,15 +5980,15 @@
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
   "src/images/IMG_6155.jpg?w=300;600;900&format=webp&as=srcset": [
-    "/assets/pages-CdvffBon.js",
-    "/assets/pages-DXNJjrla.css",
+    "/assets/pages-Dt_puxUg.js",
+    "/assets/pages-CJYI10J1.css",
     "/assets/IMG_6155-kxRAZGXC.webp",
     "/assets/IMG_6155-BCSeOP6V.webp",
     "/assets/IMG_6155-DTxKLbXN.webp"
   ],
   "src/images/IMG_6155.jpg?w=600&format=webp": [
-    "/assets/pages-CdvffBon.js",
-    "/assets/pages-DXNJjrla.css",
+    "/assets/pages-Dt_puxUg.js",
+    "/assets/pages-CJYI10J1.css",
     "/assets/IMG_6155-kxRAZGXC.webp",
     "/assets/IMG_6155-BCSeOP6V.webp",
     "/assets/IMG_6155-DTxKLbXN.webp"
@@ -6379,8 +6204,8 @@
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
   "src/pages/index.jsx": [
-    "/assets/pages-CdvffBon.js",
-    "/assets/pages-DXNJjrla.css",
+    "/assets/pages-Dt_puxUg.js",
+    "/assets/pages-CJYI10J1.css",
     "/assets/IMG_6155-kxRAZGXC.webp",
     "/assets/IMG_6155-BCSeOP6V.webp",
     "/assets/IMG_6155-DTxKLbXN.webp"
@@ -6400,18 +6225,32 @@
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
   "src/styles/components/about.scss": [
-    "/assets/pages-CdvffBon.js",
-    "/assets/pages-DXNJjrla.css",
+    "/assets/pages-Dt_puxUg.js",
+    "/assets/pages-CJYI10J1.css",
     "/assets/IMG_6155-kxRAZGXC.webp",
     "/assets/IMG_6155-BCSeOP6V.webp",
     "/assets/IMG_6155-DTxKLbXN.webp"
   ],
   "src/styles/components/banner.scss": [
-    "/assets/pages-CdvffBon.js",
-    "/assets/pages-DXNJjrla.css",
+    "/assets/pages-Dt_puxUg.js",
+    "/assets/pages-CJYI10J1.css",
     "/assets/IMG_6155-kxRAZGXC.webp",
     "/assets/IMG_6155-BCSeOP6V.webp",
     "/assets/IMG_6155-DTxKLbXN.webp"
+  ],
+  "src/styles/components/caseItem.scss": [
+    "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
+    "/assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
+    "/assets/ninjatrader-bridge-Bfuhe2_p.webp",
+    "/assets/ninjatrader-bridge-aexpZCWq.webp",
+    "/assets/ninjatrader-merlot-CFAdppUF.webp",
+    "/assets/ninjatrader-merlot-RAA4hH9l.webp",
+    "/assets/portfolio-icon-DP1p7q7g.webp",
+    "/assets/portfolio-icon-DoueLI3K.webp",
+    "/assets/portfolio-icon-BE5PS0r3.webp",
+    "/assets/topstep-algo-trade-engine-ehsa7aBx.webp",
+    "/assets/topstep-algo-trade-engine-BOgepR6-.webp",
+    "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
   "src/styles/components/footer.scss": [
     "/assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
@@ -6456,8 +6295,8 @@
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
   "src/styles/components/loopTypewriter.scss": [
-    "/assets/pages-CdvffBon.js",
-    "/assets/pages-DXNJjrla.css",
+    "/assets/pages-Dt_puxUg.js",
+    "/assets/pages-CJYI10J1.css",
     "/assets/IMG_6155-kxRAZGXC.webp",
     "/assets/IMG_6155-BCSeOP6V.webp",
     "/assets/IMG_6155-DTxKLbXN.webp"
@@ -6477,22 +6316,15 @@
     "/assets/topstep-algo-trade-engine-UnJ6XKll.webp"
   ],
   "src/styles/components/portfolio.scss": [
-    "/assets/pages-CdvffBon.js",
-    "/assets/pages-DXNJjrla.css",
-    "/assets/IMG_6155-kxRAZGXC.webp",
-    "/assets/IMG_6155-BCSeOP6V.webp",
-    "/assets/IMG_6155-DTxKLbXN.webp"
-  ],
-  "src/styles/components/portfolioItem.scss": [
-    "/assets/pages-CdvffBon.js",
-    "/assets/pages-DXNJjrla.css",
+    "/assets/pages-Dt_puxUg.js",
+    "/assets/pages-CJYI10J1.css",
     "/assets/IMG_6155-kxRAZGXC.webp",
     "/assets/IMG_6155-BCSeOP6V.webp",
     "/assets/IMG_6155-DTxKLbXN.webp"
   ],
   "src/styles/components/typewriter.scss": [
-    "/assets/pages-CdvffBon.js",
-    "/assets/pages-DXNJjrla.css",
+    "/assets/pages-Dt_puxUg.js",
+    "/assets/pages-CJYI10J1.css",
     "/assets/IMG_6155-kxRAZGXC.webp",
     "/assets/IMG_6155-BCSeOP6V.webp",
     "/assets/IMG_6155-DTxKLbXN.webp"
