@@ -49,11 +49,24 @@ $mono: $font;
     position: relative;
   }
 
-  // diagonal two-tone frame
+  // 3D tilt stage. The inner layer (set by TiltedCard) keeps a preserve-3d
+  // context so the frame and image can sit at different depths. `flex` here
+  // establishes a formatting context so the image's vertical margins don't
+  // collapse out of the wrapper — without it the frame would lose its top/bottom
+  // border band.
+  .tilted-card-inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  // diagonal two-tone frame — now a background layer that fills the media and
+  // sits at the base of the 3D stack.
   &-frame {
-    padding: 0.6rem;
+    position: absolute;
+    inset: 0;
     border-radius: 0.85rem;
-    overflow: hidden;
     background: linear-gradient(
       -45deg,
       var(--frame-a) 0%,
@@ -62,17 +75,27 @@ $mono: $font;
       var(--frame-b) 100%
     );
     box-shadow: 0 1.5rem 3rem -1.5rem rgba(0, 0, 0, 0.45);
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-      border-radius: 0.55rem;
-      transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
-    }
+    transform: translateZ(0);
   }
 
-  &:hover .case-item-frame img {
-    transform: scale(1.04);
+  // The screenshot floats above the frame: inset by the frame's border width and
+  // pushed forward in Z so it parallax-hovers over the two-tone edge on tilt.
+  //
+  // The frame's perspective (900px, set by TiltedCard) magnifies anything pulled
+  // toward the viewer, which would otherwise blow the image up past the 0.6rem
+  // border and hide it at rest. The `scale` cancels that magnification —
+  // 900 / (900 - 42) ≈ 1.049, so scale = 1 / 1.049 ≈ 0.953 — keeping the image at
+  // its true footprint (border fully visible head-on) while the Z offset still
+  // produces the floating parallax as the card rotates.
+  &-img {
+    position: relative;
+    display: block;
+    width: calc(100% - 1.2rem);
+    height: auto;
+    margin: 0.6rem;
+    border-radius: 0.55rem;
+    transform: translateZ(42px) scale(0.953);
+    box-shadow: 0 1.4rem 2.4rem -1rem rgba(0, 0, 0, 0.5);
   }
 
   &-body {

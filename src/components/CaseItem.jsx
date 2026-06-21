@@ -1,6 +1,7 @@
 import React from "react"
 import "../styles/components/caseItem.scss"
 import { IconCloud } from "@/components/ui/icon-cloud"
+import { TiltedCard } from "@/components/ui/tilted-card"
 
 // Shared "case file" project item used by both the home portfolio and the niche
 // pages. Renders an alternating two-column row (framed screenshot + write-up);
@@ -29,17 +30,17 @@ const CaseItem = ({
       data-flip={flip ? "true" : undefined}
       data-cloud={hasCloud ? "true" : undefined}
     >
-      <div className="case-item-media">
-        <div className="case-item-frame">
-          <img
-            src={image}
-            srcSet={imageSrcSet}
-            sizes={imageSizes}
-            loading={imageLoading}
-            alt={`${title} interface`}
-          />
-        </div>
-      </div>
+      <TiltedCard className="case-item-media">
+        <div className="case-item-frame" aria-hidden="true" />
+        <img
+          className="case-item-img"
+          src={image}
+          srcSet={imageSrcSet}
+          sizes={imageSizes}
+          loading={imageLoading}
+          alt={`${title} interface`}
+        />
+      </TiltedCard>
       <div className="case-item-body">
         {eyebrow && <p className="case-item-eyebrow">{eyebrow}</p>}
         <h3 className="case-item-title">{title}</h3>
