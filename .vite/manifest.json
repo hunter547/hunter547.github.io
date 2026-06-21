@@ -19,8 +19,8 @@
     "file": "assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
     "src": "_Leaflet-SmoothGeodesic-app-d-wHKMX7.webp"
   },
-  "_button-BI00KQcS.js": {
-    "file": "assets/button-BI00KQcS.js",
+  "_button-DVcUunnD.js": {
+    "file": "assets/button-DVcUunnD.js",
     "name": "button",
     "imports": [
       "index.html"
@@ -54,9 +54,33 @@
     "file": "assets/portfolio-icon-DoueLI3K.webp",
     "src": "_portfolio-icon-DoueLI3K.webp"
   },
+  "_prop-risk-geometry-surface-YVNPqOcQ.webp": {
+    "file": "assets/prop-risk-geometry-surface-YVNPqOcQ.webp",
+    "src": "_prop-risk-geometry-surface-YVNPqOcQ.webp"
+  },
+  "_prop-risk-geometry-surface-mZGmVFYU.webp": {
+    "file": "assets/prop-risk-geometry-surface-mZGmVFYU.webp",
+    "src": "_prop-risk-geometry-surface-mZGmVFYU.webp"
+  },
+  "_prop-risk-geometry-surface-wifdWGM7.webp": {
+    "file": "assets/prop-risk-geometry-surface-wifdWGM7.webp",
+    "src": "_prop-risk-geometry-surface-wifdWGM7.webp"
+  },
   "_rapier.es--SAcDlT7.js": {
     "file": "assets/rapier.es--SAcDlT7.js",
     "name": "rapier.es"
+  },
+  "_rmhe-vite-C_yCdsKx.webp": {
+    "file": "assets/rmhe-vite-C_yCdsKx.webp",
+    "src": "_rmhe-vite-C_yCdsKx.webp"
+  },
+  "_rmhe-vite-D7odis3b.webp": {
+    "file": "assets/rmhe-vite-D7odis3b.webp",
+    "src": "_rmhe-vite-D7odis3b.webp"
+  },
+  "_rmhe-vite-bmtu0Lvr.webp": {
+    "file": "assets/rmhe-vite-bmtu0Lvr.webp",
+    "src": "_rmhe-vite-bmtu0Lvr.webp"
   },
   "_topstep-algo-trade-engine-BOgepR6-.webp": {
     "file": "assets/topstep-algo-trade-engine-BOgepR6-.webp",
@@ -70,23 +94,23 @@
     "file": "assets/topstep-algo-trade-engine-ehsa7aBx.webp",
     "src": "_topstep-algo-trade-engine-ehsa7aBx.webp"
   },
-  "_tradeSimulator-C1bMEvQh.js": {
-    "file": "assets/tradeSimulator-C1bMEvQh.js",
+  "_tradeSimulator-CCvv88bh.js": {
+    "file": "assets/tradeSimulator-CCvv88bh.js",
     "name": "tradeSimulator",
     "imports": [
       "index.html",
-      "_button-BI00KQcS.js"
+      "_button-DVcUunnD.js"
     ]
   },
   "index.html": {
-    "file": "assets/app-BsqMzFP9.js",
+    "file": "assets/app-DsWLPd5-.js",
     "name": "app",
     "src": "index.html",
     "isEntry": true,
     "dynamicImports": [
       "node_modules/react-dom/client.js",
       "src/components/lanyard/Lanyard.jsx",
-      "_tradeSimulator-C1bMEvQh.js",
+      "_tradeSimulator-CCvv88bh.js",
       "src/components/nicheMap.jsx",
       "src/components/candlePrinter.jsx",
       "src/components/mappingGlobe.jsx",
@@ -94,7 +118,7 @@
       "src/pages/index.jsx"
     ],
     "css": [
-      "assets/app-Co4etMqc.css"
+      "assets/app-DjIbaizK.css"
     ],
     "assets": [
       "assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
@@ -106,6 +130,12 @@
       "assets/portfolio-icon-DP1p7q7g.webp",
       "assets/portfolio-icon-DoueLI3K.webp",
       "assets/portfolio-icon-BE5PS0r3.webp",
+      "assets/prop-risk-geometry-surface-mZGmVFYU.webp",
+      "assets/prop-risk-geometry-surface-wifdWGM7.webp",
+      "assets/prop-risk-geometry-surface-YVNPqOcQ.webp",
+      "assets/rmhe-vite-C_yCdsKx.webp",
+      "assets/rmhe-vite-bmtu0Lvr.webp",
+      "assets/rmhe-vite-D7odis3b.webp",
       "assets/topstep-algo-trade-engine-ehsa7aBx.webp",
       "assets/topstep-algo-trade-engine-BOgepR6-.webp",
       "assets/topstep-algo-trade-engine-UnJ6XKll.webp"
@@ -127,7 +157,7 @@
     "isDynamicEntry": true
   },
   "node_modules/react-dom/client.js": {
-    "file": "assets/client-BRV3y6pr.js",
+    "file": "assets/client-COhFqCUE.js",
     "name": "client",
     "src": "node_modules/react-dom/client.js",
     "isDynamicEntry": true,
@@ -136,7 +166,7 @@
     ]
   },
   "src/components/candlePrinter.jsx": {
-    "file": "assets/candlePrinter-CoSkMqAi.js",
+    "file": "assets/candlePrinter-D3eaXHhk.js",
     "name": "candlePrinter",
     "src": "src/components/candlePrinter.jsx",
     "isDynamicEntry": true,
@@ -145,7 +175,7 @@
     ]
   },
   "src/components/lanyard/Lanyard.jsx": {
-    "file": "assets/Lanyard-iI9EqaO_.js",
+    "file": "assets/Lanyard-D0CtBLyM.js",
     "name": "Lanyard",
     "src": "src/components/lanyard/Lanyard.jsx",
     "isDynamicEntry": true,
@@ -170,7 +200,7 @@
     "src": "src/components/lanyard/lanyard.png"
   },
   "src/components/mappingGlobe.jsx": {
-    "file": "assets/mappingGlobe-BhaVEar8.js",
+    "file": "assets/mappingGlobe-iKvCwgme.js",
     "name": "mappingGlobe",
     "src": "src/components/mappingGlobe.jsx",
     "isDynamicEntry": true,
@@ -179,13 +209,13 @@
     ]
   },
   "src/components/nicheMap.jsx": {
-    "file": "assets/nicheMap-5yzaZ3by.js",
+    "file": "assets/nicheMap-CVUjpjKp.js",
     "name": "nicheMap",
     "src": "src/components/nicheMap.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_button-BI00KQcS.js"
+      "_button-DVcUunnD.js"
     ],
     "dynamicImports": [
       "node_modules/leaflet.smoothgeodesic/dist/leaflet.smoothgeodesic.js"
@@ -195,17 +225,17 @@
     ]
   },
   "src/components/tradeSimulator.jsx": {
-    "file": "assets/tradeSimulator-FS_BITQi.js",
+    "file": "assets/tradeSimulator-BcTrF348.js",
     "name": "tradeSimulator",
     "src": "src/components/tradeSimulator.jsx",
     "isDynamicEntry": true,
     "imports": [
-      "_tradeSimulator-C1bMEvQh.js",
-      "_button-BI00KQcS.js"
+      "_tradeSimulator-CCvv88bh.js",
+      "_button-DVcUunnD.js"
     ]
   },
   "src/components/wineTerminal.jsx": {
-    "file": "assets/wineTerminal-BGPZcmtb.js",
+    "file": "assets/wineTerminal-B5rwqe1X.js",
     "name": "wineTerminal",
     "src": "src/components/wineTerminal.jsx",
     "isDynamicEntry": true,
@@ -214,14 +244,14 @@
     ]
   },
   "src/pages/index.jsx": {
-    "file": "assets/pages-Dt_puxUg.js",
+    "file": "assets/pages-DN_mI5tU.js",
     "name": "pages",
     "src": "src/pages/index.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_tradeSimulator-C1bMEvQh.js",
-      "_button-BI00KQcS.js"
+      "_tradeSimulator-CCvv88bh.js",
+      "_button-DVcUunnD.js"
     ],
     "css": [
       "assets/pages-CJYI10J1.css"
