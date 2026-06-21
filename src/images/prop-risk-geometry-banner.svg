@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="1200" height="280" role="img" aria-label="Prop Firm Risk Geometry">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"  stop-color="#0B1221"/>
+      <stop offset="55%" stop-color="#111C35"/>
+      <stop offset="100%" stop-color="#1B2A4E"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"  stop-color="#22C55E" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#22C55E" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"  stop-color="#EF4444" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#EF4444" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"  stop-color="#22D3EE"/>
+      <stop offset="50%" stop-color="#A78BFA"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="280" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#1F2E4E" stroke-width="1" opacity="0.5">
+    <path d="M0 70 H1200 M0 140 H1200 M0 210 H1200"/>
+    <path d="M150 0 V280 M300 0 V280 M450 0 V280 M600 0 V280 M750 0 V280 M900 0 V280 M1050 0 V280"/>
+  </g>
+
+  <!-- Equity path: winning run (green) -->
+  <path d="M60 210 L120 198 L180 205 L240 180 L300 165 L360 150 L420 135 L480 115 L540 98 L600 80"
+        fill="none" stroke="#22C55E" stroke-width="3" filter="url(#glow)"/>
+  <path d="M60 210 L120 198 L180 205 L240 180 L300 165 L360 150 L420 135 L480 115 L540 98 L600 80 L600 280 L60 280 Z"
+        fill="url(#green)" opacity="0.25"/>
+
+  <!-- Equity path: losing run (red) -->
+  <path d="M60 210 L120 215 L180 208 L240 225 L300 235 L360 245 L420 252 L480 258 L540 262 L600 268"
+        fill="none" stroke="#EF4444" stroke-width="2" opacity="0.85"/>
+
+  <!-- Target line -->
+  <line x1="40" y1="75" x2="1160" y2="75" stroke="#22C55E" stroke-width="1" stroke-dasharray="6 6" opacity="0.6"/>
+  <text x="50" y="68" fill="#22C55E" font-family="Menlo, Consolas, monospace" font-size="11" opacity="0.9">TARGET · $53,000</text>
+
+  <!-- Floor line -->
+  <line x1="40" y1="245" x2="1160" y2="245" stroke="#EF4444" stroke-width="1" stroke-dasharray="6 6" opacity="0.6"/>
+  <text x="50" y="262" fill="#EF4444" font-family="Menlo, Consolas, monospace" font-size="11" opacity="0.9">FLOOR · $48,000</text>
+
+  <!-- Title block -->
+  <g transform="translate(640, 110)">
+    <text font-family="Helvetica Neue, Arial, sans-serif" font-size="44" font-weight="800"
+          fill="url(#title)" letter-spacing="-1">
+      PROP FIRM
+    </text>
+    <text y="44" font-family="Helvetica Neue, Arial, sans-serif" font-size="44" font-weight="800"
+          fill="#F8FAFC" letter-spacing="-1">
+      RISK GEOMETRY
+    </text>
+    <text y="78" font-family="Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400"
+          fill="#94A3B8">
+      Backtest-driven Monte Carlo · NQ &amp; MNQ futures
+    </text>
+    <text y="100" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400"
+          fill="#64748B" font-style="italic">
+      Win rate × R:R × position sizing → pass probability
+    </text>
+  </g>
+
+  <!-- Markers along path (nodes) -->
+  <g fill="#22C55E" stroke="#0B1221" stroke-width="1.5">
+    <circle cx="300" cy="165" r="4"/>
+    <circle cx="420" cy="135" r="4"/>
+    <circle cx="540" cy="98"  r="4"/>
+    <circle cx="600" cy="80"  r="5"/>
+  </g>
+  <g fill="#EF4444" stroke="#0B1221" stroke-width="1.5">
+    <circle cx="300" cy="235" r="3"/>
+    <circle cx="480" cy="258" r="3"/>
+  </g>
+</svg>

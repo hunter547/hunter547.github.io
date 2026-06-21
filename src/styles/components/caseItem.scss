@@ -98,6 +98,44 @@ $mono: $font;
     box-shadow: 0 1.4rem 2.4rem -1rem rgba(0, 0, 0, 0.5);
   }
 
+  // Stacked-media variant: the same floating panel as &-img, but a clipped,
+  // perfectly square container holding the vector banner flush above the 3D
+  // surface plot. They share the panel's rounded corners (overflow: hidden) and
+  // meet at a seam — the banner's dark gradient header over the plot's light
+  // canvas. The plot is pre-cropped to ~1.30:1 so it square-completes the
+  // 1200×280 banner; `aspect-ratio` + cover pins the tile to an exact 1:1.
+  &-stack {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 1.2rem);
+    aspect-ratio: 1 / 1;
+    margin: 0.6rem;
+    border-radius: 0.55rem;
+    overflow: hidden;
+    background: $white;
+    transform: translateZ(42px) scale(0.953);
+    box-shadow: 0 1.4rem 2.4rem -1rem rgba(0, 0, 0, 0.5);
+
+    // Vector banner: keeps its natural height at full width.
+    &-svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    // 3D surface: fills the rest of the square, covering any sub-pixel
+    // remainder without distortion.
+    &-img {
+      display: block;
+      width: 100%;
+      flex: 1 1 auto;
+      min-height: 0;
+      object-fit: cover;
+      object-position: center top;
+    }
+  }
+
   &-body {
     position: relative;
   }

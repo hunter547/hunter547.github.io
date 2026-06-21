@@ -1,5 +1,36 @@
 [
   {
+    "classname": "prop-risk-geometry",
+    "header": "Prop Firm Risk Geometry",
+    "svg": "../images/prop-risk-geometry-banner.svg",
+    "image": "../images/prop-risk-geometry-surface.png",
+    "icons": [
+      "/icons/python.svg",
+      "/icons/numpy.svg",
+      "/icons/matplotlib.svg",
+      "/icons/docker.svg",
+      "/icons/topstepx.svg",
+      "/icons/ninjatrader.svg",
+      "/icons/tradovate.svg"
+    ],
+    "description": "A backtest-driven Monte Carlo simulator that finds the prop-firm challenge configuration — strategy, risk-to-reward, and position sizing — with the best statistical odds of passing, then maximizing payouts once funded. It ingests 5-minute NQ/MNQ futures bars and backtests three intraday strategies (Opening Range Breakout, Mean Reversion, Trend Continuation) to extract real win rates and winner/loser distributions, then bootstraps thousands of Monte Carlo equity paths against the asymmetric $3K-target / $2K-drawdown account rules. Top configurations are independently re-validated with backtesting.py and rendered as EV breakeven curves, 3D pass-rate surfaces, and challenge/funded-phase payout heatmaps.",
+    "githubLink": "https://github.com/hunter547/prop-risk-geometry"
+  },
+  {
+    "classname": "rmhe-vite",
+    "header": "Rocky Mountain Home Enhancement",
+    "image": "../images/rmhe-vite.png",
+    "icons": [
+      "/icons/react.svg",
+      "/icons/typescript.svg",
+      "/icons/tailwindcss.svg",
+      "/icons/vitejs.svg"
+    ],
+    "description": "A production marketing site for a Pueblo, Colorado home-remodeling company, built on React 19, TypeScript, and rolldown-vite with TailwindCSS v4 and shadcn/ui. Its centerpiece is an interactive blueprint viewer that renders real project floorplans as hand-tagged SVG layers — structure, dimensions, details, and labels — each independently toggleable and explorable with zoom and pan. An animated hero cycles room types with a motion/react text loop, while service galleries, image carousels, and a masonry wall of real before/after photos sit alongside testimonials aggregated from Google and Facebook reviews. Fully responsive with light/dark theming, smooth scrolling, SEO/Open Graph metadata, and SPA routing, deployed on Netlify.",
+    "githubLink": "https://github.com/hunter547/rmhe-vite",
+    "applicationLink": "https://rmhe.netlify.app/"
+  },
+  {
     "classname": "ninjatrader-bridge",
     "header": "NinjaTrader Bridge",
     "image": "../images/ninjatrader-bridge.png",

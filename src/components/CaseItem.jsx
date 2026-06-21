@@ -10,6 +10,7 @@ import { TiltedCard } from "@/components/ui/tilted-card"
 const CaseItem = ({
   image,
   imageSrcSet,
+  svg,
   imageSizes = "(max-width: 52rem) 90vw, 42vw",
   imageLoading = "lazy",
   eyebrow,
@@ -32,14 +33,36 @@ const CaseItem = ({
     >
       <TiltedCard className="case-item-media">
         <div className="case-item-frame" aria-hidden="true" />
-        <img
-          className="case-item-img"
-          src={image}
-          srcSet={imageSrcSet}
-          sizes={imageSizes}
-          loading={imageLoading}
-          alt={`${title} interface`}
-        />
+        {svg ? (
+          // Stacked media: the README's vector banner on top, the 3D pass-rate
+          // surface below — together they fill the frame as a squarish block.
+          // The banner stays a true SVG (loaded by URL, never rasterized).
+          <div className="case-item-stack">
+            <img
+              className="case-item-stack-svg"
+              src={svg}
+              loading={imageLoading}
+              alt={`${title} banner`}
+            />
+            <img
+              className="case-item-stack-img"
+              src={image}
+              srcSet={imageSrcSet}
+              sizes={imageSizes}
+              loading={imageLoading}
+              alt={`${title} 3D pass-rate surface`}
+            />
+          </div>
+        ) : (
+          <img
+            className="case-item-img"
+            src={image}
+            srcSet={imageSrcSet}
+            sizes={imageSizes}
+            loading={imageLoading}
+            alt={`${title} interface`}
+          />
+        )}
       </TiltedCard>
       <div className="case-item-body">
         {eyebrow && <p className="case-item-eyebrow">{eyebrow}</p>}

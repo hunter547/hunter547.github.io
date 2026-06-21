@@ -16,6 +16,15 @@ const fallbacks = import.meta.glob("../images/*.png", {
   query: { w: "800", format: "webp" },
 })
 
+// SVGs are kept as true vectors (no rasterization) — imported as their own URL
+// and rendered straight into an <img>. Keys match the relative paths in
+// portfolioData.json (e.g. "../images/prop-risk-geometry-banner.svg").
+const svgUrls = import.meta.glob("../images/*.svg", {
+  eager: true,
+  import: "default",
+  query: "?url",
+})
+
 const PortfolioCollection = ({ onVideo }) => {
   return portfolioData.map((project, index) => (
     <CaseItem
@@ -23,6 +32,7 @@ const PortfolioCollection = ({ onVideo }) => {
       flip={index % 2 === 1}
       image={fallbacks[project.image]}
       imageSrcSet={srcSets[project.image]}
+      svg={project.svg ? svgUrls[project.svg] : undefined}
       imageLoading={index === 0 ? "eager" : "lazy"}
       eyebrow="Project"
       title={project.header}
