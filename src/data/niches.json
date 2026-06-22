@@ -11,6 +11,7 @@
       "Market-data ingestion pipelines (REST, WebSocket, yfinance)"
     ],
     "relatedProjects": [
+      "prop-risk-geometry",
       "topstepx-daytrading-arena",
       "algo-trade-engine",
       "ninjatrader-bridge"
