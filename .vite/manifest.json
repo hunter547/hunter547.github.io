@@ -19,8 +19,8 @@
     "file": "assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
     "src": "_Leaflet-SmoothGeodesic-app-d-wHKMX7.webp"
   },
-  "_button-6ypzVRlZ.js": {
-    "file": "assets/button-6ypzVRlZ.js",
+  "_button-D56SRz3G.js": {
+    "file": "assets/button-D56SRz3G.js",
     "name": "button",
     "imports": [
       "index.html"
@@ -94,23 +94,35 @@
     "file": "assets/topstep-algo-trade-engine-ehsa7aBx.webp",
     "src": "_topstep-algo-trade-engine-ehsa7aBx.webp"
   },
-  "_tradeSimulator--HlPMKTg.js": {
-    "file": "assets/tradeSimulator--HlPMKTg.js",
+  "_topstepx-daytrading-arena-TDZ8piMS.webp": {
+    "file": "assets/topstepx-daytrading-arena-TDZ8piMS.webp",
+    "src": "_topstepx-daytrading-arena-TDZ8piMS.webp"
+  },
+  "_topstepx-daytrading-arena-iPgEYsxG.webp": {
+    "file": "assets/topstepx-daytrading-arena-iPgEYsxG.webp",
+    "src": "_topstepx-daytrading-arena-iPgEYsxG.webp"
+  },
+  "_topstepx-daytrading-arena-yDS5p5cv.webp": {
+    "file": "assets/topstepx-daytrading-arena-yDS5p5cv.webp",
+    "src": "_topstepx-daytrading-arena-yDS5p5cv.webp"
+  },
+  "_tradeSimulator-DC_gPL04.js": {
+    "file": "assets/tradeSimulator-DC_gPL04.js",
     "name": "tradeSimulator",
     "imports": [
       "index.html",
-      "_button-6ypzVRlZ.js"
+      "_button-D56SRz3G.js"
     ]
   },
   "index.html": {
-    "file": "assets/app-ClCcfkny.js",
+    "file": "assets/app-DTjsau73.js",
     "name": "app",
     "src": "index.html",
     "isEntry": true,
     "dynamicImports": [
       "node_modules/react-dom/client.js",
       "src/components/lanyard/Lanyard.jsx",
-      "_tradeSimulator--HlPMKTg.js",
+      "_tradeSimulator-DC_gPL04.js",
       "src/components/nicheMap.jsx",
       "src/components/candlePrinter.jsx",
       "src/components/mappingGlobe.jsx",
@@ -119,7 +131,7 @@
       "src/pages/index.jsx"
     ],
     "css": [
-      "assets/app-DI9DTL0Y.css"
+      "assets/app-BaN2tP91.css"
     ],
     "assets": [
       "assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
@@ -139,7 +151,10 @@
       "assets/rmhe-vite-BIdCSy-a.webp",
       "assets/topstep-algo-trade-engine-ehsa7aBx.webp",
       "assets/topstep-algo-trade-engine-BOgepR6-.webp",
-      "assets/topstep-algo-trade-engine-UnJ6XKll.webp"
+      "assets/topstep-algo-trade-engine-UnJ6XKll.webp",
+      "assets/topstepx-daytrading-arena-iPgEYsxG.webp",
+      "assets/topstepx-daytrading-arena-TDZ8piMS.webp",
+      "assets/topstepx-daytrading-arena-yDS5p5cv.webp"
     ]
   },
   "node_modules/@dimforge/rapier3d-compat/rapier.es.js": {
@@ -158,7 +173,7 @@
     "isDynamicEntry": true
   },
   "node_modules/react-dom/client.js": {
-    "file": "assets/client-C59VX8WO.js",
+    "file": "assets/client-BfSBiHfe.js",
     "name": "client",
     "src": "node_modules/react-dom/client.js",
     "isDynamicEntry": true,
@@ -167,7 +182,7 @@
     ]
   },
   "src/components/DotField.jsx": {
-    "file": "assets/DotField-B84YETpF.js",
+    "file": "assets/DotField-mCUQz5Jn.js",
     "name": "DotField",
     "src": "src/components/DotField.jsx",
     "isDynamicEntry": true,
@@ -176,7 +191,7 @@
     ]
   },
   "src/components/candlePrinter.jsx": {
-    "file": "assets/candlePrinter-CuaH9kKv.js",
+    "file": "assets/candlePrinter-Bm34CAXd.js",
     "name": "candlePrinter",
     "src": "src/components/candlePrinter.jsx",
     "isDynamicEntry": true,
@@ -185,7 +200,7 @@
     ]
   },
   "src/components/lanyard/Lanyard.jsx": {
-    "file": "assets/Lanyard-CSy2qcLN.js",
+    "file": "assets/Lanyard-xPu3AQym.js",
     "name": "Lanyard",
     "src": "src/components/lanyard/Lanyard.jsx",
     "isDynamicEntry": true,
@@ -210,7 +225,7 @@
     "src": "src/components/lanyard/lanyard.png"
   },
   "src/components/mappingGlobe.jsx": {
-    "file": "assets/mappingGlobe-ktSQR332.js",
+    "file": "assets/mappingGlobe-BA6mtR7I.js",
     "name": "mappingGlobe",
     "src": "src/components/mappingGlobe.jsx",
     "isDynamicEntry": true,
@@ -219,13 +234,13 @@
     ]
   },
   "src/components/nicheMap.jsx": {
-    "file": "assets/nicheMap-CR47hZKM.js",
+    "file": "assets/nicheMap-hUISrFY5.js",
     "name": "nicheMap",
     "src": "src/components/nicheMap.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_button-6ypzVRlZ.js"
+      "_button-D56SRz3G.js"
     ],
     "dynamicImports": [
       "node_modules/leaflet.smoothgeodesic/dist/leaflet.smoothgeodesic.js"
@@ -235,17 +250,17 @@
     ]
   },
   "src/components/tradeSimulator.jsx": {
-    "file": "assets/tradeSimulator-DclXsRNc.js",
+    "file": "assets/tradeSimulator-KN61TSbr.js",
     "name": "tradeSimulator",
     "src": "src/components/tradeSimulator.jsx",
     "isDynamicEntry": true,
     "imports": [
-      "_tradeSimulator--HlPMKTg.js",
-      "_button-6ypzVRlZ.js"
+      "_tradeSimulator-DC_gPL04.js",
+      "_button-D56SRz3G.js"
     ]
   },
   "src/components/wineTerminal.jsx": {
-    "file": "assets/wineTerminal-CMAvF-Ca.js",
+    "file": "assets/wineTerminal-DUEEaBIV.js",
     "name": "wineTerminal",
     "src": "src/components/wineTerminal.jsx",
     "isDynamicEntry": true,
@@ -254,14 +269,14 @@
     ]
   },
   "src/pages/index.jsx": {
-    "file": "assets/pages-B8c24Qdd.js",
+    "file": "assets/pages-CO827dzz.js",
     "name": "pages",
     "src": "src/pages/index.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_tradeSimulator--HlPMKTg.js",
-      "_button-6ypzVRlZ.js"
+      "_tradeSimulator-DC_gPL04.js",
+      "_button-D56SRz3G.js"
     ],
     "css": [
       "assets/pages-CJYI10J1.css"
