@@ -1,0 +1,1 @@
+import{F as e,M as t}from"./app-DL47xn9Z.js";var n=e((e=>{var n=t();e.createRoot=n.createRoot,e.hydrateRoot=n.hydrateRoot}));export default n();
