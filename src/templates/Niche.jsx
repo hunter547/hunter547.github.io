@@ -1,4 +1,4 @@
-import React, { Suspense, useState } from "react"
+import React, { Suspense, useContext, useState, lazy } from "react"
 import { Link, useParams } from "react-router-dom"
 import { ClientOnly } from "vite-react-ssg"
 import "../styles/index.scss"
@@ -9,6 +9,25 @@ import LanyardBadge from "../components/lanyard/LanyardBadge"
 import { nicheExtras, nicheHeroAsides } from "../components/nicheExtras"
 import VideoModal from "../components/videoModal"
 import CaseItem from "../components/CaseItem"
+import ThemeModeContext from "../context/ThemeMode/ThemeModeContext"
+
+// Browser-only: the dot-field background paints to a canvas and reads
+// window/devicePixelRatio, so keep it out of the static pre-render.
+const DotField = lazy(() => import("../components/DotField"))
+
+// Subtle dot-field tints drawn from the site palette, keyed by theme.
+const dotColorsByTheme = {
+  "theme-dark": {
+    gradientFrom: "rgba(138, 166, 191, 0.22)", // $light-blue
+    gradientTo: "rgba(242, 94, 122, 0.16)", // $light-orange
+    glowColor: "transparent", // no cursor glow
+  },
+  "theme-light": {
+    gradientFrom: "rgba(2, 52, 64, 0.20)", // $dark-blue
+    gradientTo: "rgba(138, 166, 191, 0.16)", // $light-blue
+    glowColor: "transparent", // no cursor glow
+  },
+}
 
 // Build-time responsive images (same maps the portfolio uses). Keys match the
 // relative paths in portfolioData.json (e.g. "../images/Leaflet-SmoothGeodesic-app.png").
@@ -27,6 +46,9 @@ const pad = n => String(n).padStart(2, "0")
 
 const Niche = () => {
   const { slug } = useParams()
+  const [themeMode] = useContext(ThemeModeContext)
+  const dotColors =
+    dotColorsByTheme[themeMode] || dotColorsByTheme["theme-light"]
   // The related project whose demo video is currently open (null = closed).
   const [activeVideo, setActiveVideo] = useState(null)
   const order = niches.findIndex(n => n.slug === slug)
@@ -69,6 +91,16 @@ const Niche = () => {
       <header
         className={`niche-hero${HeroAside ? " niche-hero--with-aside" : ""}`}
       >
+        {/* ---- Dot-field background behind the hero ---- */}
+        <ClientOnly>
+          {() => (
+            <div className="niche-hero-dots" aria-hidden="true">
+              <Suspense fallback={null}>
+                <DotField {...dotColors} />
+              </Suspense>
+            </div>
+          )}
+        </ClientOnly>
         <hr className="niche-rule" />
         <div className="niche-hero-main">
           <h1 className="niche-title">{niche.title}</h1>
@@ -88,94 +120,97 @@ const Niche = () => {
         )}
       </header>
 
-      {/* ---- Capabilities ---- */}
-      <section className="niche-section">
-        <h2 className="niche-section-label">What I build</h2>
-        <ul className="niche-caps">
-          {niche.highlights.map((h, i) => (
-            <li className="niche-cap" key={h}>
-              <span className="niche-cap-num">{pad(i + 1)}</span>
-              <span className="niche-cap-text">{h}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      {/* ---- Custom interactive component (per niche, optional) ---- */}
-      {NicheExtra && (
+      {/* ---- Page body ---- */}
+      <div className="niche-body">
+        {/* ---- Capabilities ---- */}
         <section className="niche-section">
-          <ClientOnly>
-            {() => (
-              <Suspense fallback={null}>
-                <NicheExtra />
-              </Suspense>
-            )}
-          </ClientOnly>
-        </section>
-      )}
-
-      {/* ---- Selected work ---- */}
-      {related.length > 0 && (
-        <section className="niche-section">
-          <h2 className="niche-section-label">Selected work</h2>
-          <div className="case-list">
-            {related.map((p, i) => (
-              <CaseItem
-                key={p.classname}
-                flip={i % 2 === 1}
-                image={fallbacks[p.image]}
-                imageSrcSet={srcSets[p.image]}
-                eyebrow={`Case file — ${niche.title}`}
-                title={p.header}
-                description={p.description}
-                githubLink={p.githubLink}
-                applicationLink={p.applicationLink}
-                video={p.video}
-                onVideo={setActiveVideo}
-                icons={p.icons}
-              />
-            ))}
-          </div>
-        </section>
-      )}
-
-      {/* ---- Experience timeline ---- */}
-      {experience.length > 0 && (
-        <section className="niche-section">
-          <h2 className="niche-section-label">Professional experience</h2>
-          <ol className="niche-timeline">
-            {experience.map(e => (
-              <li className="niche-tl" key={`${e.company}-${e.period}`}>
-                <div className="niche-tl-content">
-                  <p className="niche-tl-period">{e.period}</p>
-                  <h3 className="niche-tl-role">{e.role}</h3>
-                  <p className="niche-tl-company">{e.company}</p>
-                  <p className="niche-tl-summary">{e.summary}</p>
-                </div>
-                <div className="niche-tl-lanyard">
-                  <LanyardBadge frontImage={e.badge} />
-                </div>
+          <h2 className="niche-section-label">What I build</h2>
+          <ul className="niche-caps">
+            {niche.highlights.map((h, i) => (
+              <li className="niche-cap" key={h}>
+                <span className="niche-cap-num">{pad(i + 1)}</span>
+                <span className="niche-cap-text">{h}</span>
               </li>
             ))}
-          </ol>
+          </ul>
         </section>
-      )}
 
-      {/* ---- Closing CTA ---- */}
-      <section className="niche-cta">
-        <p className="niche-cta-kicker">Let&apos;s build</p>
-        <h2 className="niche-cta-title">
-          Have a {niche.title.toLowerCase()} project?
-        </h2>
-        <div className="niche-cta-actions">
-          <a className="niche-cta-btn" href="mailto:hunter547@gmail.com">
-            Start a conversation <span>↗</span>
-          </a>
-          <Link to="/" state={{ skipIntro: true }} className="niche-cta-back">
-            ← Back to portfolio
-          </Link>
-        </div>
-      </section>
+        {/* ---- Custom interactive component (per niche, optional) ---- */}
+        {NicheExtra && (
+          <section className="niche-section">
+            <ClientOnly>
+              {() => (
+                <Suspense fallback={null}>
+                  <NicheExtra />
+                </Suspense>
+              )}
+            </ClientOnly>
+          </section>
+        )}
+
+        {/* ---- Selected work ---- */}
+        {related.length > 0 && (
+          <section className="niche-section">
+            <h2 className="niche-section-label">Selected work</h2>
+            <div className="case-list">
+              {related.map((p, i) => (
+                <CaseItem
+                  key={p.classname}
+                  flip={i % 2 === 1}
+                  image={fallbacks[p.image]}
+                  imageSrcSet={srcSets[p.image]}
+                  eyebrow={`Case file — ${niche.title}`}
+                  title={p.header}
+                  description={p.description}
+                  githubLink={p.githubLink}
+                  applicationLink={p.applicationLink}
+                  video={p.video}
+                  onVideo={setActiveVideo}
+                  icons={p.icons}
+                />
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* ---- Experience timeline ---- */}
+        {experience.length > 0 && (
+          <section className="niche-section">
+            <h2 className="niche-section-label">Professional experience</h2>
+            <ol className="niche-timeline">
+              {experience.map(e => (
+                <li className="niche-tl" key={`${e.company}-${e.period}`}>
+                  <div className="niche-tl-content">
+                    <p className="niche-tl-period">{e.period}</p>
+                    <h3 className="niche-tl-role">{e.role}</h3>
+                    <p className="niche-tl-company">{e.company}</p>
+                    <p className="niche-tl-summary">{e.summary}</p>
+                  </div>
+                  <div className="niche-tl-lanyard">
+                    <LanyardBadge frontImage={e.badge} />
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </section>
+        )}
+
+        {/* ---- Closing CTA ---- */}
+        <section className="niche-cta">
+          <p className="niche-cta-kicker">Let&apos;s build</p>
+          <h2 className="niche-cta-title">
+            Have a {niche.title.toLowerCase()} project?
+          </h2>
+          <div className="niche-cta-actions">
+            <a className="niche-cta-btn" href="mailto:hunter547@gmail.com">
+              Start a conversation <span>↗</span>
+            </a>
+            <Link to="/" state={{ skipIntro: true }} className="niche-cta-back">
+              ← Back to portfolio
+            </Link>
+          </div>
+        </section>
+      </div>
 
       <VideoModal
         video={activeVideo}

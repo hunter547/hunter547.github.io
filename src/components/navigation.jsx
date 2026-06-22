@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 
 import { cn } from "@/lib/utils"
+import LetterGlitch from "./LetterGlitch"
 import useSectionNav from "../hooks/useSectionNav"
 import portfolioData from "../data/portfolioData.json"
 import niches from "../data/niches.json"
@@ -36,12 +37,22 @@ export default function Navigation() {
                   <a
                     href="#portfolio"
                     onClick={e => go(e, "#portfolio")}
-                    className="from-muted/40 to-muted/10 flex h-full w-full flex-col justify-end rounded-md bg-gradient-to-b p-6 no-underline outline-hidden select-none focus:shadow-md"
+                    className="relative flex h-full w-full flex-col justify-end overflow-hidden rounded-md p-6 no-underline outline-hidden select-none focus:shadow-md"
                   >
-                    <div className="mt-4 mb-2 text-lg font-medium">
+                    <div className="absolute inset-0">
+                      <LetterGlitch
+                        glitchSpeed={50}
+                        glitchColors={["#2b4539", "#61dca3", "#61b3dc"]}
+                        centerVignette={true}
+                        outerVignette={false}
+                        smooth
+                      />
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20" />
+                    <div className="relative z-10 mt-4 mb-2 text-lg font-semibold text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]">
                       Development Projects
                     </div>
-                    <p className="text-muted-foreground text-sm leading-tight">
+                    <p className="relative z-10 text-sm leading-tight text-white/90 drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)]">
                       A selection of full-stack apps, packages, and experiments
                       I&apos;ve built.
                     </p>
