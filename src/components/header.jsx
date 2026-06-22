@@ -35,7 +35,7 @@ const Header = () => {
           <NavbarRight>
             <Navigation />
             <a
-              href="/Hunter-Evanoff-2021-Resume.pdf"
+              href="/Hunter Evanoff - Full Stack Software Engineer.pdf"
               target="_blank"
               rel="noreferrer"
               className="resume-link hidden text-xs uppercase tracking-[0.109375rem] -my-[0.3125rem] md:block"

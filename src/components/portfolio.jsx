@@ -56,10 +56,14 @@ const Portfolio = () => {
             </h3>
           )}
           <p>
-            I've been a developer for 3 years and I love making applications for
-            the web, they're fun to build and can be reached by anyone on the
-            internet. My most recent projects have been focused on Javascript
-            frameworks with a preference for React.js.
+            This is what I build on my own time. Lately my projects have
+            gravitated toward financial markets and AI — multi-agent systems
+            where LLMs trade against each other, Monte Carlo simulators for
+            prop-firm risk, and bridges that turn closed desktop trading
+            platforms into programmable APIs. They reach across the whole stack,
+            from Kafka data pipelines and MySQL backends to React dashboards and
+            an open-source mapping package, and even down to running
+            Windows-only software headless on Linux through Wine.
           </p>
           {/*
           <div className="btn-row">

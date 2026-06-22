@@ -1,7 +1,7 @@
 [
   {
-    "slug": "trading-platforms",
-    "title": "Trading Platforms",
+    "slug": "trading-apis",
+    "title": "Trading APIs",
     "tagline": "Real-time charting, backtesting, and execution UIs.",
     "description": "I build fast, data-dense trading interfaces — from live candlestick charts and order tickets to paper-trading simulators and tape-replay backtesting harnesses.",
     "highlights": [
@@ -10,7 +10,11 @@
       "Tape-replay backtesting and trade simulators with live P/L",
       "Market-data ingestion pipelines (REST, WebSocket, yfinance)"
     ],
-    "relatedProjects": ["algo-trade-engine", "ninjatrader-bridge"],
+    "relatedProjects": [
+      "topstepx-daytrading-arena",
+      "algo-trade-engine",
+      "ninjatrader-bridge"
+    ],
     "experience": []
   },
   {
@@ -43,8 +47,8 @@
     ]
   },
   {
-    "slug": "wine-containerization",
-    "title": "Wine Containerization",
+    "slug": "dockerized-wine",
+    "title": "Dockerized Wine",
     "tagline": "Running Windows software on Linux — Wine + Vulkan + D3D12, containerized.",
     "description": "Packaging Windows applications — from AAA games to trading platforms — into reproducible Linux containers with the Wine compatibility layer and DirectX-to-Vulkan translation.",
     "highlights": [

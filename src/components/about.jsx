@@ -47,19 +47,21 @@ const About = () => {
               </h3>
             )}
             <h4>
-              An accounting graduate turned developer, coding an enjoyable
-              career
+              An accounting graduate turned full-stack engineer, coding an
+              enjoyable career
             </h4>
             <p>
-              I'm a driven web developer with a passion for aesthetic UI, server
-              side processing, and web animation. I’ve been working as a
-              software developer for the past 5 years. With a demonstrated
-              history of building scalable consumer applications in the
-              government, public, and private sector, my exposure to developing
-              different kinds of applications is expansive. This background has
-              made me adaptable in shifting environments, high attention to
-              detail on customer needs, and efficient at researching the right
-              tools to get the job done.
+              I'm a full-stack engineer drawn to aesthetic UI, server-side
+              processing, and the systems work in between. For the past eight
+              years I've shipped scalable consumer applications across the
+              government, public, and private sectors — currently building
+              backend APIs and recommendation systems for Samsung's Gaming Hub,
+              which streams games to smart TVs for over 100 million monthly
+              users. Before that I built cyber resiliency platforms, government
+              cloud applications, and security dashboards for NORAD, the Air
+              Force, and Space Force. That range has made me adaptable in
+              shifting environments, attentive to what customers actually need,
+              and quick to find the right tool for the job.
             </p>
             <p>
               In my free time, I enjoy spending time with my wife, my son, and

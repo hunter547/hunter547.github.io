@@ -19,7 +19,7 @@ const menuItems = [
   { label: "About", link: "#about", ariaLabel: "Jump to the about section" },
   {
     label: "Resume",
-    link: "/Hunter-Evanoff-2021-Resume.pdf",
+    link: "/Hunter Evanoff - Full Stack Software Engineer.pdf",
     ariaLabel: "Open resume in a new tab",
     external: true,
   },

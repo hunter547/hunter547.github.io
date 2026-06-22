@@ -6,14 +6,14 @@ import { lazy } from "react"
 // canvas-confetti. To give a niche its own custom component, add one line here
 // — the Niche template stays generic.
 export const nicheExtras = {
-  "trading-platforms": lazy(() => import("./tradeSimulator")),
+  "trading-apis": lazy(() => import("./tradeSimulator")),
   "mapping-apis": lazy(() => import("./nicheMap")),
 }
 
 // Optional, per-niche component rendered in the open space beside the hero
 // masthead. Same lazy + browser-only treatment as nicheExtras.
 export const nicheHeroAsides = {
-  "trading-platforms": lazy(() => import("./candlePrinter")),
+  "trading-apis": lazy(() => import("./candlePrinter")),
   "mapping-apis": lazy(() => import("./mappingGlobe")),
-  "wine-containerization": lazy(() => import("./wineTerminal")),
+  "dockerized-wine": lazy(() => import("./wineTerminal")),
 }

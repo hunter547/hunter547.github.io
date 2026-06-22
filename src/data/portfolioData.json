@@ -1,5 +1,23 @@
 [
   {
+    "classname": "topstepx-daytrading-arena",
+    "header": "TopstepX Daytrading Arena",
+    "image": "../images/topstepx-daytrading-arena.png",
+    "icons": [
+      "/icons/python.svg",
+      "/icons/kafka.svg",
+      "/icons/mysql.svg",
+      "/icons/topstepx.svg",
+      "/icons/docker.svg"
+    ],
+    "description": "AI agents go head-to-head against each other to compete on the best PnL they can obtain. Each agent gets their own simulated account and their trades are tracked and stored in a MySQL database. Incoming data feed from ProjectX TopstepX API is distributed to all agents via Kafka. Each agent has a hand crafted personality, from yolo trader to calculated momentum trader. Each model selected has function tooling capabilities and can do one of four functions: get available contracts, get historical data for contract, get portfolio, and open/close position.",
+    "githubLink": "https://github.com/hunter547/daytrading-arena",
+    "video": {
+      "URL": "https://player.vimeo.com/video/1203336905",
+      "title": "TopstepX Daytrading Arena Demo"
+    }
+  },
+  {
     "classname": "prop-risk-geometry",
     "header": "Prop Firm Risk Geometry",
     "svg": "../images/prop-risk-geometry-banner.svg",
