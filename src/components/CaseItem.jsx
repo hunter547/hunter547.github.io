@@ -33,7 +33,7 @@ const CaseItem = ({
     >
       <TiltedCard className="case-item-media">
         <div className="case-item-frame" aria-hidden="true" />
-        {svg ? (
+        {svg && image ? (
           // Stacked media: the README's vector banner on top, the 3D pass-rate
           // surface below — together they fill the frame as a squarish block.
           // The banner stays a true SVG (loaded by URL, never rasterized).
@@ -53,6 +53,16 @@ const CaseItem = ({
               alt={`${title} 3D pass-rate surface`}
             />
           </div>
+        ) : svg ? (
+          // Banner-only media: a self-contained vector illustration (used for
+          // library/SDK projects with no UI to screenshot). Fills the frame at
+          // its natural aspect, exactly like a single screenshot would.
+          <img
+            className="case-item-img"
+            src={svg}
+            loading={imageLoading}
+            alt={`${title} illustration`}
+          />
         ) : (
           <img
             className="case-item-img"

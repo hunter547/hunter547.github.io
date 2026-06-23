@@ -41,6 +41,13 @@ const fallbacks = import.meta.glob("../images/*.png", {
   import: "default",
   query: { w: "800", format: "webp" },
 })
+// SVG banners are kept as true vectors (imported as their own URL), matching
+// the home portfolio. Keys are the relative paths stored in portfolioData.json.
+const svgUrls = import.meta.glob("../images/*.svg", {
+  eager: true,
+  import: "default",
+  query: "?url",
+})
 
 const pad = n => String(n).padStart(2, "0")
 
@@ -159,6 +166,7 @@ const Niche = () => {
                   flip={i % 2 === 1}
                   image={fallbacks[p.image]}
                   imageSrcSet={srcSets[p.image]}
+                  svg={p.svg ? svgUrls[p.svg] : undefined}
                   eyebrow={`Case file — ${niche.title}`}
                   title={p.header}
                   description={p.description}

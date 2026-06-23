@@ -79,6 +79,15 @@
     }
   },
   {
+    "classname": "topstepx-api",
+    "header": "TopstepX API Client",
+    "svg": "../images/topstepx-api-banner.svg",
+    "icons": ["/icons/typescript.svg", "/icons/npm.svg", "/icons/topstepx.svg"],
+    "description": "A framework-agnostic TypeScript client for Topstep's TopstepX trading API, published on npm. It wraps the full REST surface — accounts, orders, positions, trades, contracts, and historical OHLCV bars — and layers real-time SignalR WebSocket feeds for live quotes, trades, market depth, and account/order/position updates. Ships with automatic token management and refresh, a complete set of typed interfaces and enums, dedicated error classes, and dual ESM/CommonJS builds, so it drops into any Node framework like Express, Fastify, or NestJS.",
+    "githubLink": "https://github.com/hunter547/TopstepX-API",
+    "applicationLink": "https://www.npmjs.com/package/topstepx-api"
+  },
+  {
     "classname": "ninjatrader-merlot",
     "header": "NinjaTrader Merlot",
     "image": "../images/ninjatrader-merlot.png",

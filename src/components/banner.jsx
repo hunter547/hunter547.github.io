@@ -4,7 +4,18 @@ import LoopTypewriter from "./loopTypewriter"
 import scrollTo from "../utils/scrollTo"
 
 const Banner = () => {
-  const skills = ["React", "JavaScript", "CSS", "Gatsby", "Redux"]
+  const skills = [
+    "React",
+    "TypeScript",
+    "MySQL",
+    "Docker",
+    "Redis",
+    "Linux Admin",
+    "REST",
+    "WebSocket",
+    "Nest.js",
+    "Kafka",
+  ]
   return (
     <div className="banner">
       <div className="row">
