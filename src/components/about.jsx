@@ -64,12 +64,10 @@ const About = () => {
               and quick to find the right tool for the job.
             </p>
             <p>
-              In my free time, I enjoy spending time with my wife, my son, and
-              our two Great Danes. I have a 1985 motorcycle that I've been
-              repairing and retrofitting as a hobby. I get to occasionally ride
-              it when it's in the mood. I enjoy 3D modeling with Blender to make
-              photorealistic models. Finally, not surprisingly, I love coding
-              and creating immersive apps outside of work.
+              In my free time, I enjoy spending time with my wife, my son, my
+              twin daughters, and our Great Dane. I enjoy 3D modeling with
+              Blender to make photorealistic models. Finally, not surprisingly,
+              I love coding and creating immersive apps outside of work.
             </p>
           </div>
         </div>
