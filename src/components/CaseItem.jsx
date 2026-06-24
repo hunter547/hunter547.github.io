@@ -8,6 +8,7 @@ import { TiltedCard } from "@/components/ui/tilted-card"
 // when `icons` are provided, an interactive IconCloud fills the body's
 // bottom-right open space.
 const CaseItem = ({
+  id,
   image,
   imageSrcSet,
   svg,
@@ -27,6 +28,7 @@ const CaseItem = ({
 
   return (
     <article
+      id={id}
       className="case-item"
       data-flip={flip ? "true" : undefined}
       data-cloud={hasCloud ? "true" : undefined}

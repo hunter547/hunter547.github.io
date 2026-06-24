@@ -29,6 +29,7 @@ const PortfolioCollection = ({ onVideo }) => {
   return portfolioData.map((project, index) => (
     <CaseItem
       key={project.classname}
+      id={`project-${project.classname}`}
       flip={index % 2 === 1}
       image={fallbacks[project.image]}
       imageSrcSet={srcSets[project.image]}

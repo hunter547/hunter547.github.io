@@ -59,16 +59,19 @@ export default function Navigation() {
                   </a>
                 </NavigationMenuLink>
               </li>
-              {portfolioData.map(project => (
-                <ListItem
-                  key={project.classname}
-                  title={project.header}
-                  href="#portfolio"
-                  onClick={e => go(e, "#portfolio")}
-                >
-                  {project.description}
-                </ListItem>
-              ))}
+              {portfolioData.map(project => {
+                const target = `#project-${project.classname}`
+                return (
+                  <ListItem
+                    key={project.classname}
+                    title={project.header}
+                    href={target}
+                    onClick={e => go(e, target)}
+                  >
+                    {project.description}
+                  </ListItem>
+                )
+              })}
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>

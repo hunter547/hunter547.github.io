@@ -108,8 +108,11 @@ $mono: $font;
           min-width: 0;
         }
         .niche-hero-aside {
+          display: flex;
+          align-items: center;
           flex: 0 0 auto;
           width: 25rem;
+          height: 25rem;
           margin: 0;
         }
       }
@@ -120,6 +123,7 @@ $mono: $font;
     width: 100%;
     @media (max-width: 60rem) {
       max-width: 18rem;
+      max-height: 18rem;
       margin: 1.75rem auto 0;
     }
   }
