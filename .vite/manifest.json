@@ -19,8 +19,8 @@
     "file": "assets/Leaflet-SmoothGeodesic-app-d-wHKMX7.webp",
     "src": "_Leaflet-SmoothGeodesic-app-d-wHKMX7.webp"
   },
-  "_button-ii8NOZfT.js": {
-    "file": "assets/button-ii8NOZfT.js",
+  "_button-DMV7Q5oM.js": {
+    "file": "assets/button-DMV7Q5oM.js",
     "name": "button",
     "imports": [
       "index.html"
@@ -106,23 +106,23 @@
     "file": "assets/topstepx-daytrading-arena-XpG8v_gS.webp",
     "src": "_topstepx-daytrading-arena-XpG8v_gS.webp"
   },
-  "_tradeSimulator-eag6irly.js": {
-    "file": "assets/tradeSimulator-eag6irly.js",
+  "_tradeSimulator-CxhSvrjM.js": {
+    "file": "assets/tradeSimulator-CxhSvrjM.js",
     "name": "tradeSimulator",
     "imports": [
       "index.html",
-      "_button-ii8NOZfT.js"
+      "_button-DMV7Q5oM.js"
     ]
   },
   "index.html": {
-    "file": "assets/app-Dkabd1Iv.js",
+    "file": "assets/app-DXY5wRpk.js",
     "name": "app",
     "src": "index.html",
     "isEntry": true,
     "dynamicImports": [
       "node_modules/react-dom/client.js",
       "src/components/lanyard/Lanyard.jsx",
-      "_tradeSimulator-eag6irly.js",
+      "_tradeSimulator-CxhSvrjM.js",
       "src/components/nicheMap.jsx",
       "src/components/candlePrinter.jsx",
       "src/components/mappingGlobe.jsx",
@@ -131,7 +131,7 @@
       "src/pages/index.jsx"
     ],
     "css": [
-      "assets/app-U-b6I1dx.css"
+      "assets/app-PU8pXv_P.css"
     ],
     "assets": [
       "assets/Leaflet-SmoothGeodesic-app-BujAXHsA.webp",
@@ -174,7 +174,7 @@
     "isDynamicEntry": true
   },
   "node_modules/react-dom/client.js": {
-    "file": "assets/client-CCjBa9CQ.js",
+    "file": "assets/client-CjnOD-O6.js",
     "name": "client",
     "src": "node_modules/react-dom/client.js",
     "isDynamicEntry": true,
@@ -183,7 +183,7 @@
     ]
   },
   "src/components/DotField.jsx": {
-    "file": "assets/DotField-h1EJEiCW.js",
+    "file": "assets/DotField-XPnedkMv.js",
     "name": "DotField",
     "src": "src/components/DotField.jsx",
     "isDynamicEntry": true,
@@ -192,7 +192,7 @@
     ]
   },
   "src/components/candlePrinter.jsx": {
-    "file": "assets/candlePrinter-B5AZqvej.js",
+    "file": "assets/candlePrinter-Da6_rzUB.js",
     "name": "candlePrinter",
     "src": "src/components/candlePrinter.jsx",
     "isDynamicEntry": true,
@@ -201,7 +201,7 @@
     ]
   },
   "src/components/lanyard/Lanyard.jsx": {
-    "file": "assets/Lanyard-CotYfZbT.js",
+    "file": "assets/Lanyard-BwER9B3s.js",
     "name": "Lanyard",
     "src": "src/components/lanyard/Lanyard.jsx",
     "isDynamicEntry": true,
@@ -226,7 +226,7 @@
     "src": "src/components/lanyard/lanyard.png"
   },
   "src/components/mappingGlobe.jsx": {
-    "file": "assets/mappingGlobe-BexDeJXs.js",
+    "file": "assets/mappingGlobe-DK_vdRci.js",
     "name": "mappingGlobe",
     "src": "src/components/mappingGlobe.jsx",
     "isDynamicEntry": true,
@@ -235,13 +235,13 @@
     ]
   },
   "src/components/nicheMap.jsx": {
-    "file": "assets/nicheMap-Fs9Gy5jp.js",
+    "file": "assets/nicheMap-BTq_2l4e.js",
     "name": "nicheMap",
     "src": "src/components/nicheMap.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_button-ii8NOZfT.js"
+      "_button-DMV7Q5oM.js"
     ],
     "dynamicImports": [
       "node_modules/leaflet.smoothgeodesic/dist/leaflet.smoothgeodesic.js"
@@ -251,17 +251,17 @@
     ]
   },
   "src/components/tradeSimulator.jsx": {
-    "file": "assets/tradeSimulator-heOT988Z.js",
+    "file": "assets/tradeSimulator-Db37plss.js",
     "name": "tradeSimulator",
     "src": "src/components/tradeSimulator.jsx",
     "isDynamicEntry": true,
     "imports": [
-      "_tradeSimulator-eag6irly.js",
-      "_button-ii8NOZfT.js"
+      "_tradeSimulator-CxhSvrjM.js",
+      "_button-DMV7Q5oM.js"
     ]
   },
   "src/components/wineTerminal.jsx": {
-    "file": "assets/wineTerminal-BBO708xs.js",
+    "file": "assets/wineTerminal-DRgRSP7k.js",
     "name": "wineTerminal",
     "src": "src/components/wineTerminal.jsx",
     "isDynamicEntry": true,
@@ -274,14 +274,14 @@
     "src": "src/images/topstepx-api-banner.svg"
   },
   "src/pages/index.jsx": {
-    "file": "assets/pages-BI6ikN_E.js",
+    "file": "assets/pages-BzlP2REn.js",
     "name": "pages",
     "src": "src/pages/index.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_tradeSimulator-eag6irly.js",
-      "_button-ii8NOZfT.js"
+      "_tradeSimulator-CxhSvrjM.js",
+      "_button-DMV7Q5oM.js"
     ],
     "css": [
       "assets/pages-CJYI10J1.css"
